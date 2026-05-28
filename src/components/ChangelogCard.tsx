@@ -1,12 +1,11 @@
-import React, { useState } from "react";
-import { MessageSquare, Send, Sparkles, User, Calendar, ShieldCheck, ChevronDown, ChevronUp } from "lucide-react";
+import { useState } from "react";
+import { Sparkles, Calendar } from "lucide-react";
 import { ChangelogItem, AppInfo } from "../types";
 
 export interface ChangelogCardProps {
   key?: string | number;
   item: ChangelogItem;
   app: AppInfo | undefined;
-  onAddComment: (id: string, name: string, email: string, content: string) => Promise<void>;
 }
 
 // Simple and highly customizable internal markdown parser to guarantee speed & safety
@@ -70,13 +69,11 @@ function parseBold(text: string): string {
   const codeRegex = /`(.*?)`/g;
   res = res.replace(codeRegex, `<code class="bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-xs px-1.5 py-0.5 rounded-md text-slate-800 dark:text-slate-200 font-mono font-semibold">$1</code>`);
   return res;
-}export default function ChangelogCard({ item, app, onAddComment }: ChangelogCardProps) {
-  const [commentName, setCommentName] = useState("");
-  const [commentEmail, setCommentEmail] = useState("");
-  const [commentContent, setCommentContent] = useState("");
-  const [isSubmittingComment, setIsSubmittingComment] = useState(false);
-  const [showComments, setShowComments] = useState(false);
-  const [isGenZTranslated, setIsGenZTranslated] = useState(false);
+}
+
+export default function ChangelogCard({ item, app }: ChangelogCardProps) {
+  // Default to the hype edition; readers can switch to the technical log.
+  const [isGenZTranslated, setIsGenZTranslated] = useState(true);
 
   // Type details mapper
   const getTypeMeta = (type: string) => {
@@ -102,21 +99,6 @@ function parseBold(text: string): string {
       day: "numeric",
       year: "numeric",
     });
-  };
-
-  const handleCommentSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!commentName.trim() || !commentContent.trim()) return;
-
-    setIsSubmittingComment(true);
-    try {
-      await onAddComment(item.id, commentName, commentEmail, commentContent);
-      setCommentContent("");
-    } catch (err) {
-      console.error(err);
-    } finally {
-      setIsSubmittingComment(false);
-    }
   };
 
   // Fun alternative explanation translation ("Founder slang")
@@ -190,119 +172,19 @@ function parseBold(text: string): string {
       </div>
 
       {/* Action panel footer */}
-      <div className="flex items-center justify-between mt-5 pt-3.5 border-t border-slate-100 dark:border-slate-800">
-        
-        {/* Interaction triggers */}
-        <div className="flex items-center gap-3">
-          
-          {/* Comments trigger */}
-          <button
-            id={`comments-toggle-${item.id}`}
-            onClick={() => setShowComments(!showComments)}
-            className={`flex items-center gap-1.5 text-xs font-semibold transition px-3 py-1.5 rounded-lg border ${
-              showComments
-                ? "bg-slate-100 dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-100 font-semibold"
-                : "border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:border-slate-100 hover:text-slate-900 dark:hover:text-white"
-            }`}
-          >
-            <MessageSquare className="h-3.5 w-3.5" />
-            <span>{item.comments.length} Comments</span>
-            {showComments ? <ChevronUp className="h-3 w-3 ml-0.5" /> : <ChevronDown className="h-3 w-3 ml-0.5" />}
-          </button>
-        </div>
+      <div className="flex items-center justify-end mt-5 pt-3.5 border-t border-slate-100 dark:border-slate-800">
 
         {/* Slang toggle */}
         <button
           id={`translate-vibe-btn-${item.id}`}
           onClick={() => setIsGenZTranslated(!isGenZTranslated)}
-          className={`flex items-center gap-1 px-3 py-1.5 rounded-lg text-xs font-semibold transition ${
-            isGenZTranslated
-              ? "bg-amber-400 border border-amber-500 text-slate-900 font-bold"
-              : "border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700"
-          }`}
-          title="Toggle Slang Translation"
+          className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white"
+          title="Toggle between the hype edition and the technical log"
         >
           <Sparkles className="h-3.5 w-3.5 text-amber-500" />
           <span>{isGenZTranslated ? "Technical Log" : "Hype Translation"}</span>
         </button>
       </div>
-
-      {/* Discussion Boards expansion panel */}
-      {showComments && (
-        <div className="mt-4 pt-4 border-t border-dashed border-slate-100 dark:border-slate-800 space-y-3 animate-in slide-in-from-top-3 duration-200">
-          <h4 className="text-[10px] font-bold text-slate-400 dark:text-slate-500 tracking-wider flex items-center gap-1 font-mono uppercase">
-            <MessageSquare className="h-3.5 w-3.5 text-slate-500" /> Team Discussion
-          </h4>
-
-          {/* Comments list */}
-          <div className="space-y-2.5">
-            {item.comments.length === 0 ? (
-              <p className="text-xs text-slate-400 dark:text-slate-500 italic pl-1">
-                No telemetry comments written yet. Keep it real!
-              </p>
-            ) : (
-              item.comments.map((comment) => (
-                <div key={comment.id} className="bg-slate-50/50 dark:bg-slate-800/50 border border-slate-100 dark:border-slate-700 rounded-lg p-3 flex gap-2.5">
-                  <div className="h-7 w-7 rounded bg-slate-100 dark:bg-slate-700 flex items-center justify-center text-slate-700 dark:text-slate-200 flex-shrink-0 mt-0.5 font-bold text-[11px] border border-slate-200 dark:border-slate-600 uppercase font-mono">
-                    {comment.authorName.charAt(0)}
-                  </div>
-                  <div className="flex-1 space-y-0.5">
-                    <div className="flex items-center justify-between">
-                      <span className="text-xs font-bold text-slate-800 dark:text-slate-200">{comment.authorName}</span>
-                      <span className="text-[10px] text-slate-400 dark:text-slate-500 font-mono">{formatDate(comment.timestamp)}</span>
-                    </div>
-                    <p className="text-slate-600 dark:text-slate-300 text-xs md:text-sm leading-relaxed">{comment.content}</p>
-                  </div>
-                </div>
-              ))
-            )}
-          </div>
-           {/* Submit comments form */}
-          <form onSubmit={handleCommentSubmit} className="space-y-2.5 mt-3 bg-slate-50/50 dark:bg-slate-800/40 rounded-xl p-3 border border-slate-200 dark:border-slate-700">
-            <span className="text-[10px] font-bold text-slate-800 dark:text-slate-200 uppercase tracking-wider block">Add your voice</span>
-            
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-              <input
-                id={`comment-name-${item.id}`}
-                type="text"
-                required
-                placeholder="Name"
-                value={commentName}
-                onChange={(e) => setCommentName(e.target.value)}
-                className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg px-2.5 py-1 text-xs text-slate-800 dark:text-slate-100 focus:outline-none focus:border-slate-500"
-              />
-              <input
-                id={`comment-email-${item.id}`}
-                type="email"
-                placeholder="Email (Optional)"
-                value={commentEmail}
-                onChange={(e) => setCommentEmail(e.target.value)}
-                className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg px-2.5 py-1 text-xs text-slate-800 dark:text-slate-100 focus:outline-none focus:border-slate-500"
-              />
-            </div>
-
-            <div className="relative">
-              <textarea
-                id={`comment-content-${item.id}`}
-                rows={2}
-                required
-                placeholder="Write a query or congratz..."
-                value={commentContent}
-                onChange={(e) => setCommentContent(e.target.value)}
-                className="w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg px-2.5 py-1.5 pr-8 text-xs text-slate-800 dark:text-slate-100 focus:outline-none focus:border-slate-500 placeholder-slate-400 dark:placeholder-slate-500 leading-relaxed"
-              />
-              <button
-                type="submit"
-                id={`comment-submit-${item.id}`}
-                disabled={isSubmittingComment || !commentName.trim() || !commentContent.trim()}
-                className="absolute right-2 bottom-3 p-1.5 rounded bg-slate-900 text-white hover:bg-slate-800 hover:scale-102 transition disabled:opacity-40"
-              >
-                <Send className="h-3 w-3" />
-              </button>
-            </div>
-          </form>
-        </div>
-      )}
 
     </div>
   );

@@ -21,7 +21,6 @@ import {
   Sun,
   Moon
 } from "lucide-react";
-import { APPS } from "./data";
 import { ChangelogItem, AppInfo, UpdateType } from "./types";
 import ChangelogCard from "./components/ChangelogCard";
 import SubscriptionModal from "./components/SubscriptionModal";
@@ -96,6 +95,7 @@ const getAppThemeColors = (appId: string | null) => {
 
 export default function App() {
   const { isDark, toggleTheme } = useTheme();
+  const [apps, setApps] = useState<AppInfo[]>([]);
   const [changelogs, setChangelogs] = useState<ChangelogItem[]>([]);
   const [selectedAppId, setSelectedAppId] = useState<string | null>(null); // null means "All"
   const [searchQuery, setSearchQuery] = useState("");
@@ -108,17 +108,18 @@ export default function App() {
   // Confetti celebration notification whenever new update is posted
   const [celebrationMsg, setCelebrationMsg] = useState<string | null>(null);
 
-  // Fetch changes from Express backend
+  // Load the static changelog data file (apps + updates). Fully client-side — no backend.
   const fetchChanges = async () => {
     setIsLoading(true);
     setErrorStatus(null);
     try {
-      const response = await fetch("/api/changes");
+      const response = await fetch("/data/changelog.json", { cache: "no-cache" });
       if (!response.ok) {
-        throw new Error("Failed to load changes from full-stack api.");
+        throw new Error("Failed to load changelog data file.");
       }
       const data = await response.json();
-      setChangelogs(data);
+      setApps(Array.isArray(data.apps) ? data.apps : []);
+      setChangelogs(Array.isArray(data.updates) ? data.updates : []);
     } catch (err: any) {
       setErrorStatus(err.message || "Something went wrong.");
     } finally {
@@ -130,54 +131,34 @@ export default function App() {
     fetchChanges();
   }, []);
 
-  // Handle adding comments
-  const handleAddComment = async (id: string, name: string, email: string, content: string) => {
-    try {
-      const response = await fetch("/api/changes/comment", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ id, authorName: name, authorEmail: email, content }),
-      });
-
-      if (!response.ok) {
-        const errData = await response.json();
-        throw new Error(errData.error || "Failed to post comment.");
-      }
-
-      const updatedItem = await response.json();
-      
-      // Sync client state
-      setChangelogs((prev) =>
-        prev.map((cl) => (cl.id === id ? updatedItem : cl))
-      );
-    } catch (err: any) {
-      alert("Comment submission issue: " + err.message);
-      throw err;
-    }
-  };
-
-  // Handle post success trigger
+  // Handle post success trigger. On a static site this lives in the current
+  // session only (not persisted) — add to public/data/changelog.json to make it permanent.
   const handlePublishSuccess = (newItem: ChangelogItem) => {
     setChangelogs((prev) => [newItem, ...prev]);
-    setCelebrationMsg(`🚀 App update published live to ${newItem.appName} Changelog feed!`);
+    setCelebrationMsg(`🚀 Update added to the ${newItem.appName} feed for this session!`);
     setTimeout(() => {
       setCelebrationMsg(null);
     }, 5000);
   };
 
-  // Processing search patterns and routing filters
+  // Client-side search + filtering over the loaded JSON data
   const filteredChangelogs = changelogs.filter((cl) => {
     const matchApp = selectedAppId ? cl.appId === selectedAppId : true;
     const matchType = filterType === "all" ? true : cl.type === filterType;
+    const q = searchQuery.toLowerCase().trim();
     const matchSearch =
-      cl.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      cl.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      cl.tags.some((t) => t.toLowerCase().includes(searchQuery.toLowerCase()));
+      q === "" ||
+      cl.title.toLowerCase().includes(q) ||
+      cl.description.toLowerCase().includes(q) ||
+      cl.appName.toLowerCase().includes(q) ||
+      cl.version.toLowerCase().includes(q) ||
+      cl.author.name.toLowerCase().includes(q) ||
+      cl.tags.some((t) => t.toLowerCase().includes(q));
 
     return matchApp && matchType && matchSearch;
   });
 
-  const selectedAppObj = APPS.find((a) => a.id === selectedAppId);
+  const selectedAppObj = apps.find((a) => a.id === selectedAppId);
 
   // Stats Counters
   const countByType = (type: UpdateType) => changelogs.filter((cl) => cl.type === type).length;
@@ -271,7 +252,7 @@ export default function App() {
               <h3 className="px-1 text-xs font-bold text-slate-400/90 dark:text-slate-500 uppercase tracking-wider mb-2 flex items-center justify-between">
                 <span>The Ecosystem</span>
                 <span className="font-mono bg-slate-100 dark:bg-slate-800 text-[10px] border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400 rounded px-1.5 py-0.5 leading-none font-medium">
-                  {APPS.length} Apps
+                  {apps.length} Apps
                 </span>
               </h3>
 
@@ -298,7 +279,7 @@ export default function App() {
                 </button>
 
                 {/* Individual dynamic app tabs */}
-                {APPS.map((app) => {
+                {apps.map((app) => {
                   const LucideIcon = ICON_MAP[app.icon] || Globe;
                   const isSelected = selectedAppId === app.id;
                   const appUpdatesCount = changelogs.filter((cl) => cl.appId === app.id).length;
@@ -346,7 +327,7 @@ export default function App() {
                   <span className="text-[9px] text-slate-500 dark:text-slate-400 font-medium">Updates</span>
                 </div>
                 <div className="bg-slate-50 dark:bg-slate-800/60 border border-slate-100 dark:border-slate-700 rounded-lg p-2.5 flex flex-col items-center">
-                  <span className="font-mono text-base font-bold text-slate-900 dark:text-slate-100">{APPS.length}</span>
+                  <span className="font-mono text-base font-bold text-slate-900 dark:text-slate-100">{apps.length}</span>
                   <span className="text-[9px] text-slate-500 dark:text-slate-400 font-medium">Ecosystem Apps</span>
                 </div>
               </div>
@@ -556,13 +537,12 @@ export default function App() {
               // Changelog item cards list
               <div className="space-y-6">
                 {filteredChangelogs.map((item) => {
-                  const itemApp = APPS.find((a) => a.id === item.appId);
+                  const itemApp = apps.find((a) => a.id === item.appId);
                   return (
                     <ChangelogCard
                       key={item.id}
                       item={item}
                       app={itemApp}
-                      onAddComment={handleAddComment}
                     />
                   );
                 })}
@@ -584,14 +564,14 @@ export default function App() {
       <SubscriptionModal
         isOpen={isSubModalOpen}
         onClose={() => setIsSubModalOpen(false)}
-        apps={APPS}
+        apps={apps}
       />
 
       {/* Dynamic AI Release Draft Drawer */}
       <DraftDrawer
         isOpen={isDraftDrawerOpen}
         onClose={() => setIsDraftDrawerOpen(false)}
-        apps={APPS}
+        apps={apps}
         onPublishSuccess={handlePublishSuccess}
       />
 

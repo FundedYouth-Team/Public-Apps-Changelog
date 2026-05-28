@@ -1,0 +1,123 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "FundedYouth App Updates Feed",
+  "home_page_url": "https://changelog.fundedyouth.org",
+  "feed_url": "https://changelog.fundedyouth.org/feed.json",
+  "description": "Hype updates, releases, and fixes from the FundedYouth developers.",
+  "items": [
+    {
+      "id": "update-1",
+      "url": "https://changelog.fundedyouth.org/?app=the-vault&update=update-1",
+      "title": "[The Vault] ⚡ Rocket-Fast Secure Assets Delivery Engine (SADE) Live!",
+      "content_text": "We've completely overhauled how startup boilerplate legal agreements and media kits are parsed and served.\n\n### What is SADE?\nSADE (Secure Assets Delivery Engine) utilizes edge caching and automated key rotation to make downloading templates instantaneous.\n\n### Features\n* **Zero-latency downloads**: Boilers load in under **45ms** globally.\n* **Smart Watermarking**: Clean PDF watermarking with founder signatures embedded dynamically.\n* **Vault Multi-Signatures**: Seed investment paperwork now supports co-founder parallel signing.",
+      "date_published": "2026-05-28T14:30:00Z",
+      "tags": [
+        "major",
+        "security",
+        "vault",
+        "performance"
+      ],
+      "authors": [
+        {
+          "name": "Tasha Chen",
+          "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80"
+        }
+      ]
+    },
+    {
+      "id": "update-2",
+      "url": "https://changelog.fundedyouth.org/?app=curriculum&update=update-2",
+      "title": "[Curriculum] 📚 Interactive Startup Builder Masterclass Launched",
+      "content_text": "The highly requested Startup Builder track is officially live!\n\nWe worked directly with top venture studio partners to assemble **8 hyper-practical interactive lessons** to guide you from problem discovery to your first $10k in ARR.\n\n### Core Modules Added:\n1. **The Youth Edge**: Finding arbitrage opportunities as student builders.\n2. **Landing Your First 10 Customers**: Tactical cold outreach playbooks.\n3. **No-Code Backends**: Launching dynamic websites without writing custom database layers.\n4. **The Cap Table Sim**: Interactive slider matching founder divisions.\n\n*Complete all modules to unlock the **Cap-Table Wizard Badge** in your User Portal!*",
+      "date_published": "2026-05-27T10:15:00Z",
+      "tags": [
+        "major",
+        "curriculum",
+        "lessons",
+        "education"
+      ],
+      "authors": [
+        {
+          "name": "Alex Patel",
+          "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80"
+        }
+      ]
+    },
+    {
+      "id": "update-3",
+      "url": "https://changelog.fundedyouth.org/?app=user-portal&update=update-3",
+      "title": "[User Portal] 🎨 Dark Mode Aesthetic & Interactive Achievements Grid",
+      "content_text": "Your Member Profile page got a glow up! We've heard you loud and clear: builders want a dark midnight aesthetic to code in comfort during those 2 AM sessions.\n\n### New Additions\n* **Midnight Carbon Palette**: Soft, mathematically accurate contrast ratios for long-night builders.\n* **Achievements Showcase Grid**: See your unlocked badges (including the new Cap-Table Wizard Badge!).\n* **Live Venture Stats Widget**: Watch your FundedPoints accrue dynamically based on community engagement.",
+      "date_published": "2026-05-26T18:40:00Z",
+      "tags": [
+        "minor",
+        "design",
+        "portal",
+        "gamification"
+      ],
+      "authors": [
+        {
+          "name": "Marcus Aurelio",
+          "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80"
+        }
+      ]
+    },
+    {
+      "id": "update-4",
+      "url": "https://changelog.fundedyouth.org/?app=public-site&update=update-4",
+      "title": "[Public Site] 🔒 Security Hotfix - Safeguarding Newsletter Form Entrances",
+      "content_text": "We identified and patched a minor vulnerability related to input sanitization on our public footer newsletter capture.\n\n### Key Details\n* **Vulnerability type**: Form rate-abuse and cross-site scripting risks during peak traffic times.\n* **Resolution**: Added cryptographic Cloudflare Turnstile guards and complete server-side input stripping.\n* **Impact**: Zero records were exposed; this is a preventative security hardening measure.",
+      "date_published": "2026-05-25T09:00:00Z",
+      "tags": [
+        "security",
+        "security",
+        "patch",
+        "infrastructure"
+      ],
+      "authors": [
+        {
+          "name": "Tasha Chen",
+          "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80"
+        }
+      ]
+    },
+    {
+      "id": "update-5",
+      "url": "https://changelog.fundedyouth.org/?app=docs&update=update-5",
+      "title": "[Docs] 📖 Added 'Building with AI' SDK Reference Manual",
+      "content_text": "Our developer docs now contain extensive recipes for integrating LLM features safely inside Sandbox environments.\n\n### Contents:\n* **LLM Hook Templates**: Plug-and-play code snippets for initializing your model client.\n* **Usage Limits Monitor API**: Avoid running over developer quotas when sandbox prototyping.\n* **Web-Safe Keys Guidelines**: Best practices for proxying API calls to prevent leakages.",
+      "date_published": "2026-05-24T15:30:00Z",
+      "tags": [
+        "patch",
+        "docs",
+        "api",
+        "sdk"
+      ],
+      "authors": [
+        {
+          "name": "Sarah Jenkins",
+          "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=150&q=80"
+        }
+      ]
+    },
+    {
+      "id": "update-6",
+      "url": "https://changelog.fundedyouth.org/?app=partner-network&update=update-6",
+      "title": "[Partner Hub] 🤝 High-School Startup Investor Board Launch (Beta)",
+      "content_text": "We've soft-launched our specialized Venture Board! Eligible teen founders can now upload safe executive summaries to showcase to registered micro-VC funds.\n\n### How it works:\n1. Complete your pitch summary in the **User Portal**.\n2. Push your summary directly to the **Partner Hub** and set tags like 'Fintech', 'AI', or 'SaaS'.\n3. Registered, vet-checked investors can request introduction calls with high-potential FundedYouth projects.",
+      "date_published": "2026-05-22T11:00:00Z",
+      "tags": [
+        "minor",
+        "investors",
+        "beta",
+        "funding"
+      ],
+      "authors": [
+        {
+          "name": "Elijah Vance",
+          "avatar": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=150&q=80"
+        }
+      ]
+    }
+  ]
+}

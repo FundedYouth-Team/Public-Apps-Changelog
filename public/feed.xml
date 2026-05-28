@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>FundedYouth Community App updates</title>
+  <link>https://changelog.fundedyouth.org</link>
+  <description>The latest official changelogs and software updates across the entire FundedYouth technical ecosystem.</description>
+  <language>en-us</language>
+  <atom:link href="https://changelog.fundedyouth.org/feed.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>[The Vault] ⚡ Rocket-Fast Secure Assets Delivery Engine (SADE) Live!</title>
+    <link>https://changelog.fundedyouth.org/?app=the-vault&amp;update=update-1</link>
+    <guid>https://changelog.fundedyouth.org/update/update-1</guid>
+    <pubDate>Thu, 28 May 2026 14:30:00 GMT</pubDate>
+    <description>We&apos;ve completely overhauled how startup boilerplate legal agreements and media kits are parsed and served.
+
+### What is SADE?
+SADE (Secure Assets Delivery Engine) utilizes edge caching and automated key rotation to make downloading templates instantaneous.
+
+### Features
+* **Zero-latency downloads**: Boilers load in under **45ms** globally.
+* **Smart Watermarking**: Clean PDF watermarking with founder signatures embedded dynamically.
+* **Vault Multi-Signatures**: Seed investment paperwork now supports co-founder parallel signing.</description>
+    <author>Tasha Chen</author>
+    <category>major</category>
+  </item>
+  <item>
+    <title>[Curriculum] 📚 Interactive Startup Builder Masterclass Launched</title>
+    <link>https://changelog.fundedyouth.org/?app=curriculum&amp;update=update-2</link>
+    <guid>https://changelog.fundedyouth.org/update/update-2</guid>
+    <pubDate>Wed, 27 May 2026 10:15:00 GMT</pubDate>
+    <description>The highly requested Startup Builder track is officially live!
+
+We worked directly with top venture studio partners to assemble **8 hyper-practical interactive lessons** to guide you from problem discovery to your first $10k in ARR.
+
+### Core Modules Added:
+1. **The Youth Edge**: Finding arbitrage opportunities as student builders.
+2. **Landing Your First 10 Customers**: Tactical cold outreach playbooks.
+3. **No-Code Backends**: Launching dynamic websites without writing custom database layers.
+4. **The Cap Table Sim**: Interactive slider matching founder divisions.
+
+*Complete all modules to unlock the **Cap-Table Wizard Badge** in your User Portal!*</description>
+    <author>Alex Patel</author>
+    <category>major</category>
+  </item>
+  <item>
+    <title>[User Portal] 🎨 Dark Mode Aesthetic &amp; Interactive Achievements Grid</title>
+    <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=update-3</link>
+    <guid>https://changelog.fundedyouth.org/update/update-3</guid>
+    <pubDate>Tue, 26 May 2026 18:40:00 GMT</pubDate>
+    <description>Your Member Profile page got a glow up! We&apos;ve heard you loud and clear: builders want a dark midnight aesthetic to code in comfort during those 2 AM sessions.
+
+### New Additions
+* **Midnight Carbon Palette**: Soft, mathematically accurate contrast ratios for long-night builders.
+* **Achievements Showcase Grid**: See your unlocked badges (including the new Cap-Table Wizard Badge!).
+* **Live Venture Stats Widget**: Watch your FundedPoints accrue dynamically based on community engagement.</description>
+    <author>Marcus Aurelio</author>
+    <category>minor</category>
+  </item>
+  <item>
+    <title>[Public Site] 🔒 Security Hotfix - Safeguarding Newsletter Form Entrances</title>
+    <link>https://changelog.fundedyouth.org/?app=public-site&amp;update=update-4</link>
+    <guid>https://changelog.fundedyouth.org/update/update-4</guid>
+    <pubDate>Mon, 25 May 2026 09:00:00 GMT</pubDate>
+    <description>We identified and patched a minor vulnerability related to input sanitization on our public footer newsletter capture.
+
+### Key Details
+* **Vulnerability type**: Form rate-abuse and cross-site scripting risks during peak traffic times.
+* **Resolution**: Added cryptographic Cloudflare Turnstile guards and complete server-side input stripping.
+* **Impact**: Zero records were exposed; this is a preventative security hardening measure.</description>
+    <author>Tasha Chen</author>
+    <category>security</category>
+  </item>
+  <item>
+    <title>[Docs] 📖 Added &apos;Building with AI&apos; SDK Reference Manual</title>
+    <link>https://changelog.fundedyouth.org/?app=docs&amp;update=update-5</link>
+    <guid>https://changelog.fundedyouth.org/update/update-5</guid>
+    <pubDate>Sun, 24 May 2026 15:30:00 GMT</pubDate>
+    <description>Our developer docs now contain extensive recipes for integrating LLM features safely inside Sandbox environments.
+
+### Contents:
+* **LLM Hook Templates**: Plug-and-play code snippets for initializing your model client.
+* **Usage Limits Monitor API**: Avoid running over developer quotas when sandbox prototyping.
+* **Web-Safe Keys Guidelines**: Best practices for proxying API calls to prevent leakages.</description>
+    <author>Sarah Jenkins</author>
+    <category>patch</category>
+  </item>
+  <item>
+    <title>[Partner Hub] 🤝 High-School Startup Investor Board Launch (Beta)</title>
+    <link>https://changelog.fundedyouth.org/?app=partner-network&amp;update=update-6</link>
+    <guid>https://changelog.fundedyouth.org/update/update-6</guid>
+    <pubDate>Fri, 22 May 2026 11:00:00 GMT</pubDate>
+    <description>We&apos;ve soft-launched our specialized Venture Board! Eligible teen founders can now upload safe executive summaries to showcase to registered micro-VC funds.
+
+### How it works:
+1. Complete your pitch summary in the **User Portal**.
+2. Push your summary directly to the **Partner Hub** and set tags like &apos;Fintech&apos;, &apos;AI&apos;, or &apos;SaaS&apos;.
+3. Registered, vet-checked investors can request introduction calls with high-potential FundedYouth projects.</description>
+    <author>Elijah Vance</author>
+    <category>minor</category>
+  </item>
+</channel>
+</rss>

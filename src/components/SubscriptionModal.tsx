@@ -47,8 +47,8 @@ export default function SubscriptionModal({ isOpen, onClose, apps }: Subscriptio
     }
   };
 
-  const rssUrl = `${getBaseUrl()}/api/feed.xml`;
-  const jsonUrl = `${getBaseUrl()}/api/feed.json`;
+  const rssUrl = `${getBaseUrl()}/feed.xml`;
+  const jsonUrl = `${getBaseUrl()}/feed.json`;
 
   return (
     <div id="subscription-modal" className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/80 p-4 backdrop-blur-xs">

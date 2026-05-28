@@ -33,6 +33,13 @@ export default function DraftDrawer({ isOpen, onClose, apps, onPublishSuccess }:
   const [isPublishing, setIsPublishing] = useState(false);
   const [isDraftModified, setIsDraftModified] = useState(false);
 
+  // apps load asynchronously from the JSON; default the selection once they arrive
+  useEffect(() => {
+    if (!selectedAppId && apps.length > 0) {
+      setSelectedAppId(apps[0].id);
+    }
+  }, [apps, selectedAppId]);
+
   useEffect(() => {
     if (selectedAppId) {
       const app = apps.find((a) => a.id === selectedAppId);
@@ -64,6 +71,27 @@ export default function DraftDrawer({ isOpen, onClose, apps, onPublishSuccess }:
 
   const selectedApp = apps.find((a) => a.id === selectedAppId);
 
+  // Local "hype" drafting — turns messy bullets into a punchy markdown post entirely client-side.
+  const generateHypeMarkdown = () => {
+    const appName = selectedApp?.name || "Ecosystem Hub";
+    const bullets = rawBullets
+      .split("\n")
+      .filter((l) => l.trim())
+      .map((l) => l.replace(/^[\*\-\d\.]+\s*/, ""));
+    const header = aiTone === "super-hype" ? "🚀 BIG things just shipped, FundedYouth cohorts!" : "✨ Fresh updates worth a look";
+    return `⚡ **[AI Hype Generator]**
+${header}
+
+### What's New in ${appName} (${version || "v1.0.0"})
+${bullets.map((b) => `* ${b}`).join("\n")}
+
+### Why This Matters
+* **Community first**: Designed intentionally to elevate the experience for high-school builders.
+* **Overwhelming Speed**: Tuned for instantaneous, low-latency interactions.
+
+#speed #vibe #growth`;
+  };
+
   const handleAiDraft = async () => {
     if (!rawBullets.trim()) {
       setAiError("Please type at least some raw updates or messy notes to draft!");
@@ -72,24 +100,10 @@ export default function DraftDrawer({ isOpen, onClose, apps, onPublishSuccess }:
 
     setIsAiLoading(true);
     setAiError(null);
+    // brief pause so the loading animation reads as "working"
+    await new Promise((resolve) => setTimeout(resolve, 900));
     try {
-      const res = await fetch("/api/ai/hype", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          rawBullets,
-          appName: selectedApp?.name || "Ecosystem Hub",
-          version,
-          tone: aiTone,
-        }),
-      });
-
-      if (!res.ok) {
-        throw new Error("We encountered an API breakdown while drafting. Please try again.");
-      }
-
-      const data = await res.json();
-      setDraftContent(data.markdown);
+      setDraftContent(generateHypeMarkdown());
       setIsDraftModified(true);
     } catch (err: any) {
       setAiError(err.message || "Something went wrong during generation.");
@@ -98,7 +112,7 @@ export default function DraftDrawer({ isOpen, onClose, apps, onPublishSuccess }:
     }
   };
 
-  const handlePublish = async (e: React.FormEvent) => {
+  const handlePublish = (e: React.FormEvent) => {
     e.preventDefault();
     if (!title) {
       alert("Please give this release note a concise title!");
@@ -111,33 +125,29 @@ export default function DraftDrawer({ isOpen, onClose, apps, onPublishSuccess }:
 
     setIsPublishing(true);
     try {
-      const cleanTags = [selectedAppId, type, "released"];
-
-      const res = await fetch("/api/changes", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          appId: selectedAppId,
-          appName: selectedApp?.name || "App",
-          title,
-          description: draftContent,
-          version,
-          type,
-          authorName,
-          authorRole,
-          tags: cleanTags,
-        }),
-      });
-
-      if (!res.ok) {
-        throw new Error("Failed to save changes to backend database.");
-      }
-
-      const newItem = await res.json();
+      // Build the changelog item client-side. On a static site this lives in the
+      // current session only (not persisted); to make it permanent, add it to
+      // public/data/changelog.json and redeploy.
+      const newItem: ChangelogItem = {
+        id: "update-" + Date.now(),
+        appId: selectedAppId,
+        appName: selectedApp?.name || "App",
+        title,
+        description: draftContent,
+        date: new Date().toISOString(),
+        version,
+        type,
+        author: {
+          name: authorName || "FundedYouth Admin",
+          role: authorRole || "Contributor",
+          avatarUrl: `https://api.dicebear.com/7.x/bottts/svg?seed=${encodeURIComponent(authorName || "FY")}`,
+        },
+        tags: [selectedAppId, type, "released"],
+      };
       onPublishSuccess(newItem);
       onClose();
     } catch (err: any) {
-      alert("Error publishing changes: " + err.message);
+      alert("Error adding update: " + err.message);
     } finally {
       setIsPublishing(false);
     }

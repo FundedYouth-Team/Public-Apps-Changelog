@@ -1,13 +1,5 @@
 export type UpdateType = "major" | "minor" | "patch" | "security";
 
-export interface Comment {
-  id: string;
-  authorName: string;
-  authorEmail: string;
-  content: string;
-  timestamp: string;
-}
-
 export interface ChangelogItem {
   id: string;
   appId: string;
@@ -23,7 +15,6 @@ export interface ChangelogItem {
     role: string;
   };
   tags: string[];
-  comments: Comment[];
 }
 
 export interface AppInfo {

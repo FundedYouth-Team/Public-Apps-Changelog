@@ -1,0 +1,93 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://fundedyouth.org/schemas/changelog.schema.json",
+  "title": "FundedYouth Changelog Data",
+  "description": "Schema for the static changelog data file consumed by the FundedYouth changelog hub.",
+  "type": "object",
+  "required": ["apps", "updates"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "meta": {
+      "type": "object",
+      "description": "Optional metadata about this data file.",
+      "additionalProperties": true,
+      "properties": {
+        "title": { "type": "string" },
+        "schemaVersion": { "type": "string" },
+        "description": { "type": "string" }
+      }
+    },
+    "apps": {
+      "type": "array",
+      "description": "The ecosystem apps shown in the sidebar. Each update references one via appId.",
+      "items": { "$ref": "#/$defs/app" }
+    },
+    "updates": {
+      "type": "array",
+      "description": "The changelog entries, newest first.",
+      "items": { "$ref": "#/$defs/update" }
+    }
+  },
+  "$defs": {
+    "app": {
+      "type": "object",
+      "required": ["id", "name", "description", "icon", "color", "status", "currentVersion"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "description": "Stable slug, e.g. 'the-vault'. Referenced by update.appId." },
+        "name": { "type": "string", "description": "Display name, e.g. 'The Vault'." },
+        "description": { "type": "string" },
+        "icon": {
+          "type": "string",
+          "description": "Lucide icon name. Supported by the sidebar: Globe, User, ShieldAlert, BookOpen, GraduationCap, Briefcase.",
+          "examples": ["Globe", "User", "ShieldAlert", "BookOpen", "GraduationCap", "Briefcase"]
+        },
+        "color": {
+          "type": "string",
+          "description": "Tailwind gradient utility used for the card accent, e.g. 'from-orange-500 to-amber-500'."
+        },
+        "status": {
+          "type": "string",
+          "enum": ["active", "maintenance", "beta"]
+        },
+        "currentVersion": { "type": "string", "description": "e.g. 'v2.8.4'." }
+      }
+    },
+    "update": {
+      "type": "object",
+      "required": ["id", "appId", "appName", "title", "description", "date", "version", "type", "author", "tags"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "description": "Unique id for the update, e.g. 'update-7'." },
+        "appId": { "type": "string", "description": "Must match an apps[].id." },
+        "appName": { "type": "string", "description": "Display name (kept denormalized for convenience)." },
+        "title": { "type": "string" },
+        "description": {
+          "type": "string",
+          "description": "Markdown supported (### headers, * bullets, **bold**, `code`). Use \\n for line breaks in JSON."
+        },
+        "date": { "type": "string", "format": "date-time", "description": "ISO 8601, e.g. '2026-05-28T14:30:00Z'." },
+        "version": { "type": "string", "description": "e.g. 'v1.4.0'." },
+        "type": {
+          "type": "string",
+          "enum": ["major", "minor", "patch", "security"]
+        },
+        "author": {
+          "type": "object",
+          "required": ["name", "role", "avatarUrl"],
+          "additionalProperties": false,
+          "properties": {
+            "name": { "type": "string" },
+            "role": { "type": "string" },
+            "avatarUrl": { "type": "string", "format": "uri" }
+          }
+        },
+        "tags": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    }
+  }
+}
