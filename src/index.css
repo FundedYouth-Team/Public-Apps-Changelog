@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
 @import "tailwindcss";
 
+/* Enable class-based dark mode (toggle adds `.dark` to <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
 }
+
+/* Let the browser render native controls (form fields, etc.) per theme */
+:root { color-scheme: light; }
+.dark { color-scheme: dark; }
 
 /* Custom scrollbars for a highly polished UI */
 ::-webkit-scrollbar {
@@ -23,6 +30,18 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(15, 23, 42, 0.3);
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: rgba(226, 232, 240, 0.04);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(226, 232, 240, 0.2);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgba(226, 232, 240, 0.3);
 }
 
 /* Simple animations */

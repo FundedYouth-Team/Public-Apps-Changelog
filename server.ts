@@ -9,7 +9,7 @@ let changelogs: ChangelogItem[] = [...INITIAL_CHANGELOGS];
 
 async function startServer() {
   const app = express();
-  const PORT = 3000;
+  const PORT = Number(process.env.PORT) || 3005;
 
   app.use(express.json());
 
@@ -75,7 +75,7 @@ async function startServer() {
   // API 5: RSS Feed (.xml format)
   app.get("/api/feed.xml", (req, res) => {
     const appUrl = (process.env.APP_URL || `http://localhost:${PORT}`).replace(/\/$/, "");
-    
+
     let xml = `<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>

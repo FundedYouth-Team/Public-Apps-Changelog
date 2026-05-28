@@ -14,22 +14,22 @@ function QuickMarkdown({ content }: { content: string }) {
   const lines = content.split("\n");
   
   return (
-    <div className="space-y-3.5 text-sm md:text-md text-slate-700 leading-relaxed font-sans">
+    <div className="space-y-3.5 text-sm md:text-md text-slate-700 dark:text-slate-300 leading-relaxed font-sans">
       {lines.map((line, idx) => {
         const trimmed = line.trim();
 
         // 1. Headers ### or ## or #
         if (trimmed.startsWith("###")) {
           return (
-            <h4 key={idx} className="text-sm font-bold text-slate-900 tracking-tight mt-4 uppercase border-b border-dashed border-slate-200 pb-1 flex items-center gap-1.5 font-mono">
-              <span className="h-1.5 w-1.5 rounded-full bg-slate-600" />
+            <h4 key={idx} className="text-sm font-bold text-slate-900 dark:text-slate-100 tracking-tight mt-4 uppercase border-b border-dashed border-slate-200 dark:border-slate-700 pb-1 flex items-center gap-1.5 font-mono">
+              <span className="h-1.5 w-1.5 rounded-full bg-slate-600 dark:bg-slate-400" />
               {trimmed.replace(/^###\s*/, "")}
             </h4>
           );
         }
         if (trimmed.startsWith("##") || trimmed.startsWith("#")) {
           return (
-            <h3 key={idx} className="text-md font-bold text-slate-950 mt-5 mb-2 font-sans tracking-tight">
+            <h3 key={idx} className="text-md font-bold text-slate-950 dark:text-slate-100 mt-5 mb-2 font-sans tracking-tight">
               {trimmed.replace(/^#+\s*/, "")}
             </h3>
           );
@@ -41,8 +41,8 @@ function QuickMarkdown({ content }: { content: string }) {
           // simple bolding parser
           return (
             <div key={idx} className="flex items-start gap-2.5 pl-2 my-1">
-              <span className="text-slate-600 font-bold mt-1 text-xs">•</span>
-              <p className="flex-1 text-slate-600 font-sans" dangerouslySetInnerHTML={{ __html: parseBold(contentText) }} />
+              <span className="text-slate-600 dark:text-slate-400 font-bold mt-1 text-xs">•</span>
+              <p className="flex-1 text-slate-600 dark:text-slate-300 font-sans" dangerouslySetInnerHTML={{ __html: parseBold(contentText) }} />
             </div>
           );
         }
@@ -53,7 +53,7 @@ function QuickMarkdown({ content }: { content: string }) {
         }
 
         return (
-          <p key={idx} className="text-slate-600 pl-1" dangerouslySetInnerHTML={{ __html: parseBold(line) }} />
+          <p key={idx} className="text-slate-600 dark:text-slate-300 pl-1" dangerouslySetInnerHTML={{ __html: parseBold(line) }} />
         );
       })}
     </div>
@@ -64,11 +64,11 @@ function QuickMarkdown({ content }: { content: string }) {
 function parseBold(text: string): string {
   let res = text;
   const regex = /\*\*(.*?)\*\*/g;
-  res = res.replace(regex, `<strong class="font-bold text-slate-900">$1</strong>`);
-  
+  res = res.replace(regex, `<strong class="font-bold text-slate-900 dark:text-slate-100">$1</strong>`);
+
   // also style code blocks e.g. `code`
   const codeRegex = /`(.*?)`/g;
-  res = res.replace(codeRegex, `<code class="bg-slate-100 border border-slate-200 text-xs px-1.5 py-0.5 rounded-md text-slate-850 font-mono font-semibold">$1</code>`);
+  res = res.replace(codeRegex, `<code class="bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-xs px-1.5 py-0.5 rounded-md text-slate-800 dark:text-slate-200 font-mono font-semibold">$1</code>`);
   return res;
 }export default function ChangelogCard({ item, app, onAddComment }: ChangelogCardProps) {
   const [commentName, setCommentName] = useState("");
@@ -130,7 +130,7 @@ function parseBold(text: string): string {
   };
 
   return (
-    <div id={`changelog-card-${item.id}`} className="group relative border border-slate-200 bg-white rounded-xl p-6 md:p-7 transition-all duration-200 hover:border-slate-800 hover:shadow-xs">
+    <div id={`changelog-card-${item.id}`} className="group relative border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 rounded-xl p-6 md:p-7 transition-all duration-200 hover:border-slate-800 dark:hover:border-slate-600 hover:shadow-xs">
       
       {/* Absolute indicator line with app color theme */}
       <div className={`absolute left-0 top-0 bottom-0 w-1 rounded-l-xl bg-gradient-to-b ${app?.color || "from-slate-400 to-slate-500"}`} />
@@ -143,7 +143,7 @@ function parseBold(text: string): string {
           <span className={`inline-flex items-center gap-1 px-2.5 py-0.5 text-xs font-semibold rounded-md ${app?.color ? `bg-linear-to-r ${app.color} text-white` : "bg-slate-950 text-white"}`}>
             {item.appName}
           </span>
-          <span className="font-mono text-xs text-slate-800 font-medium bg-slate-100 border border-slate-200 rounded px-1.5 py-0.5">
+          <span className="font-mono text-xs text-slate-800 dark:text-slate-300 font-medium bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded px-1.5 py-0.5">
             {item.version}
           </span>
           <span className={`text-[10px] uppercase font-bold tracking-wider border px-2 py-0.5 rounded ${typeMeta.bg} border-slate-100`}>
@@ -152,33 +152,33 @@ function parseBold(text: string): string {
         </div>
 
         {/* Date and Timeline indicator */}
-        <div className="flex items-center gap-1 text-xs text-slate-405 font-mono">
+        <div className="flex items-center gap-1 text-xs text-slate-400 dark:text-slate-500 font-mono">
           <Calendar className="h-3.5 w-3.5 text-slate-400" />
           <span>{formatDate(item.date)}</span>
         </div>
       </div>
 
       {/* Bold Announcement Header */}
-      <h3 className="text-lg md:text-xl font-bold text-slate-900 tracking-tight leading-tight group-hover:text-slate-900 transition duration-150">
+      <h3 className="text-lg md:text-xl font-bold text-slate-900 dark:text-slate-100 tracking-tight leading-tight transition duration-150">
         {item.title}
       </h3>
 
       {/* Metadata Contributor card row */}
-      <div className="flex items-center gap-2 mt-2 mb-4 text-xs text-slate-500">
+      <div className="flex items-center gap-2 mt-2 mb-4 text-xs text-slate-500 dark:text-slate-400">
         <img
           src={item.author.avatarUrl}
           alt={item.author.name}
-          className="h-5 w-5 rounded-full ring-1 ring-slate-100"
+          className="h-5 w-5 rounded-full ring-1 ring-slate-100 dark:ring-slate-700"
         />
-        <span>Posted by <strong className="text-slate-700 font-semibold">{item.author.name}</strong></span>
-        <span className="text-slate-300">•</span>
-        <span className="bg-slate-100/80 text-slate-600 px-1.5 py-0.5 rounded font-mono text-[10px]">{item.author.role}</span>
+        <span>Posted by <strong className="text-slate-700 dark:text-slate-300 font-semibold">{item.author.name}</strong></span>
+        <span className="text-slate-300 dark:text-slate-600">•</span>
+        <span className="bg-slate-100/80 dark:bg-slate-800 text-slate-600 dark:text-slate-300 px-1.5 py-0.5 rounded font-mono text-[10px]">{item.author.role}</span>
       </div>
 
       {/* Main Core Content body */}
-      <div className="bg-slate-50/40 rounded-xl p-4 md:p-5 border border-slate-100 mt-1">
+      <div className="bg-slate-50/40 dark:bg-slate-800/40 rounded-xl p-4 md:p-5 border border-slate-100 dark:border-slate-800 mt-1">
         {isGenZTranslated ? (
-          <div className="space-y-3 font-sans text-slate-705 leading-relaxed transition-all duration-200">
+          <div className="space-y-3 font-sans text-slate-700 dark:text-slate-300 leading-relaxed transition-all duration-200">
             <span className="bg-amber-50/80 border border-amber-200 text-amber-800 text-[10px] px-2.5 py-0.5 rounded font-semibold inline-flex items-center gap-1">
               <Sparkles className="h-3 w-3 text-amber-500 animate-spin" /> Vibe Slang Edition
             </span>
@@ -190,7 +190,7 @@ function parseBold(text: string): string {
       </div>
 
       {/* Action panel footer */}
-      <div className="flex items-center justify-between mt-5 pt-3.5 border-t border-slate-100">
+      <div className="flex items-center justify-between mt-5 pt-3.5 border-t border-slate-100 dark:border-slate-800">
         
         {/* Interaction triggers */}
         <div className="flex items-center gap-3">
@@ -200,9 +200,9 @@ function parseBold(text: string): string {
             id={`comments-toggle-${item.id}`}
             onClick={() => setShowComments(!showComments)}
             className={`flex items-center gap-1.5 text-xs font-semibold transition px-3 py-1.5 rounded-lg border ${
-              showComments 
-                ? "bg-slate-100 border-slate-200 text-slate-900 font-semibold" 
-                : "border-slate-200 bg-white text-slate-605 hover:bg-slate-50 hover:border-slate-100 hover:text-slate-900"
+              showComments
+                ? "bg-slate-100 dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-100 font-semibold"
+                : "border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:border-slate-100 hover:text-slate-900 dark:hover:text-white"
             }`}
           >
             <MessageSquare className="h-3.5 w-3.5" />
@@ -216,9 +216,9 @@ function parseBold(text: string): string {
           id={`translate-vibe-btn-${item.id}`}
           onClick={() => setIsGenZTranslated(!isGenZTranslated)}
           className={`flex items-center gap-1 px-3 py-1.5 rounded-lg text-xs font-semibold transition ${
-            isGenZTranslated 
-              ? "bg-amber-400 border border-amber-500 text-slate-900 font-bold" 
-              : "border border-slate-200 bg-white text-slate-600 hover:bg-slate-50"
+            isGenZTranslated
+              ? "bg-amber-400 border border-amber-500 text-slate-900 font-bold"
+              : "border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700"
           }`}
           title="Toggle Slang Translation"
         >
@@ -229,37 +229,37 @@ function parseBold(text: string): string {
 
       {/* Discussion Boards expansion panel */}
       {showComments && (
-        <div className="mt-4 pt-4 border-t border-dashed border-slate-100 space-y-3 animate-in slide-in-from-top-3 duration-200">
-          <h4 className="text-[10px] font-bold text-slate-400 tracking-wider flex items-center gap-1 font-mono uppercase">
+        <div className="mt-4 pt-4 border-t border-dashed border-slate-100 dark:border-slate-800 space-y-3 animate-in slide-in-from-top-3 duration-200">
+          <h4 className="text-[10px] font-bold text-slate-400 dark:text-slate-500 tracking-wider flex items-center gap-1 font-mono uppercase">
             <MessageSquare className="h-3.5 w-3.5 text-slate-500" /> Team Discussion
           </h4>
 
           {/* Comments list */}
           <div className="space-y-2.5">
             {item.comments.length === 0 ? (
-              <p className="text-xs text-slate-400 italic pl-1">
+              <p className="text-xs text-slate-400 dark:text-slate-500 italic pl-1">
                 No telemetry comments written yet. Keep it real!
               </p>
             ) : (
               item.comments.map((comment) => (
-                <div key={comment.id} className="bg-slate-50/50 border border-slate-100 rounded-lg p-3 flex gap-2.5">
-                  <div className="h-7 w-7 rounded bg-slate-100 flex items-center justify-center text-slate-700 flex-shrink-0 mt-0.5 font-bold text-[11px] border border-slate-255 uppercase font-mono">
+                <div key={comment.id} className="bg-slate-50/50 dark:bg-slate-800/50 border border-slate-100 dark:border-slate-700 rounded-lg p-3 flex gap-2.5">
+                  <div className="h-7 w-7 rounded bg-slate-100 dark:bg-slate-700 flex items-center justify-center text-slate-700 dark:text-slate-200 flex-shrink-0 mt-0.5 font-bold text-[11px] border border-slate-200 dark:border-slate-600 uppercase font-mono">
                     {comment.authorName.charAt(0)}
                   </div>
                   <div className="flex-1 space-y-0.5">
                     <div className="flex items-center justify-between">
-                      <span className="text-xs font-bold text-slate-800">{comment.authorName}</span>
-                      <span className="text-[10px] text-slate-400 font-mono">{formatDate(comment.timestamp)}</span>
+                      <span className="text-xs font-bold text-slate-800 dark:text-slate-200">{comment.authorName}</span>
+                      <span className="text-[10px] text-slate-400 dark:text-slate-500 font-mono">{formatDate(comment.timestamp)}</span>
                     </div>
-                    <p className="text-slate-600 text-xs md:text-sm leading-relaxed">{comment.content}</p>
+                    <p className="text-slate-600 dark:text-slate-300 text-xs md:text-sm leading-relaxed">{comment.content}</p>
                   </div>
                 </div>
               ))
             )}
           </div>
            {/* Submit comments form */}
-          <form onSubmit={handleCommentSubmit} className="space-y-2.5 mt-3 bg-slate-50/50 rounded-xl p-3 border border-slate-200">
-            <span className="text-[10px] font-bold text-slate-800 uppercase tracking-wider block">Add your voice</span>
+          <form onSubmit={handleCommentSubmit} className="space-y-2.5 mt-3 bg-slate-50/50 dark:bg-slate-800/40 rounded-xl p-3 border border-slate-200 dark:border-slate-700">
+            <span className="text-[10px] font-bold text-slate-800 dark:text-slate-200 uppercase tracking-wider block">Add your voice</span>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
               <input
@@ -269,7 +269,7 @@ function parseBold(text: string): string {
                 placeholder="Name"
                 value={commentName}
                 onChange={(e) => setCommentName(e.target.value)}
-                className="bg-white border border-slate-200 rounded-lg px-2.5 py-1 text-xs text-slate-800 focus:outline-none focus:border-slate-500"
+                className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg px-2.5 py-1 text-xs text-slate-800 dark:text-slate-100 focus:outline-none focus:border-slate-500"
               />
               <input
                 id={`comment-email-${item.id}`}
@@ -277,7 +277,7 @@ function parseBold(text: string): string {
                 placeholder="Email (Optional)"
                 value={commentEmail}
                 onChange={(e) => setCommentEmail(e.target.value)}
-                className="bg-white border border-slate-200 rounded-lg px-2.5 py-1 text-xs text-slate-800 focus:outline-none focus:border-slate-500"
+                className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg px-2.5 py-1 text-xs text-slate-800 dark:text-slate-100 focus:outline-none focus:border-slate-500"
               />
             </div>
 
@@ -289,7 +289,7 @@ function parseBold(text: string): string {
                 placeholder="Write a query or congratz..."
                 value={commentContent}
                 onChange={(e) => setCommentContent(e.target.value)}
-                className="w-full bg-white border border-slate-200 rounded-lg px-2.5 py-1.5 pr-8 text-xs text-slate-800 focus:outline-none focus:border-slate-500 placeholder-slate-405 leading-relaxed"
+                className="w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg px-2.5 py-1.5 pr-8 text-xs text-slate-800 dark:text-slate-100 focus:outline-none focus:border-slate-500 placeholder-slate-400 dark:placeholder-slate-500 leading-relaxed"
               />
               <button
                 type="submit"

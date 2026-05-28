@@ -17,13 +17,17 @@ import {
   RefreshCw,
   MessageSquare,
   BadgeAlert,
-  ArrowUpRight
+  ArrowUpRight,
+  Sun,
+  Moon
 } from "lucide-react";
 import { APPS } from "./data";
 import { ChangelogItem, AppInfo, UpdateType } from "./types";
 import ChangelogCard from "./components/ChangelogCard";
 import SubscriptionModal from "./components/SubscriptionModal";
 import DraftDrawer from "./components/DraftDrawer";
+import { useTheme } from "./hooks/useTheme";
+import logoUrl from "./assets/logo-color-white-bg.png";
 
 // Map string keys to Lucide icons dynamically for app categories
 const ICON_MAP: Record<string, any> = {
@@ -91,6 +95,7 @@ const getAppThemeColors = (appId: string | null) => {
 };
 
 export default function App() {
+  const { isDark, toggleTheme } = useTheme();
   const [changelogs, setChangelogs] = useState<ChangelogItem[]>([]);
   const [selectedAppId, setSelectedAppId] = useState<string | null>(null); // null means "All"
   const [searchQuery, setSearchQuery] = useState("");
@@ -182,11 +187,11 @@ export default function App() {
   const securityCount = countByType("security");
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-800 font-sans selection:bg-slate-800 selection:text-white pb-12">
+    <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-200 font-sans selection:bg-slate-800 selection:text-white pb-12 transition-colors duration-300">
       
       {/* Dynamic Celebration Toast */}
       {celebrationMsg && (
-        <div className="fixed top-4 right-4 z-50 max-w-md rounded-xl bg-slate-900 border border-slate-800 p-4 shadow-xl text-white flex items-start gap-3 animate-in fade-in duration-200">
+        <div className="fixed top-4 right-4 z-50 max-w-md rounded-xl bg-slate-900 dark:bg-slate-800 border border-slate-800 dark:border-slate-700 p-4 shadow-xl text-white flex items-start gap-3 animate-in fade-in duration-200">
           <div className="rounded-lg bg-slate-900 p-1.5 text-white">
             <Flame className="h-4 w-4 animate-pulse" />
           </div>
@@ -201,35 +206,45 @@ export default function App() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         
         {/* Dynamic Telemetry Header Bar */}
-        <header className="rounded-xl border border-slate-200 bg-white p-4.5 mb-6 flex flex-col md:flex-row items-center justify-between gap-4 shadow-xs">
+        <header className="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4.5 mb-6 flex flex-col md:flex-row items-center justify-between gap-4 shadow-xs">
           <div className="flex items-center gap-3">
-            <div className="relative flex h-10 w-10 items-center justify-center rounded-lg bg-slate-900 text-white font-bold text-base shadow-sm">
-              FY
-              <div className="absolute -bottom-0.5 -right-0.5 h-2.5 w-2.5 rounded-full bg-emerald-500 border border-white" />
+            <div className="relative flex h-10 w-10 items-center justify-center rounded-lg bg-white overflow-hidden">
+              <img src={logoUrl} alt="FundedYouth logo" className="h-full w-full object-contain" />
             </div>
             <div>
               <div className="flex items-center gap-2">
-                <h1 className="text-base md:text-lg font-bold tracking-tight text-slate-900 uppercase">
-                  FundedYouth <span className="text-slate-900 underline decoration-slate-300 underline-offset-4 decoration-2">Changelog</span>
+                <h1 className="text-base md:text-lg font-bold tracking-tight text-slate-900 dark:text-slate-100 uppercase">
+                  FundedYouth <span className="text-slate-900 dark:text-slate-100 underline decoration-slate-300 dark:decoration-slate-600 underline-offset-4 decoration-2">Changelog</span>
                 </h1>
-                <span className="text-[9px] uppercase font-bold tracking-widest bg-slate-100 border border-slate-200 text-slate-700 px-2 py-0.5 rounded leading-none">
+                <span className="text-[9px] uppercase font-bold tracking-widest bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 px-2 py-0.5 rounded leading-none">
                   Telemetry Hub
                 </span>
               </div>
-              <p className="text-xs text-slate-500 mt-0.5 font-medium leading-none">
+              <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5 font-medium leading-none">
                 Ecosystem Software Updates & Community Release Log
               </p>
             </div>
           </div>
 
           <div className="flex flex-wrap items-center gap-2.5">
+            {/* Dark mode toggle */}
+            <button
+              id="theme-toggle-btn"
+              onClick={toggleTheme}
+              aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
+              title={isDark ? "Switch to light mode" : "Switch to dark mode"}
+              className="flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 h-9 w-9 shadow-xs transition-colors cursor-pointer"
+            >
+              {isDark ? <Sun className="h-4 w-4 text-amber-400" /> : <Moon className="h-4 w-4 text-slate-500" />}
+            </button>
+
             {/* Direct Feed Subscriptions */}
             <button
               id="header-subscribe-btn"
               onClick={() => setIsSubModalOpen(true)}
-              className="flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white hover:bg-slate-50 hover:text-slate-900 text-xs font-semibold text-slate-700 py-2 px-3.5 shadow-xs transition-colors cursor-pointer"
+              className="flex items-center gap-1.5 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white text-xs font-semibold text-slate-700 dark:text-slate-200 py-2 px-3.5 shadow-xs transition-colors cursor-pointer"
             >
-              <Bell className="h-3.5 w-3.5 text-slate-500" />
+              <Bell className="h-3.5 w-3.5 text-slate-500 dark:text-slate-400" />
               <span>Subscribe to Feed</span>
             </button>
 
@@ -249,13 +264,13 @@ export default function App() {
         <div id="main-content-layout" className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
           
           {/* LEFT SIDEBAR NAVIGATION PANEL (lg:col-span-3) - STICKY AND LOCKED ON DESKTOP */}
-          <aside className="lg:col-span-3 lg:sticky lg:top-6 lg:max-h-[calc(100vh-3.5rem)] lg:overflow-y-auto space-y-5 bg-white border border-slate-200 p-5 rounded-xl shadow-xs self-start">
+          <aside className="lg:col-span-3 lg:sticky lg:top-6 lg:max-h-[calc(100vh-3.5rem)] lg:overflow-y-auto space-y-5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-5 rounded-xl shadow-xs self-start">
             
             {/* Apps directory navigator */}
             <div className="space-y-3.5">
-              <h3 className="px-1 text-xs font-bold text-slate-400/90 uppercase tracking-wider mb-2 flex items-center justify-between">
+              <h3 className="px-1 text-xs font-bold text-slate-400/90 dark:text-slate-500 uppercase tracking-wider mb-2 flex items-center justify-between">
                 <span>The Ecosystem</span>
-                <span className="font-mono bg-slate-100 text-[10px] border border-slate-200 text-slate-655 rounded px-1.5 py-0.5 leading-none font-medium">
+                <span className="font-mono bg-slate-100 dark:bg-slate-800 text-[10px] border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400 rounded px-1.5 py-0.5 leading-none font-medium">
                   {APPS.length} Apps
                 </span>
               </h3>
@@ -267,16 +282,16 @@ export default function App() {
                   onClick={() => setSelectedAppId(null)}
                   className={`w-full flex items-center justify-between rounded-r-lg py-2 text-left text-xs transition-all duration-150 cursor-pointer relative overflow-hidden ${
                     selectedAppId === null
-                      ? "bg-slate-100 text-slate-800 font-semibold border-l-[3px] border-slate-700 pl-2 shadow-xs"
-                      : "text-slate-600 hover:bg-slate-50 font-medium pl-2.5 border-l-[3px] border-transparent"
+                      ? "bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-100 font-semibold border-l-[3px] border-slate-700 dark:border-slate-400 pl-2 shadow-xs"
+                      : "text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800/60 font-medium pl-2.5 border-l-[3px] border-transparent"
                   }`}
                 >
                   <div className="flex items-center gap-2">
-                    <Activity className={`h-3.5 w-3.5 ${selectedAppId === null ? "text-slate-750" : "text-slate-400"}`} />
+                    <Activity className={`h-3.5 w-3.5 ${selectedAppId === null ? "text-slate-700 dark:text-slate-300" : "text-slate-400"}`} />
                     <span>Everything</span>
                   </div>
                   <span className={`font-mono text-[9px] px-1.5 py-0.5 rounded pr-2 ${
-                    selectedAppId === null ? "bg-white shadow-xs text-slate-700" : "bg-slate-100 text-slate-500"
+                    selectedAppId === null ? "bg-white dark:bg-slate-700 shadow-xs text-slate-700 dark:text-slate-200" : "bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400"
                   }`}>
                     {changelogs.length}
                   </span>
@@ -297,7 +312,7 @@ export default function App() {
                       className={`w-full flex items-center justify-between rounded-r-lg py-2 text-left text-xs transition-all duration-150 cursor-pointer relative overflow-hidden ${
                         isSelected
                           ? `${themeColors.bg} ${themeColors.text} font-semibold border-l-[3px] ${themeColors.borderClass} pl-2 shadow-xs`
-                          : "text-slate-600 hover:bg-slate-50 font-medium pl-2.5 border-l-[3px] border-transparent"
+                          : "text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800/60 font-medium pl-2.5 border-l-[3px] border-transparent"
                       }`}
                     >
                       <div className="flex items-center gap-2 min-w-0">
@@ -310,7 +325,7 @@ export default function App() {
                           {app.currentVersion}
                         </span>
                         <span className={`font-mono text-[9px] px-1.5 py-0.5 rounded ${
-                          isSelected ? "bg-white shadow-xs text-slate-705" : "bg-slate-100 text-slate-500"
+                          isSelected ? "bg-white shadow-xs text-slate-700" : "bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400"
                         }`}>
                           {appUpdatesCount}
                         </span>
@@ -322,24 +337,24 @@ export default function App() {
             </div>
 
             {/* Quick Metrics Widget */}
-            <div className="border-t border-slate-100 pt-4 space-y-3">
-              <span className="text-[9px] font-bold text-slate-400 uppercase tracking-wider block pl-1">Cohort Stats Matrix</span>
-              
+            <div className="border-t border-slate-100 dark:border-slate-800 pt-4 space-y-3">
+              <span className="text-[9px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider block pl-1">Cohort Stats Matrix</span>
+
               <div className="grid grid-cols-2 gap-2">
-                <div className="bg-slate-50 border border-slate-100 rounded-lg p-2.5 flex flex-col items-center">
-                  <span className="font-mono text-base font-bold text-slate-900">{changelogs.length}</span>
-                  <span className="text-[9px] text-slate-500 font-medium">Updates</span>
+                <div className="bg-slate-50 dark:bg-slate-800/60 border border-slate-100 dark:border-slate-700 rounded-lg p-2.5 flex flex-col items-center">
+                  <span className="font-mono text-base font-bold text-slate-900 dark:text-slate-100">{changelogs.length}</span>
+                  <span className="text-[9px] text-slate-500 dark:text-slate-400 font-medium">Updates</span>
                 </div>
-                <div className="bg-slate-50 border border-slate-100 rounded-lg p-2.5 flex flex-col items-center">
-                  <span className="font-mono text-base font-bold text-slate-900">{APPS.length}</span>
-                  <span className="text-[9px] text-slate-500 font-medium">Ecosystem Apps</span>
+                <div className="bg-slate-50 dark:bg-slate-800/60 border border-slate-100 dark:border-slate-700 rounded-lg p-2.5 flex flex-col items-center">
+                  <span className="font-mono text-base font-bold text-slate-900 dark:text-slate-100">{APPS.length}</span>
+                  <span className="text-[9px] text-slate-500 dark:text-slate-400 font-medium">Ecosystem Apps</span>
                 </div>
               </div>
 
               {/* Miniature horizontal bar for visual interest */}
               <div className="space-y-1.5 text-left pl-1">
-                <span className="text-[9px] font-bold text-slate-400 uppercase tracking-widest block">Type Distribution</span>
-                <div className="h-1.5 w-full bg-slate-100 rounded-full flex overflow-hidden">
+                <span className="text-[9px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest block">Type Distribution</span>
+                <div className="h-1.5 w-full bg-slate-100 dark:bg-slate-800 rounded-full flex overflow-hidden">
                   <div className="bg-orange-500 h-full" style={{ width: `${(majorCount/changelogs.length)*100 || 0}%` }} title="Major" />
                   <div className="bg-slate-800 h-full" style={{ width: `${(minorCount/changelogs.length)*100 || 0}%` }} title="Minor" />
                   <div className="bg-slate-500 h-full" style={{ width: `${(patchCount/changelogs.length)*100 || 0}%` }} title="Patch" />
@@ -386,22 +401,22 @@ export default function App() {
           <main className="lg:col-span-9 space-y-5">
             
             {/* Context Header Section displaying Selected App details */}
-            <section className="rounded-xl border border-slate-200 bg-white p-5 shadow-xs relative overflow-hidden">
-              <div className="absolute right-[-40px] top-[-40px] h-40 w-40 bg-slate-50 rounded-full -z-10 blur-3xl opacity-60" />
+            <section className="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 shadow-xs relative overflow-hidden">
+              <div className="absolute right-[-40px] top-[-40px] h-40 w-40 bg-slate-50 dark:bg-slate-800 rounded-full -z-10 blur-3xl opacity-60" />
 
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
                 <div>
                   <div className="flex items-center gap-2">
-                    <h2 className="text-lg md:text-xl font-bold text-slate-900">
+                    <h2 className="text-lg md:text-xl font-bold text-slate-900 dark:text-slate-100">
                       {selectedAppObj ? `${selectedAppObj.name} Feed` : "Latest Activity"}
                     </h2>
                     {selectedAppObj && (
-                      <span className="font-mono text-xs text-slate-700 bg-slate-100 border border-slate-200 rounded px-1.5 py-0.5 font-semibold">
+                      <span className="font-mono text-xs text-slate-700 dark:text-slate-300 bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded px-1.5 py-0.5 font-semibold">
                         {selectedAppObj.currentVersion}
                       </span>
                     )}
                   </div>
-                  <p className="text-xs text-slate-500 mt-1 leading-relaxed max-w-xl">
+                  <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-relaxed max-w-xl">
                     {selectedAppObj 
                       ? selectedAppObj.description 
                       : "Follow live code updates, lessons deployments, and template drops submitted by FundedYouth contributors."}
@@ -424,8 +439,8 @@ export default function App() {
             </section>
 
             {/* Inline search & filters tools panel */}
-            <div className="rounded-xl border border-slate-200 bg-white p-3 shadow-xs flex flex-col md:flex-row items-center justify-between gap-3">
-              
+            <div className="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-3 shadow-xs flex flex-col md:flex-row items-center justify-between gap-3">
+
               {/* Search input */}
               <div className="relative w-full md:max-w-xs">
                 <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-3.5 w-3.5 text-slate-400" />
@@ -435,7 +450,7 @@ export default function App() {
                   placeholder="Search changes..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full bg-slate-50 border border-slate-200 rounded-lg pl-8.5 pr-4 py-1.5 text-xs text-slate-800 placeholder-slate-405 focus:outline-none focus:border-slate-500 focus:bg-white transition-all"
+                  className="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg pl-8.5 pr-4 py-1.5 text-xs text-slate-800 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-slate-500 focus:bg-white dark:focus:bg-slate-800 transition-all"
                 />
               </div>
 
@@ -463,8 +478,8 @@ export default function App() {
                       onClick={() => setFilterType(type)}
                       className={`px-3 py-1 rounded-lg text-xs font-semibold transition flex-shrink-0 cursor-pointer ${
                         isChecked
-                          ? "bg-slate-900 text-white shadow-xs"
-                          : "bg-white border border-slate-200 text-slate-600 hover:bg-slate-50"
+                          ? "bg-slate-900 dark:bg-slate-200 text-white dark:text-slate-900 shadow-xs"
+                          : "bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700"
                       }`}
                     >
                       {getLabel()}
@@ -476,10 +491,10 @@ export default function App() {
 
             {/* Error notifications */}
             {errorStatus && (
-              <div className="rounded-3xl border border-rose-200 bg-rose-50/50 p-6 text-center space-y-4">
+              <div className="rounded-3xl border border-rose-200 dark:border-rose-900/60 bg-rose-50/50 dark:bg-rose-950/20 p-6 text-center space-y-4">
                 <BadgeAlert className="mx-auto h-12 w-12 text-rose-500" />
-                <h3 className="text-md font-bold text-slate-900">Communication Breakdown</h3>
-                <p className="text-xs text-slate-500 leading-relaxed max-w-md mx-auto">
+                <h3 className="text-md font-bold text-slate-900 dark:text-slate-100">Communication Breakdown</h3>
+                <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed max-w-md mx-auto">
                   We lost touch with the backend server telemetry pipeline: <strong>{errorStatus}</strong>.
                 </p>
                 <button
@@ -496,32 +511,32 @@ export default function App() {
             {isLoading ? (
               <div className="space-y-6">
                 {[1, 2, 3].map((n) => (
-                  <div key={n} className="rounded-3xl border border-slate-150 bg-white p-6 space-y-4 animate-pulse">
+                  <div key={n} className="rounded-3xl border border-slate-150 dark:border-slate-800 bg-white dark:bg-slate-900 p-6 space-y-4 animate-pulse">
                     <div className="flex justify-between items-center">
                       <div className="flex gap-2.5">
-                        <div className="h-6 w-20 bg-slate-100 rounded-full" />
-                        <div className="h-6 w-12 bg-slate-100 rounded-md" />
+                        <div className="h-6 w-20 bg-slate-100 dark:bg-slate-800 rounded-full" />
+                        <div className="h-6 w-12 bg-slate-100 dark:bg-slate-800 rounded-md" />
                       </div>
-                      <div className="h-4 w-24 bg-slate-100 rounded-md" />
+                      <div className="h-4 w-24 bg-slate-100 dark:bg-slate-800 rounded-md" />
                     </div>
-                    <div className="h-5 w-2/3 bg-slate-100 rounded-md" />
+                    <div className="h-5 w-2/3 bg-slate-100 dark:bg-slate-800 rounded-md" />
                     <div className="space-y-2">
-                      <div className="h-3.5 w-full bg-slate-100 rounded-md" />
-                      <div className="h-3.5 w-full bg-slate-100 rounded-md" />
-                      <div className="h-3.5 w-4/5 bg-slate-100 rounded-md" />
+                      <div className="h-3.5 w-full bg-slate-100 dark:bg-slate-800 rounded-md" />
+                      <div className="h-3.5 w-full bg-slate-100 dark:bg-slate-800 rounded-md" />
+                      <div className="h-3.5 w-4/5 bg-slate-100 dark:bg-slate-800 rounded-md" />
                     </div>
-                    <div className="h-8 w-24 bg-slate-100 rounded-full" />
+                    <div className="h-8 w-24 bg-slate-100 dark:bg-slate-800 rounded-full" />
                   </div>
                 ))}
               </div>
             ) : filteredChangelogs.length === 0 ? (
-              <div className="rounded-3xl border border-dashed border-slate-300 bg-white p-12 text-center space-y-4">
-                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-slate-100 text-slate-800">
+              <div className="rounded-3xl border border-dashed border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 p-12 text-center space-y-4">
+                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200">
                   <Activity className="h-7 w-7 stroke-[1.5]" />
                 </div>
                 <div>
-                  <h3 className="text-md font-bold text-slate-900">No telemetry records match parameters</h3>
-                  <p className="text-xs text-slate-500 mt-1 max-w-sm mx-auto leading-relaxed">
+                  <h3 className="text-md font-bold text-slate-900 dark:text-slate-100">No telemetry records match parameters</h3>
+                  <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 max-w-sm mx-auto leading-relaxed">
                     Try refining your text search query or adjusting type filters to view FundedYouth developer items.
                   </p>
                 </div>
@@ -532,7 +547,7 @@ export default function App() {
                     setFilterType("all");
                     setSelectedAppId(null);
                   }}
-                  className="rounded-xl border border-slate-200 hover:border-slate-900 hover:text-slate-900 text-xs font-bold px-4 py-2 bg-white transition"
+                  className="rounded-xl border border-slate-200 dark:border-slate-700 hover:border-slate-900 dark:hover:border-slate-400 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white text-xs font-bold px-4 py-2 bg-white dark:bg-slate-800 transition"
                 >
                   Clear active search parameters
                 </button>
@@ -555,7 +570,7 @@ export default function App() {
             )}
 
             {/* Quick help layout footer footer */}
-            <div className="text-center text-[10px] text-slate-400 py-6 border-t border-slate-200 mt-12 space-y-1">
+            <div className="text-center text-[10px] text-slate-400 dark:text-slate-500 py-6 border-t border-slate-200 dark:border-slate-800 mt-12 space-y-1">
               <p>© May 2026 FundedYouth community. Engineered for high performance & entrepreneurial builders.</p>
               <p>W3C Feed standards and AI draft summarizations parsed using standard FundedYouth drafting configurations.</p>
             </div>
