@@ -76,7 +76,11 @@
         "role": "Lead Platform Engineer",
         "avatarUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80"
       },
-      "tags": ["security", "vault", "performance"]
+      "tags": [
+        "security",
+        "vault",
+        "performance"
+      ]
     },
     {
       "id": "update-2",
@@ -92,7 +96,11 @@
         "role": "Head of Education",
         "avatarUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80"
       },
-      "tags": ["curriculum", "lessons", "education"]
+      "tags": [
+        "curriculum",
+        "lessons",
+        "education"
+      ]
     },
     {
       "id": "update-3",
@@ -108,7 +116,11 @@
         "role": "Lead UX/UI",
         "avatarUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80"
       },
-      "tags": ["design", "portal", "gamification"]
+      "tags": [
+        "design",
+        "portal",
+        "gamification"
+      ]
     },
     {
       "id": "update-4",
@@ -124,7 +136,11 @@
         "role": "Lead Platform Engineer",
         "avatarUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80"
       },
-      "tags": ["security", "patch", "infrastructure"]
+      "tags": [
+        "security",
+        "patch",
+        "infrastructure"
+      ]
     },
     {
       "id": "update-5",
@@ -140,7 +156,11 @@
         "role": "Developer Relations",
         "avatarUrl": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=150&q=80"
       },
-      "tags": ["docs", "api", "sdk"]
+      "tags": [
+        "docs",
+        "api",
+        "sdk"
+      ]
     },
     {
       "id": "update-6",
@@ -156,7 +176,11 @@
         "role": "Ecosystem Partnerships",
         "avatarUrl": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=150&q=80"
       },
-      "tags": ["investors", "beta", "funding"]
+      "tags": [
+        "investors",
+        "beta",
+        "funding"
+      ]
     }
   ]
 }
