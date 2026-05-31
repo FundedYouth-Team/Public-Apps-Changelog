@@ -19,7 +19,9 @@ import {
   ArrowUpRight,
   ArrowUpDown,
   Sun,
-  Moon
+  Moon,
+  Eye,
+  EyeOff
 } from "lucide-react";
 import { ChangelogItem, AppInfo, UpdateType } from "./types";
 import ChangelogCard from "./components/ChangelogCard";
@@ -101,6 +103,8 @@ export default function App() {
   const [searchQuery, setSearchQuery] = useState("");
   const [filterType, setFilterType] = useState<UpdateType | "all">("all");
   const [sortOrder, setSortOrder] = useState<"oldest" | "latest">("latest");
+  // Whether the "Posted by" contributor row shows on every card. Hidden by default.
+  const [showAuthors, setShowAuthors] = useState(false);
   const [isSubModalOpen, setIsSubModalOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [errorStatus, setErrorStatus] = useState<string | null>(null);
@@ -494,7 +498,17 @@ export default function App() {
             </div>
 
             {/* Sort order toggle row: oldest (default) <-> latest */}
-            <div className="flex items-center justify-end">
+            <div className="flex items-center justify-end gap-2">
+              {/* Toggle the "Posted by" contributor row across all cards (hidden by default) */}
+              <button
+                id="toggle-authors"
+                onClick={() => setShowAuthors((prev) => !prev)}
+                title={showAuthors ? "Hide who posted on all changes" : "Show who posted on all changes"}
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition cursor-pointer bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 shadow-xs"
+              >
+                {showAuthors ? <Eye className="h-3 w-3" /> : <EyeOff className="h-3 w-3" />}
+                <span>Author: {showAuthors ? "Shown" : "Hidden"}</span>
+              </button>
               <button
                 id="sort-order-toggle"
                 onClick={() => setSortOrder((prev) => (prev === "oldest" ? "latest" : "oldest"))}
@@ -579,6 +593,7 @@ export default function App() {
                       key={item.id}
                       item={item}
                       app={itemApp}
+                      showAuthor={showAuthors}
                     />
                   );
                 })}

@@ -6,6 +6,7 @@ export interface ChangelogCardProps {
   key?: string | number;
   item: ChangelogItem;
   app: AppInfo | undefined;
+  showAuthor?: boolean;
 }
 
 // Simple and highly customizable internal markdown parser to guarantee speed & safety
@@ -90,7 +91,7 @@ function toPlainText(md: string): string {
     .trim();
 }
 
-export default function ChangelogCard({ item, app }: ChangelogCardProps) {
+export default function ChangelogCard({ item, app, showAuthor = false }: ChangelogCardProps) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   // Type details mapper
@@ -161,19 +162,21 @@ export default function ChangelogCard({ item, app }: ChangelogCardProps) {
       </h3>
 
       {/* Metadata Contributor card row */}
-      <div className="flex items-center gap-2 mt-2 mb-4 text-xs text-slate-500 dark:text-slate-400">
-        <img
-          src={item.author.avatarUrl}
-          alt={item.author.name}
-          className="h-5 w-5 rounded-full ring-1 ring-slate-100 dark:ring-slate-700"
-        />
-        <span>Posted by <strong className="text-slate-700 dark:text-slate-300 font-semibold">{item.author.name}</strong></span>
-        <span className="text-slate-300 dark:text-slate-600">•</span>
-        <span className="bg-slate-100/80 dark:bg-slate-800 text-slate-600 dark:text-slate-300 px-1.5 py-0.5 rounded font-mono text-[10px]">{item.author.role}</span>
-      </div>
+      {showAuthor && (
+        <div className="flex items-center gap-2 mt-2 mb-4 text-xs text-slate-500 dark:text-slate-400">
+          <img
+            src={item.author.avatarUrl}
+            alt={item.author.name}
+            className="h-5 w-5 rounded-full ring-1 ring-slate-100 dark:ring-slate-700"
+          />
+          <span>Posted by <strong className="text-slate-700 dark:text-slate-300 font-semibold">{item.author.name}</strong></span>
+          <span className="text-slate-300 dark:text-slate-600">•</span>
+          <span className="bg-slate-100/80 dark:bg-slate-800 text-slate-600 dark:text-slate-300 px-1.5 py-0.5 rounded font-mono text-[10px]">{item.author.role}</span>
+        </div>
+      )}
 
       {/* Main Core Content body */}
-      <div className="bg-slate-50/40 dark:bg-slate-800/40 rounded-xl p-4 md:p-5 border border-slate-100 dark:border-slate-800 mt-1">
+      <div className={`bg-slate-50/40 dark:bg-slate-800/40 rounded-xl p-4 md:p-5 border border-slate-100 dark:border-slate-800 ${showAuthor ? "mt-1" : "mt-3"}`}>
         {isExpanded || !isLong ? (
           <QuickMarkdown content={item.description} />
         ) : (
