@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { 
-  Globe, 
-  User, 
-  ShieldAlert, 
-  BookOpen, 
-  GraduationCap, 
-  Briefcase, 
+import {
+  Globe,
+  User,
+  ShieldAlert,
+  BookOpen,
+  GitCompare,
+  GraduationCap,
+  Briefcase,
   Search,
   Bell,
   Activity,
@@ -31,6 +32,7 @@ const ICON_MAP: Record<string, any> = {
   User,
   ShieldAlert,
   BookOpen,
+  GitCompare,
   GraduationCap,
   Briefcase
 };
@@ -112,7 +114,13 @@ export default function App() {
       }
       const data = await response.json();
       setApps(Array.isArray(data.apps) ? data.apps : []);
-      setChangelogs(Array.isArray(data.updates) ? data.updates : []);
+      // Derive a stable id (used for React keys, element ids, and feed permalinks)
+      // from appId + the date timestamp when one isn't explicitly provided.
+      // Keep this in sync with updateId() in scripts/generate-feeds.mjs.
+      const updates: ChangelogItem[] = (Array.isArray(data.updates) ? data.updates : []).map(
+        (u: any) => ({ ...u, id: u.id || `${u.appId}-${new Date(u.date).getTime()}` })
+      );
+      setChangelogs(updates);
     } catch (err: any) {
       setErrorStatus(err.message || "Something went wrong.");
     } finally {
@@ -155,7 +163,7 @@ export default function App() {
 
       {/* Main Container Layout */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-        
+
         {/* Dynamic Telemetry Header Bar */}
         <header className="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4.5 mb-6 flex flex-col md:flex-row items-center justify-between gap-4 shadow-xs">
           <div className="flex items-center gap-3">
@@ -203,10 +211,10 @@ export default function App() {
 
         {/* Dashboard Content Grid splits into Sidebar & Stream */}
         <div id="main-content-layout" className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
-          
+
           {/* LEFT SIDEBAR NAVIGATION PANEL (lg:col-span-3) - STICKY AND LOCKED ON DESKTOP */}
           <aside className="lg:col-span-3 lg:sticky lg:top-6 lg:max-h-[calc(100vh-3.5rem)] lg:overflow-y-auto space-y-5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-5 rounded-xl shadow-xs self-start">
-            
+
             {/* Apps directory navigator */}
             <div className="space-y-3.5">
               <h3 className="px-1 text-xs font-bold text-slate-400/90 dark:text-slate-500 uppercase tracking-wider mb-2 flex items-center justify-between">
@@ -260,7 +268,7 @@ export default function App() {
                         <LucideIcon className={`h-3.5 w-3.5 flex-shrink-0 ${themeColors.icon}`} />
                         <span className="truncate">{app.name}</span>
                       </div>
-                      
+
                       <div className="flex items-center gap-1.5 flex-shrink-0 pr-2">
                         <span className="text-[9px] font-mono opacity-60 truncate max-w-[40px] hidden sm:inline">
                           {app.currentVersion}
@@ -311,13 +319,13 @@ export default function App() {
             {/* Subscribe Call-to-action card */}
             <div className="rounded-lg bg-gradient-to-br from-slate-900 to-slate-950 text-white p-4 border border-slate-950 relative overflow-hidden shadow-xs">
               <div className="absolute right-[-10px] top-[-10px] h-24 w-24 bg-slate-705/15 rounded-full blur-xl" />
-              
+
               <div className="relative space-y-3">
                 <div className="flex items-center gap-1.5">
                   <Activity className="h-3.5 w-3.5 text-slate-400" />
                   <span className="text-[10px] uppercase font-bold text-slate-305 tracking-wider font-mono">Real-Time Alerts</span>
                 </div>
-                
+
                 <div>
                   <h4 className="text-xs font-semibold tracking-tight">Need Automated Alerts?</h4>
                   <p className="text-[10px] text-slate-300 mt-0.5 leading-relaxed">
@@ -340,7 +348,7 @@ export default function App() {
 
           {/* CENTER TIMELINE FOCUS STREAM (lg:col-span-9) */}
           <main className="lg:col-span-9 space-y-5">
-            
+
             {/* Context Header Section displaying Selected App details */}
             <section className="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 shadow-xs relative overflow-hidden">
               <div className="absolute right-[-40px] top-[-40px] h-40 w-40 bg-slate-50 dark:bg-slate-800 rounded-full -z-10 blur-3xl opacity-60" />
@@ -358,8 +366,8 @@ export default function App() {
                     )}
                   </div>
                   <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-relaxed max-w-xl">
-                    {selectedAppObj 
-                      ? selectedAppObj.description 
+                    {selectedAppObj
+                      ? selectedAppObj.description
                       : "Follow live code updates, lessons deployments, and template drops submitted by FundedYouth contributors."}
                   </p>
                 </div>
@@ -368,8 +376,8 @@ export default function App() {
                 <div className="flex items-center gap-2 self-start sm:self-center">
                   <span className="text-[10px] uppercase font-bold text-slate-400 font-mono tracking-widest">Status:</span>
                   <span className={`inline-flex items-center gap-1 px-2.5 py-0.5 rounded text-xs font-medium ${
-                    selectedAppObj?.status === "beta" 
-                      ? "bg-amber-50 text-amber-800 border border-amber-200" 
+                    selectedAppObj?.status === "beta"
+                      ? "bg-amber-50 text-amber-800 border border-amber-200"
                       : "bg-emerald-50 text-emerald-800 border border-emerald-200"
                   }`}>
                     <span className={`h-1.5 w-1.5 rounded-full ${selectedAppObj?.status === "beta" ? "bg-amber-500" : "bg-emerald-500"}`} />

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Sparkles, Calendar } from "lucide-react";
+import { Calendar, ChevronDown, ChevronUp } from "lucide-react";
 import { ChangelogItem, AppInfo } from "../types";
 
 export interface ChangelogCardProps {
@@ -71,9 +71,22 @@ function parseBold(text: string): string {
   return res;
 }
 
+// How many characters of the description to show before the "Details" expander.
+const PREVIEW_CHAR_LIMIT = 220;
+
+// Strip markdown to a clean single-line string for the collapsed preview.
+function toPlainText(md: string): string {
+  return md
+    .replace(/`([^`]+)`/g, "$1") // inline code
+    .replace(/\*\*([^*]+)\*\*/g, "$1") // bold
+    .replace(/^\s*#{1,6}\s*/gm, "") // headers
+    .replace(/^\s*[\*\-]\s+/gm, "") // bullet markers
+    .replace(/\s+/g, " ") // collapse whitespace/newlines
+    .trim();
+}
+
 export default function ChangelogCard({ item, app }: ChangelogCardProps) {
-  // Default to the hype edition; readers can switch to the technical log.
-  const [isGenZTranslated, setIsGenZTranslated] = useState(true);
+  const [isExpanded, setIsExpanded] = useState(false);
 
   // Type details mapper
   const getTypeMeta = (type: string) => {
@@ -101,15 +114,12 @@ export default function ChangelogCard({ item, app }: ChangelogCardProps) {
     });
   };
 
-  // Fun alternative explanation translation ("Founder slang")
-  const getVibeTranslation = () => {
-    return `### ⚡ TL;DR: The Hype Edition (No Cap)
-* **What just happened**: We leveled up the **${item.appName}** engine with high-speed rendering and zero latency!
-* **Main upgrade**: The pipeline is now absolutely **goated** with a 45ms download footprint.
-* **Why it matters**: Zero buffers, pure productivity. No more loading screens during late-night build sessions! 
-
-#shipit #cookin #growth`;
-  };
+  // Collapsed preview: a short plain-text excerpt; expand to see the full markdown.
+  const plainDescription = toPlainText(item.description);
+  const isLong = plainDescription.length > PREVIEW_CHAR_LIMIT;
+  const excerpt = isLong
+    ? plainDescription.slice(0, PREVIEW_CHAR_LIMIT).trimEnd() + "…"
+    : plainDescription;
 
   return (
     <div id={`changelog-card-${item.id}`} className="group relative border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 rounded-xl p-6 md:p-7 transition-all duration-200 hover:border-slate-800 dark:hover:border-slate-600 hover:shadow-xs">
@@ -159,32 +169,29 @@ export default function ChangelogCard({ item, app }: ChangelogCardProps) {
 
       {/* Main Core Content body */}
       <div className="bg-slate-50/40 dark:bg-slate-800/40 rounded-xl p-4 md:p-5 border border-slate-100 dark:border-slate-800 mt-1">
-        {isGenZTranslated ? (
-          <div className="space-y-3 font-sans text-slate-700 dark:text-slate-300 leading-relaxed transition-all duration-200">
-            <span className="bg-amber-50/80 border border-amber-200 text-amber-800 text-[10px] px-2.5 py-0.5 rounded font-semibold inline-flex items-center gap-1">
-              <Sparkles className="h-3 w-3 text-amber-500 animate-spin" /> Vibe Slang Edition
-            </span>
-            <QuickMarkdown content={getVibeTranslation()} />
-          </div>
-        ) : (
+        {isExpanded || !isLong ? (
           <QuickMarkdown content={item.description} />
+        ) : (
+          <p className="text-sm md:text-md text-slate-700 dark:text-slate-300 leading-relaxed font-sans">
+            {excerpt}
+          </p>
         )}
       </div>
 
-      {/* Action panel footer */}
-      <div className="flex items-center justify-end mt-5 pt-3.5 border-t border-slate-100 dark:border-slate-800">
-
-        {/* Slang toggle */}
-        <button
-          id={`translate-vibe-btn-${item.id}`}
-          onClick={() => setIsGenZTranslated(!isGenZTranslated)}
-          className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white"
-          title="Toggle between the hype edition and the technical log"
-        >
-          <Sparkles className="h-3.5 w-3.5 text-amber-500" />
-          <span>{isGenZTranslated ? "Technical Log" : "Hype Translation"}</span>
-        </button>
-      </div>
+      {/* Action panel footer — only shown when there is more to reveal */}
+      {isLong && (
+        <div className="flex items-center justify-end mt-5 pt-3.5 border-t border-slate-100 dark:border-slate-800">
+          <button
+            id={`details-toggle-${item.id}`}
+            onClick={() => setIsExpanded(!isExpanded)}
+            aria-expanded={isExpanded}
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white"
+          >
+            <span>{isExpanded ? "Show less" : "Details"}</span>
+            {isExpanded ? <ChevronUp className="h-3.5 w-3.5" /> : <ChevronDown className="h-3.5 w-3.5" />}
+          </button>
+        </div>
+      )}
 
     </div>
   );

@@ -56,10 +56,10 @@
     },
     "update": {
       "type": "object",
-      "required": ["id", "appId", "appName", "title", "description", "date", "version", "type", "author", "tags"],
+      "required": ["appId", "appName", "title", "description", "date", "version", "type", "author", "tags"],
       "additionalProperties": false,
       "properties": {
-        "id": { "type": "string", "description": "Unique id for the update, e.g. 'update-7'." },
+        "id": { "type": "string", "description": "Optional. A stable unique id (used for feed guids/permalinks and React keys). If omitted, it is auto-derived from appId + the date's timestamp. Only set this if you need a fixed permalink that won't change when the date changes." },
         "appId": { "type": "string", "description": "Must match an apps[].id." },
         "appName": { "type": "string", "description": "Display name (kept denormalized for convenience)." },
         "title": { "type": "string" },

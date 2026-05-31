@@ -28,6 +28,11 @@ const escape = (str) =>
 const data = JSON.parse(readFileSync(dataPath, "utf8"));
 const updates = Array.isArray(data.updates) ? data.updates : [];
 
+// Stable, unique id for an update. Uses an explicit `id` if present, otherwise
+// derives one from appId + the date's timestamp. Must match the derivation in
+// src/App.tsx so feed permalinks/guids stay consistent with the app.
+const updateId = (item) => item.id || `${item.appId}-${new Date(item.date).getTime()}`;
+
 // --- RSS 2.0 ---
 let xml = `<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
@@ -39,10 +44,11 @@ let xml = `<?xml version="1.0" encoding="UTF-8" ?>
   <atom:link href="${SITE_URL}/feed.xml" rel="self" type="application/rss+xml" />
 `;
 for (const item of updates) {
+  const id = updateId(item);
   xml += `  <item>
     <title>${escape(`[${item.appName}] ${item.title}`)}</title>
-    <link>${SITE_URL}/?app=${encodeURIComponent(item.appId)}&amp;update=${encodeURIComponent(item.id)}</link>
-    <guid>${SITE_URL}/update/${encodeURIComponent(item.id)}</guid>
+    <link>${SITE_URL}/?app=${encodeURIComponent(item.appId)}&amp;update=${encodeURIComponent(id)}</link>
+    <guid>${SITE_URL}/update/${encodeURIComponent(id)}</guid>
     <pubDate>${new Date(item.date).toUTCString()}</pubDate>
     <description>${escape(item.description)}</description>
     <author>${escape(item.author?.name ?? "")}</author>
@@ -61,8 +67,8 @@ const jsonFeed = {
   feed_url: `${SITE_URL}/feed.json`,
   description: "Hype updates, releases, and fixes from the FundedYouth developers.",
   items: updates.map((item) => ({
-    id: item.id,
-    url: `${SITE_URL}/?app=${item.appId}&update=${item.id}`,
+    id: updateId(item),
+    url: `${SITE_URL}/?app=${item.appId}&update=${updateId(item)}`,
     title: `[${item.appName}] ${item.title}`,
     content_text: item.description,
     date_published: item.date,

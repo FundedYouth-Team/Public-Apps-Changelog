@@ -34,15 +34,6 @@
       "currentVersion": "v1.4.0"
     },
     {
-      "id": "docs",
-      "name": "Docs",
-      "description": "Self-service knowledge bases, ecosystem API guidelines, and developer toolkits.",
-      "icon": "BookOpen",
-      "color": "from-cyan-500 to-blue-500",
-      "status": "active",
-      "currentVersion": "v1.12.3"
-    },
-    {
       "id": "curriculum",
       "name": "Curriculum",
       "description": "Startup builder guides, interactive masterclasses, and project submission steps.",
@@ -52,10 +43,19 @@
       "currentVersion": "v2.1.0"
     },
     {
-      "id": "partner-network",
-      "name": "Partner Hub",
-      "description": "Investor matchmaking boards, sponsor deal catalogs, and internship match systems.",
-      "icon": "Briefcase",
+      "id": "docs",
+      "name": "Docs",
+      "description": "Self-service knowledge bases, ecosystem API guidelines, and developer toolkits.",
+      "icon": "BookOpen",
+      "color": "from-cyan-500 to-blue-500",
+      "status": "active",
+      "currentVersion": "v1.12.3"
+    },
+    {
+      "id": "changelog",
+      "name": "Changelog",
+      "description": "This ecosystem software updates and community release log",
+      "icon": "GitCompare",
       "color": "from-indigo-500 to-purple-500",
       "status": "beta",
       "currentVersion": "v0.9.5"
@@ -63,7 +63,6 @@
   ],
   "updates": [
     {
-      "id": "update-1",
       "appId": "the-vault",
       "appName": "The Vault",
       "title": "⚡ Rocket-Fast Secure Assets Delivery Engine (SADE) Live!",
@@ -83,10 +82,9 @@
       ]
     },
     {
-      "id": "update-2",
       "appId": "curriculum",
       "appName": "Curriculum",
-      "title": "📚 Interactive Startup Builder Masterclass Launched",
+      "title": "3DP1 - Cura Slicer Basics",
       "description": "The highly requested Startup Builder track is officially live!\n\nWe worked directly with top venture studio partners to assemble **8 hyper-practical interactive lessons** to guide you from problem discovery to your first $10k in ARR.\n\n### Core Modules Added:\n1. **The Youth Edge**: Finding arbitrage opportunities as student builders.\n2. **Landing Your First 10 Customers**: Tactical cold outreach playbooks.\n3. **No-Code Backends**: Launching dynamic websites without writing custom database layers.\n4. **The Cap Table Sim**: Interactive slider matching founder divisions.\n\n*Complete all modules to unlock the **Cap-Table Wizard Badge** in your User Portal!*",
       "date": "2026-05-27T10:15:00Z",
       "version": "v2.1.0",
@@ -103,7 +101,6 @@
       ]
     },
     {
-      "id": "update-3",
       "appId": "user-portal",
       "appName": "User Portal",
       "title": "🎨 Dark Mode Aesthetic & Interactive Achievements Grid",
@@ -123,7 +120,6 @@
       ]
     },
     {
-      "id": "update-4",
       "appId": "public-site",
       "appName": "Public Site",
       "title": "🔒 Security Hotfix - Safeguarding Newsletter Form Entrances",
@@ -143,7 +139,6 @@
       ]
     },
     {
-      "id": "update-5",
       "appId": "docs",
       "appName": "Docs",
       "title": "📖 Added 'Building with AI' SDK Reference Manual",
@@ -163,7 +158,6 @@
       ]
     },
     {
-      "id": "update-6",
       "appId": "partner-network",
       "appName": "Partner Hub",
       "title": "🤝 High-School Startup Investor Board Launch (Beta)",

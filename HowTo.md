@@ -34,7 +34,6 @@ Add a new object to the **top** of the `updates` array (newest first). Example:
 
 ```json
 {
-  "id": "update-7",
   "appId": "the-vault",
   "appName": "The Vault",
   "title": "🚀 New Template Marketplace",
@@ -55,7 +54,7 @@ Add a new object to the **top** of the `updates` array (newest first). Example:
 
 | Field | Required | Notes |
 |-------|----------|-------|
-| `id` | yes | Unique string, e.g. `"update-7"`. Used in feed links. |
+| `id` | no | A stable unique id for feed permalinks/guids. **Usually omit it** — it's auto-derived from `appId` + the date's timestamp. Only set it if you need a permalink that won't change if you later edit the date. |
 | `appId` | yes | **Must match an `apps[].id`** (see §3). |
 | `appName` | yes | Display name, e.g. `"The Vault"`. |
 | `title` | yes | The headline (emoji welcome). |
