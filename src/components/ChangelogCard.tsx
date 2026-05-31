@@ -59,7 +59,7 @@ function QuickMarkdown({ content }: { content: string }) {
   );
 }
 
-// Utility to replace **bold** with <strong>bold</strong>
+// Utility to replace inline markdown (**bold**, `code`, [links](url)) with HTML.
 function parseBold(text: string): string {
   let res = text;
   const regex = /\*\*(.*?)\*\*/g;
@@ -68,6 +68,10 @@ function parseBold(text: string): string {
   // also style code blocks e.g. `code`
   const codeRegex = /`(.*?)`/g;
   res = res.replace(codeRegex, `<code class="bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-xs px-1.5 py-0.5 rounded-md text-slate-800 dark:text-slate-200 font-mono font-semibold">$1</code>`);
+
+  // markdown links [label](https://url) -> anchor (http/https only for safety)
+  const linkRegex = /\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g;
+  res = res.replace(linkRegex, `<a href="$2" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-600 dark:text-blue-400 underline decoration-blue-300 dark:decoration-blue-600 underline-offset-2 hover:text-blue-700 dark:hover:text-blue-300">$1</a>`);
   return res;
 }
 
@@ -77,6 +81,7 @@ const PREVIEW_CHAR_LIMIT = 220;
 // Strip markdown to a clean single-line string for the collapsed preview.
 function toPlainText(md: string): string {
   return md
+    .replace(/\[([^\]]+)\]\((?:https?:\/\/[^\s)]+)\)/g, "$1") // links -> label
     .replace(/`([^`]+)`/g, "$1") // inline code
     .replace(/\*\*([^*]+)\*\*/g, "$1") // bold
     .replace(/^\s*#{1,6}\s*/gm, "") // headers
@@ -92,13 +97,13 @@ export default function ChangelogCard({ item, app }: ChangelogCardProps) {
   const getTypeMeta = (type: string) => {
     switch (type) {
       case "major":
-        return { label: "🚀 Rocket Launch", bg: "bg-orange-100 text-orange-700 border-orange-200" };
+        return { label: "🚀 Major", bg: "bg-orange-100 text-orange-700 border-orange-200" };
       case "security":
         return { label: "🔒 Security Shield", bg: "bg-rose-100 text-rose-700 border-rose-200" };
       case "patch":
-        return { label: "🩹 Patch Fix", bg: "bg-slate-100 text-slate-650 border-slate-200" };
+        return { label: "👾 Patch Fix", bg: "bg-slate-100 text-slate-650 border-slate-200" };
       default:
-        return { label: "✨ Polish & Dust", bg: "bg-slate-100 text-slate-800 border-slate-200" };
+        return { label: "🌿 Minor", bg: "bg-slate-100 text-slate-800 border-slate-200" };
     }
   };
 

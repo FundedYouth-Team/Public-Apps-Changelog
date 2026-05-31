@@ -7,43 +7,53 @@
   <language>en-us</language>
   <atom:link href="https://changelog.fundedyouth.org/feed.xml" rel="self" type="application/rss+xml" />
   <item>
-    <title>[The Vault] ⚡ Rocket-Fast Secure Assets Delivery Engine (SADE) Live!</title>
-    <link>https://changelog.fundedyouth.org/?app=the-vault&amp;update=the-vault-1779978600000</link>
-    <guid>https://changelog.fundedyouth.org/update/the-vault-1779978600000</guid>
-    <pubDate>Thu, 28 May 2026 14:30:00 GMT</pubDate>
-    <description>We&apos;ve completely overhauled how startup boilerplate legal agreements and media kits are parsed and served.
+    <title>[The Vault] New App in Development</title>
+    <link>https://changelog.fundedyouth.org/?app=the-vault&amp;update=the-vault-1780151400000</link>
+    <guid>https://changelog.fundedyouth.org/update/the-vault-1780151400000</guid>
+    <pubDate>Sat, 30 May 2026 14:30:00 GMT</pubDate>
+    <description>🚀 Something exciting is brewing! We&apos;re building a brand-new in-house file server exclusively for active members — and we&apos;re calling it **The Vault**.
 
-### What is SADE?
-SADE (Secure Assets Delivery Engine) utilizes edge caching and automated key rotation to make downloading templates instantaneous.
+### What is The Vault?
+The Vault is your members-only treasure chest of premium resources, available **onsite for active members only**. Think custom 3D models, exclusive assets, and limited edition prints you won&apos;t find anywhere else.
 
-### Features
-* **Zero-latency downloads**: Boilers load in under **45ms** globally.
-* **Smart Watermarking**: Clean PDF watermarking with founder signatures embedded dynamically.
-* **Vault Multi-Signatures**: Seed investment paperwork now supports co-founder parallel signing.</description>
-    <author>Tasha Chen</author>
+### What to Expect
+* **🎨 Custom 3D Models**: A curated, ever-growing library built just for our community.
+* **💎 Limited Edition Prints**: Exclusive drops reserved for active members — and more on the way.
+* **🔒 Members-Only Access**: Premium resources available exclusively onsite.
+
+This project is still in **early development**, and we&apos;re just getting started. 📬 **Subscribe to the feed** to be the first to know as The Vault takes shape!
+
+### Stay in the Loop
+Don&apos;t miss a single drop! [**Sign up for our newsletter**](https://fundedyouth.org/contact) to get the latest updates delivered straight to your inbox.
+
+And give us a follow for behind-the-scenes sneak peeks and announcements:
+* 📸 **Instagram**: [@FundedYouth](https://www.instagram.com/FundedYouth/)
+* 👍 **Facebook**: [FundedYouth](https://www.facebook.com/FundedYouth)</description>
+    <author>Ryan Jones</author>
+    <category>minor</category>
+  </item>
+  <item>
+    <title>[Curriculum] Cura Slicer Basics -  New Course Model (3DP1)</title>
+    <link>https://changelog.fundedyouth.org/?app=curriculum&amp;update=curriculum-1779272100000</link>
+    <guid>https://changelog.fundedyouth.org/update/curriculum-1779272100000</guid>
+    <pubDate>Wed, 20 May 2026 10:15:00 GMT</pubDate>
+    <description>Cura Slicer Basics is now split into two **1-hour sessions**, giving students room to learn the tool and then put it to work on a realistic job.
+
+### Session 1: Hands-On Slicer Lesson
+Our existing hands-on lesson on how to use the **Ultimaker Cura Slicer** application. Students get comfortable navigating the software and preparing a model to print.
+
+### Session 2: Challenges &amp; Estimating
+This new session introduces real-world challenges and provides students with a **template for producing an estimate**. The instructor plays the role of a client or customer and makes three requests. For each one, the student will:
+1. **Find a model** that fits the request.
+2. **Get the customer&apos;s approval** on the model.
+3. **Write up the estimate** using the provided template.
+4. **Confirm the price** with the customer.
+5. **Print the file**.</description>
+    <author>Ryan Jones</author>
     <category>major</category>
   </item>
   <item>
-    <title>[Curriculum] 3DP1 - Cura Slicer Basics</title>
-    <link>https://changelog.fundedyouth.org/?app=curriculum&amp;update=curriculum-1779876900000</link>
-    <guid>https://changelog.fundedyouth.org/update/curriculum-1779876900000</guid>
-    <pubDate>Wed, 27 May 2026 10:15:00 GMT</pubDate>
-    <description>The highly requested Startup Builder track is officially live!
-
-We worked directly with top venture studio partners to assemble **8 hyper-practical interactive lessons** to guide you from problem discovery to your first $10k in ARR.
-
-### Core Modules Added:
-1. **The Youth Edge**: Finding arbitrage opportunities as student builders.
-2. **Landing Your First 10 Customers**: Tactical cold outreach playbooks.
-3. **No-Code Backends**: Launching dynamic websites without writing custom database layers.
-4. **The Cap Table Sim**: Interactive slider matching founder divisions.
-
-*Complete all modules to unlock the **Cap-Table Wizard Badge** in your User Portal!*</description>
-    <author>Alex Patel</author>
-    <category>major</category>
-  </item>
-  <item>
-    <title>[User Portal] 🎨 Dark Mode Aesthetic &amp; Interactive Achievements Grid</title>
+    <title>[User Portal] User Portal is Live</title>
     <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1779820800000</link>
     <guid>https://changelog.fundedyouth.org/update/user-portal-1779820800000</guid>
     <pubDate>Tue, 26 May 2026 18:40:00 GMT</pubDate>

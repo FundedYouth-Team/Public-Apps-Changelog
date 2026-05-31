@@ -56,7 +56,7 @@
       "name": "Changelog",
       "description": "This ecosystem software updates and community release log",
       "icon": "GitCompare",
-      "color": "from-indigo-500 to-purple-500",
+      "color": "from-gray-500 to-gray-900",
       "status": "beta",
       "currentVersion": "v0.9.5"
     }
@@ -65,15 +65,15 @@
     {
       "appId": "the-vault",
       "appName": "The Vault",
-      "title": "⚡ Rocket-Fast Secure Assets Delivery Engine (SADE) Live!",
-      "description": "We've completely overhauled how startup boilerplate legal agreements and media kits are parsed and served.\n\n### What is SADE?\nSADE (Secure Assets Delivery Engine) utilizes edge caching and automated key rotation to make downloading templates instantaneous.\n\n### Features\n* **Zero-latency downloads**: Boilers load in under **45ms** globally.\n* **Smart Watermarking**: Clean PDF watermarking with founder signatures embedded dynamically.\n* **Vault Multi-Signatures**: Seed investment paperwork now supports co-founder parallel signing.",
-      "date": "2026-05-28T14:30:00Z",
-      "version": "v1.4.0",
-      "type": "major",
+      "title": "New App in Development",
+      "description": "🚀 Something exciting is brewing! We're building a brand-new in-house file server exclusively for active members — and we're calling it **The Vault**.\n\n### What is The Vault?\nThe Vault is your members-only treasure chest of premium resources, available **onsite for active members only**. Think custom 3D models, exclusive assets, and limited edition prints you won't find anywhere else.\n\n### What to Expect\n* **🎨 Custom 3D Models**: A curated, ever-growing library built just for our community.\n* **💎 Limited Edition Prints**: Exclusive drops reserved for active members — and more on the way.\n* **🔒 Members-Only Access**: Premium resources available exclusively onsite.\n\nThis project is still in **early development**, and we're just getting started. 📬 **Subscribe to the feed** to be the first to know as The Vault takes shape!\n\n### Stay in the Loop\nDon't miss a single drop! [**Sign up for our newsletter**](https://fundedyouth.org/contact) to get the latest updates delivered straight to your inbox.\n\nAnd give us a follow for behind-the-scenes sneak peeks and announcements:\n* 📸 **Instagram**: [@FundedYouth](https://www.instagram.com/FundedYouth/)\n* 👍 **Facebook**: [FundedYouth](https://www.facebook.com/FundedYouth)",
+      "date": "2026-05-30T14:30:00Z",
+      "version": "v1.1.1",
+      "type": "minor",
       "author": {
-        "name": "Tasha Chen",
-        "role": "Lead Platform Engineer",
-        "avatarUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80"
+        "name": "Ryan Jones",
+        "role": "Lead Developer and Designer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
       },
       "tags": [
         "security",
@@ -91,8 +91,8 @@
       "type": "major",
       "author": {
         "name": "Ryan Jones",
-        "role": "Head of Education",
-        "avatarUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80"
+        "role": "Curriculum Developer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
       },
       "tags": [
         "curriculum",
@@ -104,74 +104,149 @@
       ]
     },
     {
-      "appId": "user-portal",
-      "appName": "User Portal",
-      "title": "🎨 Dark Mode Aesthetic & Interactive Achievements Grid",
-      "description": "Your Member Profile page got a glow up! We've heard you loud and clear: builders want a dark midnight aesthetic to code in comfort during those 2 AM sessions.\n\n### New Additions\n* **Midnight Carbon Palette**: Soft, mathematically accurate contrast ratios for long-night builders.\n* **Achievements Showcase Grid**: See your unlocked badges (including the new Cap-Table Wizard Badge!).\n* **Live Venture Stats Widget**: Watch your FundedPoints accrue dynamically based on community engagement.",
-      "date": "2026-05-26T18:40:00Z",
-      "version": "v3.1.2",
-      "type": "minor",
+      "appId": "curriculum",
+      "appName": "Curriculum",
+      "title": "New Course: Bambu Studio Basics (3DP2)",
+      "description": "A brand-new course has landed! **Bambu Studio Basics (3DP2)** is here, and just like 3DP1, it's split into two fun **1-hour sessions**. 🎉\n\n*Heads up: You'll need to finish the **3DP1 course** first before jumping into this one!*\n\n### Session 1: Learning the Tools\nGet hands-on with the **Bambu Studio** app! This first class walks you through all the basic tools so you feel comfortable getting your models ready to print.\n\n### Session 2: Making a Cost Estimate\nWant to sell your prints? This class teaches you how to make a real cost estimate through three fun challenges. The instructor plays the role of a client and asks for three different items. For each one, you'll:\n1. **Find something** the customer wants.\n2. **Produce an estimate** for the job.\n3. **Get the customer's confirmation**.\n4. **Take the payment**.\n5. **Print the product**.\n6. **Present it** to the customer.",
+      "date": "2026-05-21T10:15:00Z",
+      "version": "v1.0.0",
+      "type": "major",
       "author": {
-        "name": "Marcus Aurelio",
-        "role": "Lead UX/UI",
-        "avatarUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80"
+        "name": "Ryan Jones",
+        "role": "Curriculum Developer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
       },
       "tags": [
-        "design",
+        "curriculum",
+        "lessons",
+        "education",
+        "3dp2",
+        "3d printing",
+        "bambu studio"
+      ]
+    },
+    {
+      "appId": "curriculum",
+      "appName": "Curriculum",
+      "title": "Updated Course: TinkerCAD 3D Modeling (3DM1)",
+      "description": "We've leveled up our **TinkerCAD 3D Modeling (3DM1)** course! 🎉 It now includes a brand-new **Cost Estimate document** to help students learn how to figure out the time and cost of making 3D models.\n\n*Good news: there are **no prerequisites** for this course — anyone can jump right in!*\n\n### How It Works\nThe course is split into two **1-hour sessions**, and it's **100% hands-on**. Every lesson builds on the one before it, and you'll always be modeling something brand-new!\n\n### What You'll Do\n* **🛠️ Two Modeling Lessons Per Class**: Each session is packed with two hands-on modeling lessons.\n* **📐 Learn to Estimate**: Discover how to calculate the time and cost to produce your 3D models.\n* **🚀 Build As You Go**: Each lesson grows your skills so you keep getting better and better.",
+      "date": "2026-05-22T10:15:00Z",
+      "version": "v2.1.1",
+      "type": "minor",
+      "author": {
+        "name": "Ryan Jones",
+        "role": "Curriculum Reviewer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+      },
+      "tags": [
+        "curriculum",
+        "lessons",
+        "education",
+        "3dm1",
+        "3d modeling",
+        "tinkercad"
+      ]
+    },
+    {
+      "appId": "curriculum",
+      "appName": "Curriculum",
+      "title": "💻 New Course: Coding with SpriteLab (CDE1)",
+      "description": "Get ready to code! **Coding with SpriteLab (CDE1)** by Code.org is our newest course — and it's included in your membership at **no extra charge**! 🎉\n\n### What to Expect\nThis is a fun, three-part course made up of three **1-hour sessions**. It covers all the basic terminology and skills to get you ready for hands-on challenges and real-world scenarios.\n\n### Where It Takes You\nThis course is your launchpad! It prepares you for bigger adventures in:\n* **🌐 Web App Development**\n* **📡 IoT (Internet of Things)**\n* **🔌 Embedded Design**\n* **✨ And so much more!**\n\nStart here and build the foundation for an awesome coding journey!",
+      "date": "2026-05-23T10:15:00Z",
+      "version": "v1.2.0",
+      "type": "major",
+      "author": {
+        "name": "Ryan Jones",
+        "role": "Curriculum Developer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+      },
+      "tags": [
+        "curriculum",
+        "lessons",
+        "education",
+        "cde1",
+        "coding",
+        "spritelab",
+        "code.org"
+      ]
+    },
+    {
+      "appId": "user-portal",
+      "appName": "User Portal",
+      "title": "User Portal is Live",
+      "description": "The User Portal is officially live, and you can sign up to become a member today! Getting started is quick and easy.\n\n### How to Get Started\n* **Create an account**: Sign up and confirm your email to unlock the portal.\n* **Buy credits & subscribe**: Grab some credits and pick your membership.\n* **Use your benefits**: Join the free classes that come with the basic membership.\n* **Spend your FYBIT credits**: Trade them for filament or kick off a 3D print!\n\n### Need a Little Help?\n* **Watch our videos**: Follow along with our [YouTube tutorials](https://www.youtube.com/watch?v=E8rDILmQb6M&list=PLqD3DJZs3fm57yyM-hkpIi_3VOyoYxDxx).\n* **Read the guide**: Check out our [Getting Started page](https://fundedyouth.org/get-started).",
+      "date": "2026-05-26T18:40:00Z",
+      "version": "v2.1.2",
+      "type": "major",
+      "author": {
+        "name": "Ryan Jones",
+        "role": "Lead Product Engineer & Designer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+      },
+      "tags": [
+        "user",
         "portal",
-        "gamification"
+        "gamification",
+        "classes",
+        "courses",
+        "registration",
+        "membership",
+        "fybit"
       ]
     },
     {
       "appId": "public-site",
       "appName": "Public Site",
-      "title": "🔒 Security Hotfix - Safeguarding Newsletter Form Entrances",
-      "description": "We identified and patched a minor vulnerability related to input sanitization on our public footer newsletter capture.\n\n### Key Details\n* **Vulnerability type**: Form rate-abuse and cross-site scripting risks during peak traffic times.\n* **Resolution**: Added cryptographic Cloudflare Turnstile guards and complete server-side input stripping.\n* **Impact**: Zero records were exposed; this is a preventative security hardening measure.",
+      "title": "🚀 A Brand-New Public Site!",
+      "description": "We gave our **Public Site** a complete makeover from top to bottom! 🎨\n\n### What's New\n* **✨ Fresh Design**: A clean, modern look that's easier and more fun to use.\n* **🎯 New Focus**: We're shining a spotlight on the [**FundedYouth Portal**](https://portal.fundedyouth.org), our STEM classes, and all the awesome services we offer.\n* **📅 Live Schedule**: A brand-new live schedule connected right to the Portal, so you always know what's happening next.\n\n### Become a Member\nOur new site makes it super easy to **join and unlock great benefits**. Come explore everything FundedYouth has to offer!",
       "date": "2026-05-25T09:00:00Z",
-      "version": "v2.8.4",
-      "type": "security",
+      "version": "v4.0.0",
+      "type": "major",
       "author": {
-        "name": "Tasha Chen",
-        "role": "Lead Platform Engineer",
-        "avatarUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80"
+        "name": "Ryan Jones",
+        "role": "Lead Design Engineer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
       },
       "tags": [
-        "security",
-        "patch",
-        "infrastructure"
+        "public",
+        "website",
+        "portal",
+        "fundedyouth.org"
       ]
     },
     {
       "appId": "docs",
       "appName": "Docs",
-      "title": "📖 Added 'Building with AI' SDK Reference Manual",
-      "description": "Our developer docs now contain extensive recipes for integrating LLM features safely inside Sandbox environments.\n\n### Contents:\n* **LLM Hook Templates**: Plug-and-play code snippets for initializing your model client.\n* **Usage Limits Monitor API**: Avoid running over developer quotas when sandbox prototyping.\n* **Web-Safe Keys Guidelines**: Best practices for proxying API calls to prevent leakages.",
+      "title": "📖 A Fresh New Look for Our Docs!",
+      "description": "We gave [**docs.fundedyouth.org**](https://docs.fundedyouth.org) a brand-new look and feel to make finding answers easier than ever! ✨\n\n### What's New\n* **🧭 Easier Navigation**: We split everything into clear sections so you can find what you need fast — **Getting Started**, **FYBIT Credits**, **Courses**, **Portal**, **Legal**, and **Technical Details**.\n* **🎨 Prettier Courses Pages**: We added custom formatting to the Courses pages, so they're cleaner and more fun to read.\n\n### Take a Look\nCome explore the new and improved docs — everything you need to know, all in one tidy place!",
       "date": "2026-05-24T15:30:00Z",
       "version": "v1.12.3",
       "type": "patch",
       "author": {
-        "name": "Sarah Jenkins",
-        "role": "Developer Relations",
-        "avatarUrl": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=150&q=80"
+        "name": "Ryan Jones",
+        "role": "Lead Designer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
       },
       "tags": [
         "docs",
-        "api",
-        "sdk"
+        "foramtting",
+        "style",
+        "fresh",
+        "courses"
       ]
     },
     {
-      "appId": "partner-network",
-      "appName": "Partner Hub",
-      "title": "🤝 High-School Startup Investor Board Launch (Beta)",
-      "description": "We've soft-launched our specialized Venture Board! Eligible teen founders can now upload safe executive summaries to showcase to registered micro-VC funds.\n\n### How it works:\n1. Complete your pitch summary in the **User Portal**.\n2. Push your summary directly to the **Partner Hub** and set tags like 'Fintech', 'AI', or 'SaaS'.\n3. Registered, vet-checked investors can request introduction calls with high-potential FundedYouth projects.",
-      "date": "2026-05-22T11:00:00Z",
-      "version": "v0.9.5",
+      "appId": "changelog",
+      "appName": "Changelog",
+      "title": "🎉 The Changelog App is Live!",
+      "description": "Say hello to our brand-new **Changelog App** — your one-stop spot to see everything FundedYouth is building! 🚀\n\n### What You Can Do\n* **🔍 See the Latest**: Browse all our newest changes, fixes, and projects in one place.\n* **📬 Subscribe to the Feed**: Never miss an update — follow along with our RSS feed.\n* **👋 Follow Us**: Stay connected on social media or sign up to get updates by email.\n\n### Stay in the Loop\nThis is your window into everything we're working on. Check back often to see what's new!",
+      "date": "2026-05-31T12:00:00Z",
+      "version": "v1.0.0",
       "type": "minor",
       "author": {
-        "name": "Elijah Vance",
-        "role": "Ecosystem Partnerships",
-        "avatarUrl": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=150&q=80"
+        "name": "Ryan Jones",
+        "role": "Lead Designer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
       },
       "tags": [
         "investors",

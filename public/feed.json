@@ -6,47 +6,50 @@
   "description": "Hype updates, releases, and fixes from the FundedYouth developers.",
   "items": [
     {
-      "id": "the-vault-1779978600000",
-      "url": "https://changelog.fundedyouth.org/?app=the-vault&update=the-vault-1779978600000",
-      "title": "[The Vault] ⚡ Rocket-Fast Secure Assets Delivery Engine (SADE) Live!",
-      "content_text": "We've completely overhauled how startup boilerplate legal agreements and media kits are parsed and served.\n\n### What is SADE?\nSADE (Secure Assets Delivery Engine) utilizes edge caching and automated key rotation to make downloading templates instantaneous.\n\n### Features\n* **Zero-latency downloads**: Boilers load in under **45ms** globally.\n* **Smart Watermarking**: Clean PDF watermarking with founder signatures embedded dynamically.\n* **Vault Multi-Signatures**: Seed investment paperwork now supports co-founder parallel signing.",
-      "date_published": "2026-05-28T14:30:00Z",
+      "id": "the-vault-1780151400000",
+      "url": "https://changelog.fundedyouth.org/?app=the-vault&update=the-vault-1780151400000",
+      "title": "[The Vault] New App in Development",
+      "content_text": "🚀 Something exciting is brewing! We're building a brand-new in-house file server exclusively for active members — and we're calling it **The Vault**.\n\n### What is The Vault?\nThe Vault is your members-only treasure chest of premium resources, available **onsite for active members only**. Think custom 3D models, exclusive assets, and limited edition prints you won't find anywhere else.\n\n### What to Expect\n* **🎨 Custom 3D Models**: A curated, ever-growing library built just for our community.\n* **💎 Limited Edition Prints**: Exclusive drops reserved for active members — and more on the way.\n* **🔒 Members-Only Access**: Premium resources available exclusively onsite.\n\nThis project is still in **early development**, and we're just getting started. 📬 **Subscribe to the feed** to be the first to know as The Vault takes shape!\n\n### Stay in the Loop\nDon't miss a single drop! [**Sign up for our newsletter**](https://fundedyouth.org/contact) to get the latest updates delivered straight to your inbox.\n\nAnd give us a follow for behind-the-scenes sneak peeks and announcements:\n* 📸 **Instagram**: [@FundedYouth](https://www.instagram.com/FundedYouth/)\n* 👍 **Facebook**: [FundedYouth](https://www.facebook.com/FundedYouth)",
+      "date_published": "2026-05-30T14:30:00Z",
       "tags": [
-        "major",
+        "minor",
         "security",
         "vault",
         "performance"
       ],
       "authors": [
         {
-          "name": "Tasha Chen",
-          "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80"
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
         }
       ]
     },
     {
-      "id": "curriculum-1779876900000",
-      "url": "https://changelog.fundedyouth.org/?app=curriculum&update=curriculum-1779876900000",
-      "title": "[Curriculum] 3DP1 - Cura Slicer Basics",
-      "content_text": "The highly requested Startup Builder track is officially live!\n\nWe worked directly with top venture studio partners to assemble **8 hyper-practical interactive lessons** to guide you from problem discovery to your first $10k in ARR.\n\n### Core Modules Added:\n1. **The Youth Edge**: Finding arbitrage opportunities as student builders.\n2. **Landing Your First 10 Customers**: Tactical cold outreach playbooks.\n3. **No-Code Backends**: Launching dynamic websites without writing custom database layers.\n4. **The Cap Table Sim**: Interactive slider matching founder divisions.\n\n*Complete all modules to unlock the **Cap-Table Wizard Badge** in your User Portal!*",
-      "date_published": "2026-05-27T10:15:00Z",
+      "id": "curriculum-1779272100000",
+      "url": "https://changelog.fundedyouth.org/?app=curriculum&update=curriculum-1779272100000",
+      "title": "[Curriculum] Cura Slicer Basics -  New Course Model (3DP1)",
+      "content_text": "Cura Slicer Basics is now split into two **1-hour sessions**, giving students room to learn the tool and then put it to work on a realistic job.\n\n### Session 1: Hands-On Slicer Lesson\nOur existing hands-on lesson on how to use the **Ultimaker Cura Slicer** application. Students get comfortable navigating the software and preparing a model to print.\n\n### Session 2: Challenges & Estimating\nThis new session introduces real-world challenges and provides students with a **template for producing an estimate**. The instructor plays the role of a client or customer and makes three requests. For each one, the student will:\n1. **Find a model** that fits the request.\n2. **Get the customer's approval** on the model.\n3. **Write up the estimate** using the provided template.\n4. **Confirm the price** with the customer.\n5. **Print the file**.",
+      "date_published": "2026-05-20T10:15:00Z",
       "tags": [
         "major",
         "curriculum",
         "lessons",
-        "education"
+        "education",
+        "3dp1",
+        "3d printing",
+        "cura slicer"
       ],
       "authors": [
         {
-          "name": "Alex Patel",
-          "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80"
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
         }
       ]
     },
     {
       "id": "user-portal-1779820800000",
       "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1779820800000",
-      "title": "[User Portal] 🎨 Dark Mode Aesthetic & Interactive Achievements Grid",
+      "title": "[User Portal] User Portal is Live",
       "content_text": "Your Member Profile page got a glow up! We've heard you loud and clear: builders want a dark midnight aesthetic to code in comfort during those 2 AM sessions.\n\n### New Additions\n* **Midnight Carbon Palette**: Soft, mathematically accurate contrast ratios for long-night builders.\n* **Achievements Showcase Grid**: See your unlocked badges (including the new Cap-Table Wizard Badge!).\n* **Live Venture Stats Widget**: Watch your FundedPoints accrue dynamically based on community engagement.",
       "date_published": "2026-05-26T18:40:00Z",
       "tags": [
