@@ -6,14 +6,12 @@ import {
   BookOpen, 
   GraduationCap, 
   Briefcase, 
-  Search, 
-  Bell, 
-  Plus, 
-  Activity, 
-  Sparkles, 
-  Code, 
-  Filter, 
-  Flame, 
+  Search,
+  Bell,
+  Activity,
+  Sparkles,
+  Code,
+  Filter,
   RefreshCw,
   MessageSquare,
   BadgeAlert,
@@ -24,7 +22,6 @@ import {
 import { ChangelogItem, AppInfo, UpdateType } from "./types";
 import ChangelogCard from "./components/ChangelogCard";
 import SubscriptionModal from "./components/SubscriptionModal";
-import DraftDrawer from "./components/DraftDrawer";
 import { useTheme } from "./hooks/useTheme";
 import logoUrl from "./assets/logo-color-white-bg.png";
 
@@ -101,12 +98,8 @@ export default function App() {
   const [searchQuery, setSearchQuery] = useState("");
   const [filterType, setFilterType] = useState<UpdateType | "all">("all");
   const [isSubModalOpen, setIsSubModalOpen] = useState(false);
-  const [isDraftDrawerOpen, setIsDraftDrawerOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [errorStatus, setErrorStatus] = useState<string | null>(null);
-  
-  // Confetti celebration notification whenever new update is posted
-  const [celebrationMsg, setCelebrationMsg] = useState<string | null>(null);
 
   // Load the static changelog data file (apps + updates). Fully client-side — no backend.
   const fetchChanges = async () => {
@@ -130,16 +123,6 @@ export default function App() {
   useEffect(() => {
     fetchChanges();
   }, []);
-
-  // Handle post success trigger. On a static site this lives in the current
-  // session only (not persisted) — add to public/data/changelog.json to make it permanent.
-  const handlePublishSuccess = (newItem: ChangelogItem) => {
-    setChangelogs((prev) => [newItem, ...prev]);
-    setCelebrationMsg(`🚀 Update added to the ${newItem.appName} feed for this session!`);
-    setTimeout(() => {
-      setCelebrationMsg(null);
-    }, 5000);
-  };
 
   // Client-side search + filtering over the loaded JSON data
   const filteredChangelogs = changelogs.filter((cl) => {
@@ -169,19 +152,6 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-200 font-sans selection:bg-slate-800 selection:text-white pb-12 transition-colors duration-300">
-      
-      {/* Dynamic Celebration Toast */}
-      {celebrationMsg && (
-        <div className="fixed top-4 right-4 z-50 max-w-md rounded-xl bg-slate-900 dark:bg-slate-800 border border-slate-800 dark:border-slate-700 p-4 shadow-xl text-white flex items-start gap-3 animate-in fade-in duration-200">
-          <div className="rounded-lg bg-slate-900 p-1.5 text-white">
-            <Flame className="h-4 w-4 animate-pulse" />
-          </div>
-          <div>
-            <h4 className="text-xs font-bold font-mono tracking-wider text-amber-400">CO-FOUNDER SHIP CONFIRMED</h4>
-            <p className="text-xs text-slate-300 mt-0.5">{celebrationMsg}</p>
-          </div>
-        </div>
-      )}
 
       {/* Main Container Layout */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
@@ -227,16 +197,6 @@ export default function App() {
             >
               <Bell className="h-3.5 w-3.5 text-slate-500 dark:text-slate-400" />
               <span>Subscribe to Feed</span>
-            </button>
-
-            {/* Launch change publisher (Contributor Mode) */}
-            <button
-              id="header-contribute-btn"
-              onClick={() => setIsDraftDrawerOpen(true)}
-              className="flex items-center gap-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-xs font-semibold text-white py-2 px-3.5 shadow-xs transition-colors cursor-pointer"
-            >
-              <Plus className="h-3.5 w-3.5" />
-              <span>Draft App Change</span>
             </button>
           </div>
         </header>
@@ -565,14 +525,6 @@ export default function App() {
         isOpen={isSubModalOpen}
         onClose={() => setIsSubModalOpen(false)}
         apps={apps}
-      />
-
-      {/* Dynamic AI Release Draft Drawer */}
-      <DraftDrawer
-        isOpen={isDraftDrawerOpen}
-        onClose={() => setIsDraftDrawerOpen(false)}
-        apps={apps}
-        onPublishSuccess={handlePublishSuccess}
       />
 
     </div>
