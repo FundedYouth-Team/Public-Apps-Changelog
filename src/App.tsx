@@ -17,6 +17,7 @@ import {
   MessageSquare,
   BadgeAlert,
   ArrowUpRight,
+  ArrowUpDown,
   Sun,
   Moon
 } from "lucide-react";
@@ -99,6 +100,7 @@ export default function App() {
   const [selectedAppId, setSelectedAppId] = useState<string | null>(null); // null means "All"
   const [searchQuery, setSearchQuery] = useState("");
   const [filterType, setFilterType] = useState<UpdateType | "all">("all");
+  const [sortOrder, setSortOrder] = useState<"oldest" | "latest">("latest");
   const [isSubModalOpen, setIsSubModalOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [errorStatus, setErrorStatus] = useState<string | null>(null);
@@ -133,21 +135,26 @@ export default function App() {
   }, []);
 
   // Client-side search + filtering over the loaded JSON data
-  const filteredChangelogs = changelogs.filter((cl) => {
-    const matchApp = selectedAppId ? cl.appId === selectedAppId : true;
-    const matchType = filterType === "all" ? true : cl.type === filterType;
-    const q = searchQuery.toLowerCase().trim();
-    const matchSearch =
-      q === "" ||
-      cl.title.toLowerCase().includes(q) ||
-      cl.description.toLowerCase().includes(q) ||
-      cl.appName.toLowerCase().includes(q) ||
-      cl.version.toLowerCase().includes(q) ||
-      cl.author.name.toLowerCase().includes(q) ||
-      cl.tags.some((t) => t.toLowerCase().includes(q));
+  const filteredChangelogs = changelogs
+    .filter((cl) => {
+      const matchApp = selectedAppId ? cl.appId === selectedAppId : true;
+      const matchType = filterType === "all" ? true : cl.type === filterType;
+      const q = searchQuery.toLowerCase().trim();
+      const matchSearch =
+        q === "" ||
+        cl.title.toLowerCase().includes(q) ||
+        cl.description.toLowerCase().includes(q) ||
+        cl.appName.toLowerCase().includes(q) ||
+        cl.version.toLowerCase().includes(q) ||
+        cl.author.name.toLowerCase().includes(q) ||
+        cl.tags.some((t) => t.toLowerCase().includes(q));
 
-    return matchApp && matchType && matchSearch;
-  });
+      return matchApp && matchType && matchSearch;
+    })
+    .sort((a, b) => {
+      const diff = new Date(a.date).getTime() - new Date(b.date).getTime();
+      return sortOrder === "oldest" ? diff : -diff;
+    });
 
   const selectedAppObj = apps.find((a) => a.id === selectedAppId);
 
@@ -436,6 +443,19 @@ export default function App() {
                   );
                 })}
               </div>
+            </div>
+
+            {/* Sort order toggle row: oldest (default) <-> latest */}
+            <div className="flex items-center justify-end">
+              <button
+                id="sort-order-toggle"
+                onClick={() => setSortOrder((prev) => (prev === "oldest" ? "latest" : "oldest"))}
+                title={sortOrder === "oldest" ? "Showing oldest first — switch to latest" : "Showing latest first — switch to oldest"}
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition cursor-pointer bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 shadow-xs"
+              >
+                <ArrowUpDown className="h-3 w-3" />
+                <span>Sort: {sortOrder === "oldest" ? "Oldest First" : "Latest First"}</span>
+              </button>
             </div>
 
             {/* Error notifications */}

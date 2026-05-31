@@ -84,20 +84,23 @@
     {
       "appId": "curriculum",
       "appName": "Curriculum",
-      "title": "3DP1 - Cura Slicer Basics",
-      "description": "The highly requested Startup Builder track is officially live!\n\nWe worked directly with top venture studio partners to assemble **8 hyper-practical interactive lessons** to guide you from problem discovery to your first $10k in ARR.\n\n### Core Modules Added:\n1. **The Youth Edge**: Finding arbitrage opportunities as student builders.\n2. **Landing Your First 10 Customers**: Tactical cold outreach playbooks.\n3. **No-Code Backends**: Launching dynamic websites without writing custom database layers.\n4. **The Cap Table Sim**: Interactive slider matching founder divisions.\n\n*Complete all modules to unlock the **Cap-Table Wizard Badge** in your User Portal!*",
-      "date": "2026-05-27T10:15:00Z",
+      "title": "Cura Slicer Basics -  New Course Model (3DP1)",
+      "description": "Cura Slicer Basics is now split into two **1-hour sessions**, giving students room to learn the tool and then put it to work on a realistic job.\n\n### Session 1: Hands-On Slicer Lesson\nOur existing hands-on lesson on how to use the **Ultimaker Cura Slicer** application. Students get comfortable navigating the software and preparing a model to print.\n\n### Session 2: Challenges & Estimating\nThis new session introduces real-world challenges and provides students with a **template for producing an estimate**. The instructor plays the role of a client or customer and makes three requests. For each one, the student will:\n1. **Find a model** that fits the request.\n2. **Get the customer's approval** on the model.\n3. **Write up the estimate** using the provided template.\n4. **Confirm the price** with the customer.\n5. **Print the file**.",
+      "date": "2026-05-20T10:15:00Z",
       "version": "v2.1.0",
       "type": "major",
       "author": {
-        "name": "Alex Patel",
+        "name": "Ryan Jones",
         "role": "Head of Education",
         "avatarUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80"
       },
       "tags": [
         "curriculum",
         "lessons",
-        "education"
+        "education",
+        "3dp1",
+        "3d printing",
+        "cura slicer"
       ]
     },
     {
