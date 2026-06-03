@@ -7,6 +7,7 @@ import {
   GitCompare,
   GraduationCap,
   Briefcase,
+  FlaskConical,
   Search,
   Bell,
   Activity,
@@ -37,7 +38,8 @@ const ICON_MAP: Record<string, any> = {
   BookOpen,
   GitCompare,
   GraduationCap,
-  Briefcase
+  Briefcase,
+  FlaskConical
 };
 
 // Helper to get matching clean design colors for each app
@@ -84,6 +86,13 @@ const getAppThemeColors = (appId: string | null) => {
         icon: "text-indigo-500",
         bg: "bg-indigo-50/70",
         borderClass: "border-indigo-500"
+      };
+    case "fun-labs":
+      return {
+        text: "text-fuchsia-700",
+        icon: "text-fuchsia-500",
+        bg: "bg-fuchsia-50/70",
+        borderClass: "border-fuchsia-500"
       };
     default:
       return {

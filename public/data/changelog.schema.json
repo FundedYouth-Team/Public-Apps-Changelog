@@ -40,8 +40,8 @@
         "description": { "type": "string" },
         "icon": {
           "type": "string",
-          "description": "Lucide icon name. Supported by the sidebar: Globe, User, ShieldAlert, BookOpen, GraduationCap, Briefcase.",
-          "examples": ["Globe", "User", "ShieldAlert", "BookOpen", "GraduationCap", "Briefcase"]
+          "description": "Lucide icon name. Supported by the sidebar: Globe, User, ShieldAlert, BookOpen, GitCompare, GraduationCap, Briefcase, FlaskConical.",
+          "examples": ["Globe", "User", "ShieldAlert", "BookOpen", "GitCompare", "GraduationCap", "Briefcase", "FlaskConical"]
         },
         "color": {
           "type": "string",

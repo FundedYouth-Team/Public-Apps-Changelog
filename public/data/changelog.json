@@ -22,7 +22,7 @@
       "icon": "User",
       "color": "from-pink-500 to-rose-500",
       "status": "active",
-      "currentVersion": "v3.1.2"
+      "currentVersion": "v3.2.0"
     },
     {
       "id": "the-vault",
@@ -52,16 +52,63 @@
       "currentVersion": "v1.12.3"
     },
     {
-      "id": "changelog",
-      "name": "Changelog",
-      "description": "This ecosystem software updates and community release log",
-      "icon": "GitCompare",
-      "color": "from-gray-500 to-gray-900",
+      "id": "fun-labs",
+      "name": "Fun Labs",
+      "description": "Our experimental playground — a peek at future projects and the smaller side builds we're tinkering with.",
+      "icon": "FlaskConical",
+      "color": "from-fuchsia-500 to-pink-500",
       "status": "beta",
-      "currentVersion": "v0.9.5"
+      "currentVersion": "v1.0.0"
     }
   ],
   "updates": [
+    {
+      "appId": "fun-labs",
+      "appName": "Fun Labs",
+      "title": "🚀 Introducing the App Launcher",
+      "description": "Say hello to the **App Launcher** — a friendly home base for the makerspace computers that puts everything one click away! 🧪\n\n### What Is It?\nThe App Launcher is a shortcut landing page that runs **locally on the makerspace computers**. Instead of hunting through bookmarks and desktop icons, you get one tidy launchpad with cards for every app and service you need.\n\n### What's On the Launchpad\n* **🛠️ FundedYouth Apps**: Quick-launch cards for the apps we build in-house.\n* **🔌 Services We Use**: Handy shortcuts to the third-party tools and services that power the makerspace.\n\n### Why It's Handy\nWalk up to any makerspace computer and get to work in seconds — no more digging for the right link.",
+      "date": "2026-06-03T17:00:00Z",
+      "version": "v1.0.0",
+      "type": "major",
+      "author": {
+        "name": "Ryan Jones",
+        "role": "Lead Developer and Designer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+      },
+      "tags": [
+        "fun labs",
+        "app launcher",
+        "makerspace",
+        "shortcuts",
+        "local",
+        "experimental"
+      ]
+    },
+    {
+      "appId": "user-portal",
+      "appName": "User Portal",
+      "title": "🛒 POS Integration: Buy, Subscribe & Enroll In Person",
+      "description": "Our new **Point of Sale (POS) integration** brings the full power of the User Portal to the front desk — so members can get set up in person, no laptop required! 🎉\n\n### What's New\n* **💰 Buy FYBIT Credits**: Purchase FYBIT Credits right at the POS and start using them on the spot.\n* **🎟️ Manage Memberships**: Sign up for and handle membership subscriptions in person, handled directly through the POS.\n* **📚 Enroll On the Spot**: Register students for **courses, workshops, and class sessions** without leaving the counter.\n\n### Why It Matters\nWhether you're joining at an event or stopping by onsite, getting started is now faster and easier than ever — buy credits, pick a membership, and lock in your classes all in one place.",
+      "date": "2026-06-03T16:00:00Z",
+      "version": "v3.2.0",
+      "type": "major",
+      "author": {
+        "name": "Ryan Jones",
+        "role": "Lead Product Engineer & Designer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+      },
+      "tags": [
+        "user",
+        "portal",
+        "pos",
+        "point of sale",
+        "fybit",
+        "membership",
+        "courses",
+        "workshops",
+        "registration"
+      ]
+    },
     {
       "appId": "the-vault",
       "appName": "The Vault",
@@ -236,8 +283,8 @@
       ]
     },
     {
-      "appId": "changelog",
-      "appName": "Changelog",
+      "appId": "fun-labs",
+      "appName": "Fun Labs",
       "title": "🎉 The Changelog App is Live!",
       "description": "Say hello to our brand-new **Changelog App** — your one-stop spot to see everything FundedYouth is building! 🚀\n\n### What You Can Do\n* **🔍 See the Latest**: Browse all our newest changes, fixes, and projects in one place.\n* **📬 Subscribe to the Feed**: Never miss an update — follow along with our RSS feed.\n* **👋 Follow Us**: Stay connected on social media or sign up to get updates by email.\n\n### Stay in the Loop\nThis is your window into everything we're working on. Check back often to see what's new!",
       "date": "2026-05-31T12:00:00Z",

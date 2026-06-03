@@ -7,6 +7,42 @@
   <language>en-us</language>
   <atom:link href="https://changelog.fundedyouth.org/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>[Fun Labs] 🚀 Introducing the App Launcher</title>
+    <link>https://changelog.fundedyouth.org/?app=fun-labs&amp;update=fun-labs-1780506000000</link>
+    <guid>https://changelog.fundedyouth.org/update/fun-labs-1780506000000</guid>
+    <pubDate>Wed, 03 Jun 2026 17:00:00 GMT</pubDate>
+    <description>Say hello to the **App Launcher** — a friendly home base for the makerspace computers that puts everything one click away! 🧪
+
+### What Is It?
+The App Launcher is a shortcut landing page that runs **locally on the makerspace computers**. Instead of hunting through bookmarks and desktop icons, you get one tidy launchpad with cards for every app and service you need.
+
+### What&apos;s On the Launchpad
+* **🛠️ FundedYouth Apps**: Quick-launch cards for the apps we build in-house.
+* **🔌 Services We Use**: Handy shortcuts to the third-party tools and services that power the makerspace.
+
+### Why It&apos;s Handy
+Walk up to any makerspace computer and get to work in seconds — no more digging for the right link.</description>
+    <author>Ryan Jones</author>
+    <category>major</category>
+  </item>
+  <item>
+    <title>[User Portal] 🛒 POS Integration: Buy, Subscribe &amp; Enroll In Person</title>
+    <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1780502400000</link>
+    <guid>https://changelog.fundedyouth.org/update/user-portal-1780502400000</guid>
+    <pubDate>Wed, 03 Jun 2026 16:00:00 GMT</pubDate>
+    <description>Our new **Point of Sale (POS) integration** brings the full power of the User Portal to the front desk — so members can get set up in person, no laptop required! 🎉
+
+### What&apos;s New
+* **💰 Buy FYBIT Credits**: Purchase FYBIT Credits right at the POS and start using them on the spot.
+* **🎟️ Manage Memberships**: Sign up for and handle membership subscriptions in person, handled directly through the POS.
+* **📚 Enroll On the Spot**: Register students for **courses, workshops, and class sessions** without leaving the counter.
+
+### Why It Matters
+Whether you&apos;re joining at an event or stopping by onsite, getting started is now faster and easier than ever — buy credits, pick a membership, and lock in your classes all in one place.</description>
+    <author>Ryan Jones</author>
+    <category>major</category>
+  </item>
+  <item>
     <title>[The Vault] New App in Development</title>
     <link>https://changelog.fundedyouth.org/?app=the-vault&amp;update=the-vault-1780151400000</link>
     <guid>https://changelog.fundedyouth.org/update/the-vault-1780151400000</guid>
@@ -53,59 +89,135 @@ This new session introduces real-world challenges and provides students with a *
     <category>major</category>
   </item>
   <item>
+    <title>[Curriculum] New Course: Bambu Studio Basics (3DP2)</title>
+    <link>https://changelog.fundedyouth.org/?app=curriculum&amp;update=curriculum-1779358500000</link>
+    <guid>https://changelog.fundedyouth.org/update/curriculum-1779358500000</guid>
+    <pubDate>Thu, 21 May 2026 10:15:00 GMT</pubDate>
+    <description>A brand-new course has landed! **Bambu Studio Basics (3DP2)** is here, and just like 3DP1, it&apos;s split into two fun **1-hour sessions**. 🎉
+
+*Heads up: You&apos;ll need to finish the **3DP1 course** first before jumping into this one!*
+
+### Session 1: Learning the Tools
+Get hands-on with the **Bambu Studio** app! This first class walks you through all the basic tools so you feel comfortable getting your models ready to print.
+
+### Session 2: Making a Cost Estimate
+Want to sell your prints? This class teaches you how to make a real cost estimate through three fun challenges. The instructor plays the role of a client and asks for three different items. For each one, you&apos;ll:
+1. **Find something** the customer wants.
+2. **Produce an estimate** for the job.
+3. **Get the customer&apos;s confirmation**.
+4. **Take the payment**.
+5. **Print the product**.
+6. **Present it** to the customer.</description>
+    <author>Ryan Jones</author>
+    <category>major</category>
+  </item>
+  <item>
+    <title>[Curriculum] Updated Course: TinkerCAD 3D Modeling (3DM1)</title>
+    <link>https://changelog.fundedyouth.org/?app=curriculum&amp;update=curriculum-1779444900000</link>
+    <guid>https://changelog.fundedyouth.org/update/curriculum-1779444900000</guid>
+    <pubDate>Fri, 22 May 2026 10:15:00 GMT</pubDate>
+    <description>We&apos;ve leveled up our **TinkerCAD 3D Modeling (3DM1)** course! 🎉 It now includes a brand-new **Cost Estimate document** to help students learn how to figure out the time and cost of making 3D models.
+
+*Good news: there are **no prerequisites** for this course — anyone can jump right in!*
+
+### How It Works
+The course is split into two **1-hour sessions**, and it&apos;s **100% hands-on**. Every lesson builds on the one before it, and you&apos;ll always be modeling something brand-new!
+
+### What You&apos;ll Do
+* **🛠️ Two Modeling Lessons Per Class**: Each session is packed with two hands-on modeling lessons.
+* **📐 Learn to Estimate**: Discover how to calculate the time and cost to produce your 3D models.
+* **🚀 Build As You Go**: Each lesson grows your skills so you keep getting better and better.</description>
+    <author>Ryan Jones</author>
+    <category>minor</category>
+  </item>
+  <item>
+    <title>[Curriculum] 💻 New Course: Coding with SpriteLab (CDE1)</title>
+    <link>https://changelog.fundedyouth.org/?app=curriculum&amp;update=curriculum-1779531300000</link>
+    <guid>https://changelog.fundedyouth.org/update/curriculum-1779531300000</guid>
+    <pubDate>Sat, 23 May 2026 10:15:00 GMT</pubDate>
+    <description>Get ready to code! **Coding with SpriteLab (CDE1)** by Code.org is our newest course — and it&apos;s included in your membership at **no extra charge**! 🎉
+
+### What to Expect
+This is a fun, three-part course made up of three **1-hour sessions**. It covers all the basic terminology and skills to get you ready for hands-on challenges and real-world scenarios.
+
+### Where It Takes You
+This course is your launchpad! It prepares you for bigger adventures in:
+* **🌐 Web App Development**
+* **📡 IoT (Internet of Things)**
+* **🔌 Embedded Design**
+* **✨ And so much more!**
+
+Start here and build the foundation for an awesome coding journey!</description>
+    <author>Ryan Jones</author>
+    <category>major</category>
+  </item>
+  <item>
     <title>[User Portal] User Portal is Live</title>
     <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1779820800000</link>
     <guid>https://changelog.fundedyouth.org/update/user-portal-1779820800000</guid>
     <pubDate>Tue, 26 May 2026 18:40:00 GMT</pubDate>
-    <description>Your Member Profile page got a glow up! We&apos;ve heard you loud and clear: builders want a dark midnight aesthetic to code in comfort during those 2 AM sessions.
+    <description>The User Portal is officially live, and you can sign up to become a member today! Getting started is quick and easy.
 
-### New Additions
-* **Midnight Carbon Palette**: Soft, mathematically accurate contrast ratios for long-night builders.
-* **Achievements Showcase Grid**: See your unlocked badges (including the new Cap-Table Wizard Badge!).
-* **Live Venture Stats Widget**: Watch your FundedPoints accrue dynamically based on community engagement.</description>
-    <author>Marcus Aurelio</author>
-    <category>minor</category>
+### How to Get Started
+* **Create an account**: Sign up and confirm your email to unlock the portal.
+* **Buy credits &amp; subscribe**: Grab some credits and pick your membership.
+* **Use your benefits**: Join the free classes that come with the basic membership.
+* **Spend your FYBIT credits**: Trade them for filament or kick off a 3D print!
+
+### Need a Little Help?
+* **Watch our videos**: Follow along with our [YouTube tutorials](https://www.youtube.com/watch?v=E8rDILmQb6M&amp;list=PLqD3DJZs3fm57yyM-hkpIi_3VOyoYxDxx).
+* **Read the guide**: Check out our [Getting Started page](https://fundedyouth.org/get-started).</description>
+    <author>Ryan Jones</author>
+    <category>major</category>
   </item>
   <item>
-    <title>[Public Site] 🔒 Security Hotfix - Safeguarding Newsletter Form Entrances</title>
+    <title>[Public Site] 🚀 A Brand-New Public Site!</title>
     <link>https://changelog.fundedyouth.org/?app=public-site&amp;update=public-site-1779699600000</link>
     <guid>https://changelog.fundedyouth.org/update/public-site-1779699600000</guid>
     <pubDate>Mon, 25 May 2026 09:00:00 GMT</pubDate>
-    <description>We identified and patched a minor vulnerability related to input sanitization on our public footer newsletter capture.
+    <description>We gave our **Public Site** a complete makeover from top to bottom! 🎨
 
-### Key Details
-* **Vulnerability type**: Form rate-abuse and cross-site scripting risks during peak traffic times.
-* **Resolution**: Added cryptographic Cloudflare Turnstile guards and complete server-side input stripping.
-* **Impact**: Zero records were exposed; this is a preventative security hardening measure.</description>
-    <author>Tasha Chen</author>
-    <category>security</category>
+### What&apos;s New
+* **✨ Fresh Design**: A clean, modern look that&apos;s easier and more fun to use.
+* **🎯 New Focus**: We&apos;re shining a spotlight on the [**FundedYouth Portal**](https://portal.fundedyouth.org), our STEM classes, and all the awesome services we offer.
+* **📅 Live Schedule**: A brand-new live schedule connected right to the Portal, so you always know what&apos;s happening next.
+
+### Become a Member
+Our new site makes it super easy to **join and unlock great benefits**. Come explore everything FundedYouth has to offer!</description>
+    <author>Ryan Jones</author>
+    <category>major</category>
   </item>
   <item>
-    <title>[Docs] 📖 Added &apos;Building with AI&apos; SDK Reference Manual</title>
+    <title>[Docs] 📖 A Fresh New Look for Our Docs!</title>
     <link>https://changelog.fundedyouth.org/?app=docs&amp;update=docs-1779636600000</link>
     <guid>https://changelog.fundedyouth.org/update/docs-1779636600000</guid>
     <pubDate>Sun, 24 May 2026 15:30:00 GMT</pubDate>
-    <description>Our developer docs now contain extensive recipes for integrating LLM features safely inside Sandbox environments.
+    <description>We gave [**docs.fundedyouth.org**](https://docs.fundedyouth.org) a brand-new look and feel to make finding answers easier than ever! ✨
 
-### Contents:
-* **LLM Hook Templates**: Plug-and-play code snippets for initializing your model client.
-* **Usage Limits Monitor API**: Avoid running over developer quotas when sandbox prototyping.
-* **Web-Safe Keys Guidelines**: Best practices for proxying API calls to prevent leakages.</description>
-    <author>Sarah Jenkins</author>
+### What&apos;s New
+* **🧭 Easier Navigation**: We split everything into clear sections so you can find what you need fast — **Getting Started**, **FYBIT Credits**, **Courses**, **Portal**, **Legal**, and **Technical Details**.
+* **🎨 Prettier Courses Pages**: We added custom formatting to the Courses pages, so they&apos;re cleaner and more fun to read.
+
+### Take a Look
+Come explore the new and improved docs — everything you need to know, all in one tidy place!</description>
+    <author>Ryan Jones</author>
     <category>patch</category>
   </item>
   <item>
-    <title>[Partner Hub] 🤝 High-School Startup Investor Board Launch (Beta)</title>
-    <link>https://changelog.fundedyouth.org/?app=partner-network&amp;update=partner-network-1779447600000</link>
-    <guid>https://changelog.fundedyouth.org/update/partner-network-1779447600000</guid>
-    <pubDate>Fri, 22 May 2026 11:00:00 GMT</pubDate>
-    <description>We&apos;ve soft-launched our specialized Venture Board! Eligible teen founders can now upload safe executive summaries to showcase to registered micro-VC funds.
+    <title>[Fun Labs] 🎉 The Changelog App is Live!</title>
+    <link>https://changelog.fundedyouth.org/?app=fun-labs&amp;update=fun-labs-1780228800000</link>
+    <guid>https://changelog.fundedyouth.org/update/fun-labs-1780228800000</guid>
+    <pubDate>Sun, 31 May 2026 12:00:00 GMT</pubDate>
+    <description>Say hello to our brand-new **Changelog App** — your one-stop spot to see everything FundedYouth is building! 🚀
 
-### How it works:
-1. Complete your pitch summary in the **User Portal**.
-2. Push your summary directly to the **Partner Hub** and set tags like &apos;Fintech&apos;, &apos;AI&apos;, or &apos;SaaS&apos;.
-3. Registered, vet-checked investors can request introduction calls with high-potential FundedYouth projects.</description>
-    <author>Elijah Vance</author>
+### What You Can Do
+* **🔍 See the Latest**: Browse all our newest changes, fixes, and projects in one place.
+* **📬 Subscribe to the Feed**: Never miss an update — follow along with our RSS feed.
+* **👋 Follow Us**: Stay connected on social media or sign up to get updates by email.
+
+### Stay in the Loop
+This is your window into everything we&apos;re working on. Check back often to see what&apos;s new!</description>
+    <author>Ryan Jones</author>
     <category>minor</category>
   </item>
 </channel>
