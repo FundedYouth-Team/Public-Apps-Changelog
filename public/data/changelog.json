@@ -91,7 +91,7 @@
       "description": "Our new **Point of Sale (POS) integration** brings the full power of the User Portal to the front desk — so members can get set up in person, no laptop required! 🎉\n\n### What's New\n* **💰 Buy FYBIT Credits**: Purchase FYBIT Credits right at the POS and start using them on the spot.\n* **🎟️ Manage Memberships**: Sign up for and handle membership subscriptions in person, handled directly through the POS.\n* **📚 Enroll On the Spot**: Register students for **courses, workshops, and class sessions** without leaving the counter.\n\n### Why It Matters\nWhether you're joining at an event or stopping by onsite, getting started is now faster and easier than ever — buy credits, pick a membership, and lock in your classes all in one place.",
       "date": "2026-06-03T16:00:00Z",
       "version": "v3.2.0",
-      "type": "major",
+      "type": "minor",
       "author": {
         "name": "Ryan Jones",
         "role": "Lead Product Engineer & Designer",
