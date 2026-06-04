@@ -22,7 +22,7 @@
       "icon": "User",
       "color": "from-pink-500 to-rose-500",
       "status": "active",
-      "currentVersion": "v3.4.0"
+      "currentVersion": "v4.0.0"
     },
     {
       "id": "the-vault",
@@ -62,6 +62,31 @@
     }
   ],
   "updates": [
+    {
+      "appId": "user-portal",
+      "appName": "User Portal",
+      "title": "🏪 Storefront POS: In-Person Account Creation & Sign-Ups",
+      "description": "The **Storefront POS** in the Admin Portal just got a major upgrade — making it possible to get members fully set up in person! 🎉\n\n### What's New\n* **👤 Built-In Account Creation**: The new account creation process is now integrated right into the POS. Register a **single user** or sign up as a **parent or guardian** for a child — complete with our **concatenated email** feature.\n* **✍️ Sign Agreements In Person**: All required agreements can now be signed on the spot at the storefront.\n\n### The Big Win\n**98% of account creation and class registration** can now happen entirely through the Storefront POS. The only thing left for the user to do is click the **email confirmations** — one to confirm their new account, and the **parental agreement** for COPPA compliance.",
+      "date": "2026-06-04T18:00:00Z",
+      "version": "v4.0.0",
+      "type": "major",
+      "author": {
+        "name": "Ryan Jones",
+        "role": "Lead Product Engineer & Designer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+      },
+      "tags": [
+        "user",
+        "portal",
+        "storefront",
+        "pos",
+        "point of sale",
+        "account creation",
+        "registration",
+        "agreements",
+        "coppa"
+      ]
+    },
     {
       "appId": "user-portal",
       "appName": "User Portal",

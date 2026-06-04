@@ -6,6 +6,31 @@
   "description": "Hype updates, releases, and fixes from the FundedYouth developers.",
   "items": [
     {
+      "id": "user-portal-1780596000000",
+      "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1780596000000",
+      "title": "[User Portal] 🏪 Storefront POS: In-Person Account Creation & Sign-Ups",
+      "content_text": "The **Storefront POS** in the Admin Portal just got a major upgrade — making it possible to get members fully set up in person! 🎉\n\n### What's New\n* **👤 Built-In Account Creation**: The new account creation process is now integrated right into the POS. Register a **single user** or sign up as a **parent or guardian** for a child — complete with our **concatenated email** feature.\n* **✍️ Sign Agreements In Person**: All required agreements can now be signed on the spot at the storefront.\n\n### The Big Win\n**98% of account creation and class registration** can now happen entirely through the Storefront POS. The only thing left for the user to do is click the **email confirmations** — one to confirm their new account, and the **parental agreement** for COPPA compliance.",
+      "date_published": "2026-06-04T18:00:00Z",
+      "tags": [
+        "major",
+        "user",
+        "portal",
+        "storefront",
+        "pos",
+        "point of sale",
+        "account creation",
+        "registration",
+        "agreements",
+        "coppa"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
       "id": "user-portal-1780585200000",
       "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1780585200000",
       "title": "[User Portal] ✨ Refreshed Account Creation & Registration",
