@@ -7,6 +7,22 @@
   <language>en-us</language>
   <atom:link href="https://changelog.fundedyouth.org/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>[User Portal] ✨ Refreshed Account Creation &amp; Registration</title>
+    <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1780585200000</link>
+    <guid>https://changelog.fundedyouth.org/update/user-portal-1780585200000</guid>
+    <pubDate>Thu, 04 Jun 2026 15:00:00 GMT</pubDate>
+    <description>We&apos;ve updated the **landing page** to make creating an account and getting registered smoother than ever! 🎉
+
+### What Changed
+* **🙌 Clearer Account Creation**: A cleaner, more intuitive sign-up flow right from the landing page.
+* **📝 Streamlined Registration**: We tidied up the registration process so getting started takes fewer steps and less guesswork.
+
+### Why It Matters
+New members can go from landing on the page to fully registered faster and with less friction.</description>
+    <author>Ryan Jones</author>
+    <category>minor</category>
+  </item>
+  <item>
     <title>[User Portal] 📅 User Registration V2</title>
     <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1780563600000</link>
     <guid>https://changelog.fundedyouth.org/update/user-portal-1780563600000</guid>

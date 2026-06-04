@@ -6,6 +6,28 @@
   "description": "Hype updates, releases, and fixes from the FundedYouth developers.",
   "items": [
     {
+      "id": "user-portal-1780585200000",
+      "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1780585200000",
+      "title": "[User Portal] ✨ Refreshed Account Creation & Registration",
+      "content_text": "We've updated the **landing page** to make creating an account and getting registered smoother than ever! 🎉\n\n### What Changed\n* **🙌 Clearer Account Creation**: A cleaner, more intuitive sign-up flow right from the landing page.\n* **📝 Streamlined Registration**: We tidied up the registration process so getting started takes fewer steps and less guesswork.\n\n### Why It Matters\nNew members can go from landing on the page to fully registered faster and with less friction.",
+      "date_published": "2026-06-04T15:00:00Z",
+      "tags": [
+        "minor",
+        "user",
+        "portal",
+        "landing page",
+        "account creation",
+        "registration",
+        "onboarding"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
       "id": "user-portal-1780563600000",
       "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1780563600000",
       "title": "[User Portal] 📅 User Registration V2",
