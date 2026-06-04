@@ -6,6 +6,30 @@
   "description": "Hype updates, releases, and fixes from the FundedYouth developers.",
   "items": [
     {
+      "id": "user-portal-1780563600000",
+      "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1780563600000",
+      "title": "[User Portal] 📅 User Registration V2",
+      "content_text": "We've cleaned up class registration and moved everything into the **Sessions Menu** — so signing up for your courses and classes is simpler than ever! 🎉\n\n### How It Works\n* **🎯 Pick a Course**: Select **Available Courses** to join a course. This reveals the upcoming classes available for that course.\n* **🗓️ Register for Same-Day Classes**: You can now register for two class sessions on the same day! Just sign up for **Class A** at, say, 4 PM and **Class B** at 5 PM (or any later time). That way you complete the course classes in the correct order.\n\n### Smart Prerequisites\nAvailable Courses only show up once you **meet the prerequisites**. So if you haven't finished **Course A**, you won't be able to join **Course B** or its class sessions — it stays hidden on your portal calendar until you're ready.",
+      "date_published": "2026-06-04T09:00:00Z",
+      "tags": [
+        "minor",
+        "user",
+        "portal",
+        "registration",
+        "courses",
+        "classes",
+        "sessions",
+        "prerequisites",
+        "calendar"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
       "id": "fun-labs-1780506000000",
       "url": "https://changelog.fundedyouth.org/?app=fun-labs&update=fun-labs-1780506000000",
       "title": "[Fun Labs] 🚀 Introducing the App Launcher",
@@ -34,7 +58,7 @@
       "content_text": "Our new **Point of Sale (POS) integration** brings the full power of the User Portal to the front desk — so members can get set up in person, no laptop required! 🎉\n\n### What's New\n* **💰 Buy FYBIT Credits**: Purchase FYBIT Credits right at the POS and start using them on the spot.\n* **🎟️ Manage Memberships**: Sign up for and handle membership subscriptions in person, handled directly through the POS.\n* **📚 Enroll On the Spot**: Register students for **courses, workshops, and class sessions** without leaving the counter.\n\n### Why It Matters\nWhether you're joining at an event or stopping by onsite, getting started is now faster and easier than ever — buy credits, pick a membership, and lock in your classes all in one place.",
       "date_published": "2026-06-03T16:00:00Z",
       "tags": [
-        "major",
+        "minor",
         "user",
         "portal",
         "pos",

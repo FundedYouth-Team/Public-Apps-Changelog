@@ -7,6 +7,22 @@
   <language>en-us</language>
   <atom:link href="https://changelog.fundedyouth.org/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>[User Portal] 📅 User Registration V2</title>
+    <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1780563600000</link>
+    <guid>https://changelog.fundedyouth.org/update/user-portal-1780563600000</guid>
+    <pubDate>Thu, 04 Jun 2026 09:00:00 GMT</pubDate>
+    <description>We&apos;ve cleaned up class registration and moved everything into the **Sessions Menu** — so signing up for your courses and classes is simpler than ever! 🎉
+
+### How It Works
+* **🎯 Pick a Course**: Select **Available Courses** to join a course. This reveals the upcoming classes available for that course.
+* **🗓️ Register for Same-Day Classes**: You can now register for two class sessions on the same day! Just sign up for **Class A** at, say, 4 PM and **Class B** at 5 PM (or any later time). That way you complete the course classes in the correct order.
+
+### Smart Prerequisites
+Available Courses only show up once you **meet the prerequisites**. So if you haven&apos;t finished **Course A**, you won&apos;t be able to join **Course B** or its class sessions — it stays hidden on your portal calendar until you&apos;re ready.</description>
+    <author>Ryan Jones</author>
+    <category>minor</category>
+  </item>
+  <item>
     <title>[Fun Labs] 🚀 Introducing the App Launcher</title>
     <link>https://changelog.fundedyouth.org/?app=fun-labs&amp;update=fun-labs-1780506000000</link>
     <guid>https://changelog.fundedyouth.org/update/fun-labs-1780506000000</guid>
@@ -40,7 +56,7 @@ Walk up to any makerspace computer and get to work in seconds — no more diggin
 ### Why It Matters
 Whether you&apos;re joining at an event or stopping by onsite, getting started is now faster and easier than ever — buy credits, pick a membership, and lock in your classes all in one place.</description>
     <author>Ryan Jones</author>
-    <category>major</category>
+    <category>minor</category>
   </item>
   <item>
     <title>[The Vault] New App in Development</title>

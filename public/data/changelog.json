@@ -22,7 +22,7 @@
       "icon": "User",
       "color": "from-pink-500 to-rose-500",
       "status": "active",
-      "currentVersion": "v3.2.0"
+      "currentVersion": "v3.3.0"
     },
     {
       "id": "the-vault",
@@ -62,6 +62,30 @@
     }
   ],
   "updates": [
+    {
+      "appId": "user-portal",
+      "appName": "User Portal",
+      "title": "📅 User Registration V2",
+      "description": "We've cleaned up class registration and moved everything into the **Sessions Menu** — so signing up for your courses and classes is simpler than ever! 🎉\n\n### How It Works\n* **🎯 Pick a Course**: Select **Available Courses** to join a course. This reveals the upcoming classes available for that course.\n* **🗓️ Register for Same-Day Classes**: You can now register for two class sessions on the same day! Just sign up for **Class A** at, say, 4 PM and **Class B** at 5 PM (or any later time). That way you complete the course classes in the correct order.\n\n### Smart Prerequisites\nAvailable Courses only show up once you **meet the prerequisites**. So if you haven't finished **Course A**, you won't be able to join **Course B** or its class sessions — it stays hidden on your portal calendar until you're ready.",
+      "date": "2026-06-04T09:00:00Z",
+      "version": "v3.3.0",
+      "type": "minor",
+      "author": {
+        "name": "Ryan Jones",
+        "role": "Lead Product Engineer & Designer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+      },
+      "tags": [
+        "user",
+        "portal",
+        "registration",
+        "courses",
+        "classes",
+        "sessions",
+        "prerequisites",
+        "calendar"
+      ]
+    },
     {
       "appId": "fun-labs",
       "appName": "Fun Labs",
