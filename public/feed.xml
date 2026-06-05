@@ -7,6 +7,96 @@
   <language>en-us</language>
   <atom:link href="https://changelog.fundedyouth.org/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>[User Portal] 📝 Simpler Sign-Up: Account Types &amp; One Combined Agreement</title>
+    <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1780675200000</link>
+    <guid>https://changelog.fundedyouth.org/update/user-portal-1780675200000</guid>
+    <pubDate>Fri, 05 Jun 2026 16:00:00 GMT</pubDate>
+    <description>We&apos;ve streamlined how you create your account and sign agreements — so getting started is quicker and clearer! 🎉
+
+### Choose Your Account Type
+* **👤 Personal Account**: Register as a single user.
+* **👨‍👩‍👧 Multi-Child Account**: Register as a parent or guardian for your children. For each child, we automatically create a custom email from your address and the student&apos;s name — so you still receive every confirmation. Example: `&lt;your-email&gt;+&lt;student-name&gt;@example.com`.
+
+### One Agreement Instead of Three
+* **📄 Combined Agreement**: We merged the **General**, **Student**, and **Subscription** agreements into one. Now the only things you sign at registration are the **parental agreement** and this **new combined agreement** — which unlocks the entire portal, including the student menus.
+* **✅ Already Signed?**: If you previously signed all three agreements, you&apos;ve been **automatically signed** to the new one — nothing to do.</description>
+    <author>Ryan Jones</author>
+    <category>minor</category>
+  </item>
+  <item>
+    <title>[User Portal] ☀️ New Summer Class Schedule</title>
+    <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1780671600000</link>
+    <guid>https://changelog.fundedyouth.org/update/user-portal-1780671600000</guid>
+    <pubDate>Fri, 05 Jun 2026 15:00:00 GMT</pubDate>
+    <description>Our summer schedule is here — with **three one-hour classes every day**! 🌞
+
+### Daily Class Times
+* **1:00 – 2:00 PM**
+* **2:00 – 3:00 PM**
+* **3:00 – 4:00 PM**
+
+Running **Monday through Friday**.
+
+### Rotating Courses by Day
+Entry-level courses are assigned by day — **Monday: 3DP1**, **Tuesday: 3DP2**, **Wednesday: 3DM1**, **Thursday: CDE1**. The Monday/Tuesday and Wednesday course days **alternate each week**, so check your portal calendar for the current week&apos;s lineup.</description>
+    <author>Ryan Jones</author>
+    <category>minor</category>
+  </item>
+  <item>
+    <title>[User Portal] 🛠️ Admin Portal: Sessions Databank &amp; Events Upgrades</title>
+    <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1780668000000</link>
+    <guid>https://changelog.fundedyouth.org/update/user-portal-1780668000000</guid>
+    <pubDate>Fri, 05 Jun 2026 14:00:00 GMT</pubDate>
+    <description>We&apos;ve polished the **Sessions** tools in the Admin Portal to make linking classes and events faster and clearer.
+
+### Databank Card View
+* **🧹 Simplified Cards**: A cleaner card view that surfaces the key information at a glance.
+* **🔗 Link Class to Event**: New field for linking a class directly to its event.
+* **🆔 Cleaner Layout**: Removed the ID prefix from the Event Name. The **ID pill** now sits under the description, followed by the category, then the **linked course** and **linked class**.
+* **⚡ Auto-Assign Event ID**: A new button auto-assigns the Event ID to the linked Class ID, plus an optional **Auto-Assign Event ID** toggle when a class is linked to an event.
+* **❗ Required Field**: Event ID is now a required field.
+
+### Events: From Template
+* **🔎 Richer Search**: The **From Template** search popup now includes **Event ID**, **Course ID**, and **Class ID**.</description>
+    <author>Ryan Jones</author>
+    <category>minor</category>
+  </item>
+  <item>
+    <title>[Public Site] 🔗 Changelog Link Added to the Footer</title>
+    <link>https://changelog.fundedyouth.org/?app=public-site&amp;update=public-site-1780662600000</link>
+    <guid>https://changelog.fundedyouth.org/update/public-site-1780662600000</guid>
+    <pubDate>Fri, 05 Jun 2026 12:30:00 GMT</pubDate>
+    <description>Finding out what we&apos;re building just got easier! We&apos;ve added a link to our **Changelog** (a Fun Labs project) right in the **site footer** — so the latest updates are always one click away.</description>
+    <author>Ryan Jones</author>
+    <category>patch</category>
+  </item>
+  <item>
+    <title>[Public Site] 📅 Updated Summer Class Schedule</title>
+    <link>https://changelog.fundedyouth.org/?app=public-site&amp;update=public-site-1780660800000</link>
+    <guid>https://changelog.fundedyouth.org/update/public-site-1780660800000</guid>
+    <pubDate>Fri, 05 Jun 2026 12:00:00 GMT</pubDate>
+    <description>We&apos;ve updated our weekly summer class schedule based on the most common requests we&apos;ve been hearing from you! 🌞
+
+### What Changed
+* **🕐 New Hours**: Classes now run **1:00 – 4:00 PM, Monday through Thursday**.
+* **📚 All Four Classes Weekly**: All four entry-level classes are now available **every week**.</description>
+    <author>Ryan Jones</author>
+    <category>minor</category>
+  </item>
+  <item>
+    <title>[Docs] 📄 Agreements Combined: The Portal Member Agreement</title>
+    <link>https://changelog.fundedyouth.org/?app=docs&amp;update=docs-1780657200000</link>
+    <guid>https://changelog.fundedyouth.org/update/docs-1780657200000</guid>
+    <pubDate>Fri, 05 Jun 2026 11:00:00 GMT</pubDate>
+    <description>We&apos;ve combined three separate agreements — **General**, **Student**, and **Subscription** — into a single **Portal Member Agreement**, streamlining the account creation process.
+
+### What This Means
+* **📝 One Agreement**: A single Portal Member Agreement replaces the previous three.
+* **⚡ Faster Sign-Up**: Fewer documents to read and sign means a quicker, simpler registration.</description>
+    <author>Ryan Jones</author>
+    <category>minor</category>
+  </item>
+  <item>
     <title>[User Portal] 🏪 Storefront POS: In-Person Account Creation &amp; Sign-Ups</title>
     <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1780596000000</link>
     <guid>https://changelog.fundedyouth.org/update/user-portal-1780596000000</guid>

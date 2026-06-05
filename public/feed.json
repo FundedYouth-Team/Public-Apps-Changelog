@@ -6,6 +6,139 @@
   "description": "Hype updates, releases, and fixes from the FundedYouth developers.",
   "items": [
     {
+      "id": "user-portal-1780675200000",
+      "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1780675200000",
+      "title": "[User Portal] 📝 Simpler Sign-Up: Account Types & One Combined Agreement",
+      "content_text": "We've streamlined how you create your account and sign agreements — so getting started is quicker and clearer! 🎉\n\n### Choose Your Account Type\n* **👤 Personal Account**: Register as a single user.\n* **👨‍👩‍👧 Multi-Child Account**: Register as a parent or guardian for your children. For each child, we automatically create a custom email from your address and the student's name — so you still receive every confirmation. Example: `<your-email>+<student-name>@example.com`.\n\n### One Agreement Instead of Three\n* **📄 Combined Agreement**: We merged the **General**, **Student**, and **Subscription** agreements into one. Now the only things you sign at registration are the **parental agreement** and this **new combined agreement** — which unlocks the entire portal, including the student menus.\n* **✅ Already Signed?**: If you previously signed all three agreements, you've been **automatically signed** to the new one — nothing to do.",
+      "date_published": "2026-06-05T16:00:00Z",
+      "tags": [
+        "minor",
+        "user",
+        "portal",
+        "account creation",
+        "registration",
+        "agreements",
+        "parent",
+        "guardian",
+        "coppa"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
+      "id": "user-portal-1780671600000",
+      "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1780671600000",
+      "title": "[User Portal] ☀️ New Summer Class Schedule",
+      "content_text": "Our summer schedule is here — with **three one-hour classes every day**! 🌞\n\n### Daily Class Times\n* **1:00 – 2:00 PM**\n* **2:00 – 3:00 PM**\n* **3:00 – 4:00 PM**\n\nRunning **Monday through Friday**.\n\n### Rotating Courses by Day\nEntry-level courses are assigned by day — **Monday: 3DP1**, **Tuesday: 3DP2**, **Wednesday: 3DM1**, **Thursday: CDE1**. The Monday/Tuesday and Wednesday course days **alternate each week**, so check your portal calendar for the current week's lineup.",
+      "date_published": "2026-06-05T15:00:00Z",
+      "tags": [
+        "minor",
+        "user",
+        "portal",
+        "schedule",
+        "summer",
+        "classes",
+        "3dp1",
+        "3dp2",
+        "3dm1",
+        "cde1"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
+      "id": "user-portal-1780668000000",
+      "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1780668000000",
+      "title": "[User Portal] 🛠️ Admin Portal: Sessions Databank & Events Upgrades",
+      "content_text": "We've polished the **Sessions** tools in the Admin Portal to make linking classes and events faster and clearer.\n\n### Databank Card View\n* **🧹 Simplified Cards**: A cleaner card view that surfaces the key information at a glance.\n* **🔗 Link Class to Event**: New field for linking a class directly to its event.\n* **🆔 Cleaner Layout**: Removed the ID prefix from the Event Name. The **ID pill** now sits under the description, followed by the category, then the **linked course** and **linked class**.\n* **⚡ Auto-Assign Event ID**: A new button auto-assigns the Event ID to the linked Class ID, plus an optional **Auto-Assign Event ID** toggle when a class is linked to an event.\n* **❗ Required Field**: Event ID is now a required field.\n\n### Events: From Template\n* **🔎 Richer Search**: The **From Template** search popup now includes **Event ID**, **Course ID**, and **Class ID**.",
+      "date_published": "2026-06-05T14:00:00Z",
+      "tags": [
+        "minor",
+        "admin",
+        "portal",
+        "sessions",
+        "databank",
+        "events",
+        "templates"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
+      "id": "public-site-1780662600000",
+      "url": "https://changelog.fundedyouth.org/?app=public-site&update=public-site-1780662600000",
+      "title": "[Public Site] 🔗 Changelog Link Added to the Footer",
+      "content_text": "Finding out what we're building just got easier! We've added a link to our **Changelog** (a Fun Labs project) right in the **site footer** — so the latest updates are always one click away.",
+      "date_published": "2026-06-05T12:30:00Z",
+      "tags": [
+        "patch",
+        "public",
+        "website",
+        "footer",
+        "changelog",
+        "fun labs"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
+      "id": "public-site-1780660800000",
+      "url": "https://changelog.fundedyouth.org/?app=public-site&update=public-site-1780660800000",
+      "title": "[Public Site] 📅 Updated Summer Class Schedule",
+      "content_text": "We've updated our weekly summer class schedule based on the most common requests we've been hearing from you! 🌞\n\n### What Changed\n* **🕐 New Hours**: Classes now run **1:00 – 4:00 PM, Monday through Thursday**.\n* **📚 All Four Classes Weekly**: All four entry-level classes are now available **every week**.",
+      "date_published": "2026-06-05T12:00:00Z",
+      "tags": [
+        "minor",
+        "public",
+        "website",
+        "schedule",
+        "summer",
+        "classes"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
+      "id": "docs-1780657200000",
+      "url": "https://changelog.fundedyouth.org/?app=docs&update=docs-1780657200000",
+      "title": "[Docs] 📄 Agreements Combined: The Portal Member Agreement",
+      "content_text": "We've combined three separate agreements — **General**, **Student**, and **Subscription** — into a single **Portal Member Agreement**, streamlining the account creation process.\n\n### What This Means\n* **📝 One Agreement**: A single Portal Member Agreement replaces the previous three.\n* **⚡ Faster Sign-Up**: Fewer documents to read and sign means a quicker, simpler registration.",
+      "date_published": "2026-06-05T11:00:00Z",
+      "tags": [
+        "minor",
+        "docs",
+        "agreements",
+        "portal member agreement",
+        "account creation"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
       "id": "user-portal-1780596000000",
       "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1780596000000",
       "title": "[User Portal] 🏪 Storefront POS: In-Person Account Creation & Sign-Ups",

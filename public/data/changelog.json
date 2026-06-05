@@ -13,7 +13,7 @@
       "icon": "Globe",
       "color": "from-orange-500 to-amber-500",
       "status": "active",
-      "currentVersion": "v2.8.4"
+      "currentVersion": "v2.9.1"
     },
     {
       "id": "user-portal",
@@ -22,7 +22,7 @@
       "icon": "User",
       "color": "from-pink-500 to-rose-500",
       "status": "active",
-      "currentVersion": "v4.0.0"
+      "currentVersion": "v4.3.0"
     },
     {
       "id": "the-vault",
@@ -49,7 +49,7 @@
       "icon": "BookOpen",
       "color": "from-cyan-500 to-blue-500",
       "status": "active",
-      "currentVersion": "v1.12.3"
+      "currentVersion": "v1.13.0"
     },
     {
       "id": "fun-labs",
@@ -62,6 +62,139 @@
     }
   ],
   "updates": [
+    {
+      "appId": "user-portal",
+      "appName": "User Portal",
+      "title": "📝 Simpler Sign-Up: Account Types & One Combined Agreement",
+      "description": "We've streamlined how you create your account and sign agreements — so getting started is quicker and clearer! 🎉\n\n### Choose Your Account Type\n* **👤 Personal Account**: Register as a single user.\n* **👨‍👩‍👧 Multi-Child Account**: Register as a parent or guardian for your children. For each child, we automatically create a custom email from your address and the student's name — so you still receive every confirmation. Example: `<your-email>+<student-name>@example.com`.\n\n### One Agreement Instead of Three\n* **📄 Combined Agreement**: We merged the **General**, **Student**, and **Subscription** agreements into one. Now the only things you sign at registration are the **parental agreement** and this **new combined agreement** — which unlocks the entire portal, including the student menus.\n* **✅ Already Signed?**: If you previously signed all three agreements, you've been **automatically signed** to the new one — nothing to do.",
+      "date": "2026-06-05T16:00:00Z",
+      "version": "v4.3.0",
+      "type": "minor",
+      "author": {
+        "name": "Ryan Jones",
+        "role": "Lead Product Engineer & Designer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+      },
+      "tags": [
+        "user",
+        "portal",
+        "account creation",
+        "registration",
+        "agreements",
+        "parent",
+        "guardian",
+        "coppa"
+      ]
+    },
+    {
+      "appId": "user-portal",
+      "appName": "User Portal",
+      "title": "☀️ New Summer Class Schedule",
+      "description": "Our summer schedule is here — with **three one-hour classes every day**! 🌞\n\n### Daily Class Times\n* **1:00 – 2:00 PM**\n* **2:00 – 3:00 PM**\n* **3:00 – 4:00 PM**\n\nRunning **Monday through Friday**.\n\n### Rotating Courses by Day\nEntry-level courses are assigned by day — **Monday: 3DP1**, **Tuesday: 3DP2**, **Wednesday: 3DM1**, **Thursday: CDE1**. The Monday/Tuesday and Wednesday course days **alternate each week**, so check your portal calendar for the current week's lineup.",
+      "date": "2026-06-05T15:00:00Z",
+      "version": "v4.2.0",
+      "type": "minor",
+      "author": {
+        "name": "Ryan Jones",
+        "role": "Lead Product Engineer & Designer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+      },
+      "tags": [
+        "user",
+        "portal",
+        "schedule",
+        "summer",
+        "classes",
+        "3dp1",
+        "3dp2",
+        "3dm1",
+        "cde1"
+      ]
+    },
+    {
+      "appId": "user-portal",
+      "appName": "User Portal",
+      "title": "🛠️ Admin Portal: Sessions Databank & Events Upgrades",
+      "description": "We've polished the **Sessions** tools in the Admin Portal to make linking classes and events faster and clearer.\n\n### Databank Card View\n* **🧹 Simplified Cards**: A cleaner card view that surfaces the key information at a glance.\n* **🔗 Link Class to Event**: New field for linking a class directly to its event.\n* **🆔 Cleaner Layout**: Removed the ID prefix from the Event Name. The **ID pill** now sits under the description, followed by the category, then the **linked course** and **linked class**.\n* **⚡ Auto-Assign Event ID**: A new button auto-assigns the Event ID to the linked Class ID, plus an optional **Auto-Assign Event ID** toggle when a class is linked to an event.\n* **❗ Required Field**: Event ID is now a required field.\n\n### Events: From Template\n* **🔎 Richer Search**: The **From Template** search popup now includes **Event ID**, **Course ID**, and **Class ID**.",
+      "date": "2026-06-05T14:00:00Z",
+      "version": "v4.1.0",
+      "type": "minor",
+      "author": {
+        "name": "Ryan Jones",
+        "role": "Lead Product Engineer & Designer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+      },
+      "tags": [
+        "admin",
+        "portal",
+        "sessions",
+        "databank",
+        "events",
+        "templates"
+      ]
+    },
+    {
+      "appId": "public-site",
+      "appName": "Public Site",
+      "title": "🔗 Changelog Link Added to the Footer",
+      "description": "Finding out what we're building just got easier! We've added a link to our **Changelog** (a Fun Labs project) right in the **site footer** — so the latest updates are always one click away.",
+      "date": "2026-06-05T12:30:00Z",
+      "version": "v2.9.1",
+      "type": "patch",
+      "author": {
+        "name": "Ryan Jones",
+        "role": "Lead Design Engineer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+      },
+      "tags": [
+        "public",
+        "website",
+        "footer",
+        "changelog",
+        "fun labs"
+      ]
+    },
+    {
+      "appId": "public-site",
+      "appName": "Public Site",
+      "title": "📅 Updated Summer Class Schedule",
+      "description": "We've updated our weekly summer class schedule based on the most common requests we've been hearing from you! 🌞\n\n### What Changed\n* **🕐 New Hours**: Classes now run **1:00 – 4:00 PM, Monday through Thursday**.\n* **📚 All Four Classes Weekly**: All four entry-level classes are now available **every week**.",
+      "date": "2026-06-05T12:00:00Z",
+      "version": "v2.9.0",
+      "type": "minor",
+      "author": {
+        "name": "Ryan Jones",
+        "role": "Lead Design Engineer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+      },
+      "tags": [
+        "public",
+        "website",
+        "schedule",
+        "summer",
+        "classes"
+      ]
+    },
+    {
+      "appId": "docs",
+      "appName": "Docs",
+      "title": "📄 Agreements Combined: The Portal Member Agreement",
+      "description": "We've combined three separate agreements — **General**, **Student**, and **Subscription** — into a single **Portal Member Agreement**, streamlining the account creation process.\n\n### What This Means\n* **📝 One Agreement**: A single Portal Member Agreement replaces the previous three.\n* **⚡ Faster Sign-Up**: Fewer documents to read and sign means a quicker, simpler registration.",
+      "date": "2026-06-05T11:00:00Z",
+      "version": "v1.13.0",
+      "type": "minor",
+      "author": {
+        "name": "Ryan Jones",
+        "role": "Lead Designer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+      },
+      "tags": [
+        "docs",
+        "agreements",
+        "portal member agreement",
+        "account creation"
+      ]
+    },
     {
       "appId": "user-portal",
       "appName": "User Portal",
