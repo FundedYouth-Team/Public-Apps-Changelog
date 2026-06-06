@@ -7,6 +7,58 @@
   <language>en-us</language>
   <atom:link href="https://changelog.fundedyouth.org/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>[User Portal] 🏅 Earn Badges for Completing Courses</title>
+    <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1780761600000</link>
+    <guid>https://changelog.fundedyouth.org/update/user-portal-1780761600000</guid>
+    <pubDate>Sat, 06 Jun 2026 16:00:00 GMT</pubDate>
+    <description>Gamification is here! We&apos;ve created brand-new **graphical badges** and added them to the portal. 🎉
+
+### How It Works
+* **🎓 Complete a Course, Earn a Badge**: Finish a course and a shiny new badge is yours.
+* **🏆 Show Off Your Progress**: Collect badges as you work your way through our courses.
+
+This feature is **live now** — start earning! 🚀</description>
+    <author>Ryan Jones</author>
+    <category>minor</category>
+  </item>
+  <item>
+    <title>[User Portal] 🗂️ New Admin Page: Event Management</title>
+    <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1780758000000</link>
+    <guid>https://changelog.fundedyouth.org/update/user-portal-1780758000000</guid>
+    <pubDate>Sat, 06 Jun 2026 15:00:00 GMT</pubDate>
+    <description>A brand-new **Event Management** page in the Admin Portal brings everything you need to run an event into one place. 🎉
+
+### What You Can Do
+* **📋 See Every Event**: List all current and upcoming events at a glance.
+* **👥 View Registered Students**: See exactly who&apos;s signed up for each event.
+* **✅ Check Students In**: Check a student in to an event when they arrive.
+* **🏁 Mark as Completed**: Set a student as completed once they&apos;ve finished.
+* **🚫 Handle No-Shows**: Remove a student from the event if they don&apos;t show up.
+* **🏅 Award Badges**: Select a student and award a badge right from the event.</description>
+    <author>Ryan Jones</author>
+    <category>minor</category>
+  </item>
+  <item>
+    <title>[User Portal] 🛠️ Admin Portal: Synced Logs, POS Shortcuts &amp; Cleaner Navigation</title>
+    <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1780754400000</link>
+    <guid>https://changelog.fundedyouth.org/update/user-portal-1780754400000</guid>
+    <pubDate>Sat, 06 Jun 2026 14:00:00 GMT</pubDate>
+    <description>We&apos;ve made the Admin Portal smoother to manage day-to-day, from shared logs to a tidier menu.
+
+### Fixed: Notification Syncing
+* **🔄 No More Duplicates**: Fixed an internal error in notification syncing. **Notifications**, the **Audit Log**, and the **Error Log** no longer duplicate for every admin. When one admin marks an item as **read** or **completed**, it&apos;s marked that way for all admins — so no one gets buried under duplicate alerts and logs.
+
+### POS Shortcuts
+* **🎓 Faster Enrollment**: The **Enroll a Student** action on the Dashboard now takes you straight to the **Storefront POS**.
+* **📆 Calendar View**: Added a **calendar view** in the POS for Courses and Events — now including the **Course ID**.
+
+### Cleaner Navigation
+* **🧭 Rearranged Menu**: **Storefront POS** and **Events Manager** now sit directly under the Dashboard, with a divider after Events Manager for clear separation.
+* **👤 All Users**: **User Management** has been renamed **All Users** and moved to the bottom of the menu.</description>
+    <author>Ryan Jones</author>
+    <category>minor</category>
+  </item>
+  <item>
     <title>[User Portal] 📝 Simpler Sign-Up: Account Types &amp; One Combined Agreement</title>
     <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1780675200000</link>
     <guid>https://changelog.fundedyouth.org/update/user-portal-1780675200000</guid>

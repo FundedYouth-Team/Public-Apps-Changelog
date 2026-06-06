@@ -22,7 +22,7 @@
       "icon": "User",
       "color": "from-pink-500 to-rose-500",
       "status": "active",
-      "currentVersion": "v4.3.0"
+      "currentVersion": "v4.6.0"
     },
     {
       "id": "the-vault",
@@ -62,6 +62,74 @@
     }
   ],
   "updates": [
+    {
+      "appId": "user-portal",
+      "appName": "User Portal",
+      "title": "🏅 Earn Badges for Completing Courses",
+      "description": "Gamification is here! We've created brand-new **graphical badges** and added them to the portal. 🎉\n\n### How It Works\n* **🎓 Complete a Course, Earn a Badge**: Finish a course and a shiny new badge is yours.\n* **🏆 Show Off Your Progress**: Collect badges as you work your way through our courses.\n\nThis feature is **live now** — start earning! 🚀",
+      "date": "2026-06-06T16:00:00Z",
+      "version": "v4.6.0",
+      "type": "minor",
+      "author": {
+        "name": "Ryan Jones",
+        "role": "Lead Product Engineer & Designer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+      },
+      "tags": [
+        "user",
+        "portal",
+        "badges",
+        "gamification",
+        "courses",
+        "achievements"
+      ]
+    },
+    {
+      "appId": "user-portal",
+      "appName": "User Portal",
+      "title": "🗂️ New Admin Page: Event Management",
+      "description": "A brand-new **Event Management** page in the Admin Portal brings everything you need to run an event into one place. 🎉\n\n### What You Can Do\n* **📋 See Every Event**: List all current and upcoming events at a glance.\n* **👥 View Registered Students**: See exactly who's signed up for each event.\n* **✅ Check Students In**: Check a student in to an event when they arrive.\n* **🏁 Mark as Completed**: Set a student as completed once they've finished.\n* **🚫 Handle No-Shows**: Remove a student from the event if they don't show up.\n* **🏅 Award Badges**: Select a student and award a badge right from the event.",
+      "date": "2026-06-06T15:00:00Z",
+      "version": "v4.5.0",
+      "type": "minor",
+      "author": {
+        "name": "Ryan Jones",
+        "role": "Lead Product Engineer & Designer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+      },
+      "tags": [
+        "admin",
+        "portal",
+        "events",
+        "event management",
+        "check-in",
+        "badges"
+      ]
+    },
+    {
+      "appId": "user-portal",
+      "appName": "User Portal",
+      "title": "🛠️ Admin Portal: Synced Logs, POS Shortcuts & Cleaner Navigation",
+      "description": "We've made the Admin Portal smoother to manage day-to-day, from shared logs to a tidier menu.\n\n### Fixed: Notification Syncing\n* **🔄 No More Duplicates**: Fixed an internal error in notification syncing. **Notifications**, the **Audit Log**, and the **Error Log** no longer duplicate for every admin. When one admin marks an item as **read** or **completed**, it's marked that way for all admins — so no one gets buried under duplicate alerts and logs.\n\n### POS Shortcuts\n* **🎓 Faster Enrollment**: The **Enroll a Student** action on the Dashboard now takes you straight to the **Storefront POS**.\n* **📆 Calendar View**: Added a **calendar view** in the POS for Courses and Events — now including the **Course ID**.\n\n### Cleaner Navigation\n* **🧭 Rearranged Menu**: **Storefront POS** and **Events Manager** now sit directly under the Dashboard, with a divider after Events Manager for clear separation.\n* **👤 All Users**: **User Management** has been renamed **All Users** and moved to the bottom of the menu.",
+      "date": "2026-06-06T14:00:00Z",
+      "version": "v4.4.0",
+      "type": "minor",
+      "author": {
+        "name": "Ryan Jones",
+        "role": "Lead Product Engineer & Designer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+      },
+      "tags": [
+        "admin",
+        "portal",
+        "notifications",
+        "audit log",
+        "error log",
+        "pos",
+        "navigation",
+        "dashboard"
+      ]
+    },
     {
       "appId": "user-portal",
       "appName": "User Portal",

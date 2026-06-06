@@ -6,6 +6,74 @@
   "description": "Hype updates, releases, and fixes from the FundedYouth developers.",
   "items": [
     {
+      "id": "user-portal-1780761600000",
+      "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1780761600000",
+      "title": "[User Portal] 🏅 Earn Badges for Completing Courses",
+      "content_text": "Gamification is here! We've created brand-new **graphical badges** and added them to the portal. 🎉\n\n### How It Works\n* **🎓 Complete a Course, Earn a Badge**: Finish a course and a shiny new badge is yours.\n* **🏆 Show Off Your Progress**: Collect badges as you work your way through our courses.\n\nThis feature is **live now** — start earning! 🚀",
+      "date_published": "2026-06-06T16:00:00Z",
+      "tags": [
+        "minor",
+        "user",
+        "portal",
+        "badges",
+        "gamification",
+        "courses",
+        "achievements"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
+      "id": "user-portal-1780758000000",
+      "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1780758000000",
+      "title": "[User Portal] 🗂️ New Admin Page: Event Management",
+      "content_text": "A brand-new **Event Management** page in the Admin Portal brings everything you need to run an event into one place. 🎉\n\n### What You Can Do\n* **📋 See Every Event**: List all current and upcoming events at a glance.\n* **👥 View Registered Students**: See exactly who's signed up for each event.\n* **✅ Check Students In**: Check a student in to an event when they arrive.\n* **🏁 Mark as Completed**: Set a student as completed once they've finished.\n* **🚫 Handle No-Shows**: Remove a student from the event if they don't show up.\n* **🏅 Award Badges**: Select a student and award a badge right from the event.",
+      "date_published": "2026-06-06T15:00:00Z",
+      "tags": [
+        "minor",
+        "admin",
+        "portal",
+        "events",
+        "event management",
+        "check-in",
+        "badges"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
+      "id": "user-portal-1780754400000",
+      "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1780754400000",
+      "title": "[User Portal] 🛠️ Admin Portal: Synced Logs, POS Shortcuts & Cleaner Navigation",
+      "content_text": "We've made the Admin Portal smoother to manage day-to-day, from shared logs to a tidier menu.\n\n### Fixed: Notification Syncing\n* **🔄 No More Duplicates**: Fixed an internal error in notification syncing. **Notifications**, the **Audit Log**, and the **Error Log** no longer duplicate for every admin. When one admin marks an item as **read** or **completed**, it's marked that way for all admins — so no one gets buried under duplicate alerts and logs.\n\n### POS Shortcuts\n* **🎓 Faster Enrollment**: The **Enroll a Student** action on the Dashboard now takes you straight to the **Storefront POS**.\n* **📆 Calendar View**: Added a **calendar view** in the POS for Courses and Events — now including the **Course ID**.\n\n### Cleaner Navigation\n* **🧭 Rearranged Menu**: **Storefront POS** and **Events Manager** now sit directly under the Dashboard, with a divider after Events Manager for clear separation.\n* **👤 All Users**: **User Management** has been renamed **All Users** and moved to the bottom of the menu.",
+      "date_published": "2026-06-06T14:00:00Z",
+      "tags": [
+        "minor",
+        "admin",
+        "portal",
+        "notifications",
+        "audit log",
+        "error log",
+        "pos",
+        "navigation",
+        "dashboard"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
       "id": "user-portal-1780675200000",
       "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1780675200000",
       "title": "[User Portal] 📝 Simpler Sign-Up: Account Types & One Combined Agreement",
