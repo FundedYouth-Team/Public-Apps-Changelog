@@ -22,7 +22,7 @@
       "icon": "User",
       "color": "from-pink-500 to-rose-500",
       "status": "active",
-      "currentVersion": "v4.6.0"
+      "currentVersion": "v4.8.0"
     },
     {
       "id": "the-vault",
@@ -62,6 +62,92 @@
     }
   ],
   "updates": [
+    {
+      "appId": "user-portal",
+      "appName": "User Portal",
+      "title": "📊 Storefront POS: View Student Progress & Badges Earned",
+      "description": "The **Storefront POS** now gives you a quick window into each student's journey. 🎉\n\n### What's New\n* **📈 View Progress**: See a student's course progress right from the POS.\n* **🏅 Badges Earned**: Check which badges a student has earned without leaving the POS.",
+      "date": "2026-06-07T12:00:00Z",
+      "version": "v4.8.0",
+      "type": "minor",
+      "author": {
+        "name": "Ryan Jones",
+        "role": "Lead Product Engineer & Designer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+      },
+      "tags": [
+        "admin",
+        "portal",
+        "pos",
+        "storefront",
+        "progress",
+        "badges"
+      ]
+    },
+    {
+      "appId": "user-portal",
+      "appName": "User Portal",
+      "title": "🚦 Pathways: Set a Pathway to Live or Draft",
+      "description": "Pathways now have a **mode** so you can work on them before they go public.\n\n### What Changed\n* **🟢 Live or Draft**: A pathway can now be set to **Live** or **Draft**, giving you control over what's visible while you build.",
+      "date": "2026-06-07T11:00:00Z",
+      "version": "v4.7.1",
+      "type": "patch",
+      "author": {
+        "name": "Ryan Jones",
+        "role": "Lead Product Engineer & Designer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+      },
+      "tags": [
+        "admin",
+        "portal",
+        "pathways",
+        "draft",
+        "live"
+      ]
+    },
+    {
+      "appId": "user-portal",
+      "appName": "User Portal",
+      "title": "📂 Accounts > Progress: Expand a Course to See Student Status",
+      "description": "Tracking how a class is doing is now much easier. 🎉\n\n### What's New\n* **🔽 Expandable Courses**: Clicking a course expands the students in the class.\n* **🚦 Status at a Glance**: Each student shows their status — **Not Started**, **In Progress**, or **Completed**.",
+      "date": "2026-06-07T10:00:00Z",
+      "version": "v4.7.0",
+      "type": "minor",
+      "author": {
+        "name": "Ryan Jones",
+        "role": "Lead Product Engineer & Designer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+      },
+      "tags": [
+        "admin",
+        "portal",
+        "accounts",
+        "progress",
+        "courses",
+        "status"
+      ]
+    },
+    {
+      "appId": "user-portal",
+      "appName": "User Portal",
+      "title": "🗂️ Admin Menu: Students Is Now “Accounts”",
+      "description": "A small navigation tidy-up in the Admin Portal.\n\n### What Changed\n* **✏️ Renamed**: **Students > Students** is now **Accounts**.\n* **⬆️ Moved Up**: **Accounts** now sits at the top of the sub-menu for quicker access.",
+      "date": "2026-06-07T09:00:00Z",
+      "version": "v4.6.1",
+      "type": "patch",
+      "author": {
+        "name": "Ryan Jones",
+        "role": "Lead Product Engineer & Designer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+      },
+      "tags": [
+        "admin",
+        "portal",
+        "navigation",
+        "accounts",
+        "menu"
+      ]
+    },
     {
       "appId": "user-portal",
       "appName": "User Portal",

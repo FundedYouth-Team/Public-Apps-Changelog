@@ -6,6 +6,92 @@
   "description": "Hype updates, releases, and fixes from the FundedYouth developers.",
   "items": [
     {
+      "id": "user-portal-1780833600000",
+      "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1780833600000",
+      "title": "[User Portal] 📊 Storefront POS: View Student Progress & Badges Earned",
+      "content_text": "The **Storefront POS** now gives you a quick window into each student's journey. 🎉\n\n### What's New\n* **📈 View Progress**: See a student's course progress right from the POS.\n* **🏅 Badges Earned**: Check which badges a student has earned without leaving the POS.",
+      "date_published": "2026-06-07T12:00:00Z",
+      "tags": [
+        "minor",
+        "admin",
+        "portal",
+        "pos",
+        "storefront",
+        "progress",
+        "badges"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
+      "id": "user-portal-1780830000000",
+      "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1780830000000",
+      "title": "[User Portal] 🚦 Pathways: Set a Pathway to Live or Draft",
+      "content_text": "Pathways now have a **mode** so you can work on them before they go public.\n\n### What Changed\n* **🟢 Live or Draft**: A pathway can now be set to **Live** or **Draft**, giving you control over what's visible while you build.",
+      "date_published": "2026-06-07T11:00:00Z",
+      "tags": [
+        "patch",
+        "admin",
+        "portal",
+        "pathways",
+        "draft",
+        "live"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
+      "id": "user-portal-1780826400000",
+      "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1780826400000",
+      "title": "[User Portal] 📂 Accounts > Progress: Expand a Course to See Student Status",
+      "content_text": "Tracking how a class is doing is now much easier. 🎉\n\n### What's New\n* **🔽 Expandable Courses**: Clicking a course expands the students in the class.\n* **🚦 Status at a Glance**: Each student shows their status — **Not Started**, **In Progress**, or **Completed**.",
+      "date_published": "2026-06-07T10:00:00Z",
+      "tags": [
+        "minor",
+        "admin",
+        "portal",
+        "accounts",
+        "progress",
+        "courses",
+        "status"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
+      "id": "user-portal-1780822800000",
+      "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1780822800000",
+      "title": "[User Portal] 🗂️ Admin Menu: Students Is Now “Accounts”",
+      "content_text": "A small navigation tidy-up in the Admin Portal.\n\n### What Changed\n* **✏️ Renamed**: **Students > Students** is now **Accounts**.\n* **⬆️ Moved Up**: **Accounts** now sits at the top of the sub-menu for quicker access.",
+      "date_published": "2026-06-07T09:00:00Z",
+      "tags": [
+        "patch",
+        "admin",
+        "portal",
+        "navigation",
+        "accounts",
+        "menu"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
       "id": "user-portal-1780761600000",
       "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1780761600000",
       "title": "[User Portal] 🏅 Earn Badges for Completing Courses",

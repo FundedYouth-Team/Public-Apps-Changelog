@@ -7,6 +7,57 @@
   <language>en-us</language>
   <atom:link href="https://changelog.fundedyouth.org/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>[User Portal] 📊 Storefront POS: View Student Progress &amp; Badges Earned</title>
+    <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1780833600000</link>
+    <guid>https://changelog.fundedyouth.org/update/user-portal-1780833600000</guid>
+    <pubDate>Sun, 07 Jun 2026 12:00:00 GMT</pubDate>
+    <description>The **Storefront POS** now gives you a quick window into each student&apos;s journey. 🎉
+
+### What&apos;s New
+* **📈 View Progress**: See a student&apos;s course progress right from the POS.
+* **🏅 Badges Earned**: Check which badges a student has earned without leaving the POS.</description>
+    <author>Ryan Jones</author>
+    <category>minor</category>
+  </item>
+  <item>
+    <title>[User Portal] 🚦 Pathways: Set a Pathway to Live or Draft</title>
+    <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1780830000000</link>
+    <guid>https://changelog.fundedyouth.org/update/user-portal-1780830000000</guid>
+    <pubDate>Sun, 07 Jun 2026 11:00:00 GMT</pubDate>
+    <description>Pathways now have a **mode** so you can work on them before they go public.
+
+### What Changed
+* **🟢 Live or Draft**: A pathway can now be set to **Live** or **Draft**, giving you control over what&apos;s visible while you build.</description>
+    <author>Ryan Jones</author>
+    <category>patch</category>
+  </item>
+  <item>
+    <title>[User Portal] 📂 Accounts &gt; Progress: Expand a Course to See Student Status</title>
+    <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1780826400000</link>
+    <guid>https://changelog.fundedyouth.org/update/user-portal-1780826400000</guid>
+    <pubDate>Sun, 07 Jun 2026 10:00:00 GMT</pubDate>
+    <description>Tracking how a class is doing is now much easier. 🎉
+
+### What&apos;s New
+* **🔽 Expandable Courses**: Clicking a course expands the students in the class.
+* **🚦 Status at a Glance**: Each student shows their status — **Not Started**, **In Progress**, or **Completed**.</description>
+    <author>Ryan Jones</author>
+    <category>minor</category>
+  </item>
+  <item>
+    <title>[User Portal] 🗂️ Admin Menu: Students Is Now “Accounts”</title>
+    <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1780822800000</link>
+    <guid>https://changelog.fundedyouth.org/update/user-portal-1780822800000</guid>
+    <pubDate>Sun, 07 Jun 2026 09:00:00 GMT</pubDate>
+    <description>A small navigation tidy-up in the Admin Portal.
+
+### What Changed
+* **✏️ Renamed**: **Students &gt; Students** is now **Accounts**.
+* **⬆️ Moved Up**: **Accounts** now sits at the top of the sub-menu for quicker access.</description>
+    <author>Ryan Jones</author>
+    <category>patch</category>
+  </item>
+  <item>
     <title>[User Portal] 🏅 Earn Badges for Completing Courses</title>
     <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1780761600000</link>
     <guid>https://changelog.fundedyouth.org/update/user-portal-1780761600000</guid>
