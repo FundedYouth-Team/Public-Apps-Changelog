@@ -63,6 +63,25 @@
   ],
   "updates": [
     {
+      "appId": "public-site",
+      "appName": "Public Site",
+      "title": "Get Start now Redirected to Portal",
+      "description": "Remove the Get Started page. All links pointed to get started now redirect to https://portal.fundedyouth.org/#watch-and-learn",
+      "date": "2026-06-08T08:30:00Z",
+      "version": "v0.0.1",
+      "type": "major",
+      "author": {
+        "name": "Ryan Jones",
+        "role": "Lead Developer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+      },
+      "tags": [
+        "fun-labs",
+        "q-up",
+        "service-requests"
+      ]
+    },
+    {
       "appId": "fun-labs",
       "appName": "Fun Labs",
       "title": "🚀 New Rocket Workshop Coming Soon",
