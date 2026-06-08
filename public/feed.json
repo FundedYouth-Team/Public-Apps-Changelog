@@ -6,6 +6,25 @@
   "description": "Hype updates, releases, and fixes from the FundedYouth developers.",
   "items": [
     {
+      "id": "public-site-1780920000000",
+      "url": "https://changelog.fundedyouth.org/?app=public-site&update=public-site-1780920000000",
+      "title": "[Public Site] 🧰 New /apps Page: Tiny Tools & Course Apps",
+      "content_text": "Introducing a new **/apps** page on the public site. 🎉\n\n### What's New\n* **🔗 One place for everything**: The page collects links to the tiny apps and tools used across FundedYouth courses and more.\n* **🚀 Quick access**: Jump straight to a course tool without hunting for the link.",
+      "date_published": "2026-06-08T12:00:00Z",
+      "tags": [
+        "minor",
+        "public-site",
+        "apps",
+        "tools"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
       "id": "user-portal-1780833600000",
       "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1780833600000",
       "title": "[User Portal] 📊 Storefront POS: View Student Progress & Badges Earned",

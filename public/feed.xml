@@ -7,6 +7,19 @@
   <language>en-us</language>
   <atom:link href="https://changelog.fundedyouth.org/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>[Public Site] 🧰 New /apps Page: Tiny Tools &amp; Course Apps</title>
+    <link>https://changelog.fundedyouth.org/?app=public-site&amp;update=public-site-1780920000000</link>
+    <guid>https://changelog.fundedyouth.org/update/public-site-1780920000000</guid>
+    <pubDate>Mon, 08 Jun 2026 12:00:00 GMT</pubDate>
+    <description>Introducing a new **/apps** page on the public site. 🎉
+
+### What&apos;s New
+* **🔗 One place for everything**: The page collects links to the tiny apps and tools used across FundedYouth courses and more.
+* **🚀 Quick access**: Jump straight to a course tool without hunting for the link.</description>
+    <author>Ryan Jones</author>
+    <category>minor</category>
+  </item>
+  <item>
     <title>[User Portal] 📊 Storefront POS: View Student Progress &amp; Badges Earned</title>
     <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1780833600000</link>
     <guid>https://changelog.fundedyouth.org/update/user-portal-1780833600000</guid>
