@@ -6,6 +6,66 @@
   "description": "Hype updates, releases, and fixes from the FundedYouth developers.",
   "items": [
     {
+      "id": "fun-labs-1780930800000",
+      "url": "https://changelog.fundedyouth.org/?app=fun-labs&update=fun-labs-1780930800000",
+      "title": "[Fun Labs] 🗂️ Q-UP: Service Request Tracking",
+      "content_text": "A new in-house tool is taking shape in the lab. 🚀\n\n### What It Does\n* **📋 Track service requests**: Keep tabs on incoming requests so jobs like prints get completed.\n* **🙌 Keep volunteers on track**: Helps volunteers know what's in the queue and what's next.\n* **🔄 Team in the loop**: Keeps the whole team aware of progress from request to done.",
+      "date_published": "2026-06-08T15:00:00Z",
+      "tags": [
+        "major",
+        "fun-labs",
+        "q-up",
+        "service-requests"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
+      "id": "fun-labs-1780927200000",
+      "url": "https://changelog.fundedyouth.org/?app=fun-labs&update=fun-labs-1780927200000",
+      "title": "[Fun Labs] 🗄️ The Vault: In-House File Server",
+      "content_text": "A new in-house file server for active members. 🔐\n\n### What It Does\n* **🗄️ Member file server**: A central place for active members to access files.\n* **🧩 Exclusive 3D files**: Gain access to exclusive 3D files for onsite use only.\n* **✂️ Laser crafting designs**: Gain access to exclusive laser crafting designs.",
+      "date_published": "2026-06-08T14:00:00Z",
+      "tags": [
+        "major",
+        "fun-labs",
+        "the-vault",
+        "file-server",
+        "3d",
+        "laser"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
+      "id": "fun-labs-1780923600000",
+      "url": "https://changelog.fundedyouth.org/?app=fun-labs&update=fun-labs-1780923600000",
+      "title": "[Fun Labs] 🎨 Filament Visualizer: Preview Materials on 3D Models",
+      "content_text": "A new experimental tool, currently under development. 🚧\n\n### What It Does\n* **📥 Import a model**: Bring in a 3D model.\n* **🎨 Assign a material**: Apply a material to preview how the model will look.\n* **🚧 Under development**: Still actively being built.",
+      "date_published": "2026-06-08T13:00:00Z",
+      "tags": [
+        "major",
+        "fun-labs",
+        "filament-visualizer",
+        "3d",
+        "materials"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
       "id": "public-site-1780920000000",
       "url": "https://changelog.fundedyouth.org/?app=public-site&update=public-site-1780920000000",
       "title": "[Public Site] 🧰 New /apps Page: Tiny Tools & Course Apps",

@@ -58,10 +58,70 @@
       "icon": "FlaskConical",
       "color": "from-fuchsia-500 to-pink-500",
       "status": "beta",
-      "currentVersion": "v1.0.0"
+      "currentVersion": "v4.0.0"
     }
   ],
   "updates": [
+    {
+      "appId": "fun-labs",
+      "appName": "Fun Labs",
+      "title": "🗂️ Q-UP: Service Request Tracking",
+      "description": "A new in-house tool is taking shape in the lab. 🚀\n\n### What It Does\n* **📋 Track service requests**: Keep tabs on incoming requests so jobs like prints get completed.\n* **🙌 Keep volunteers on track**: Helps volunteers know what's in the queue and what's next.\n* **🔄 Team in the loop**: Keeps the whole team aware of progress from request to done.",
+      "date": "2026-06-08T15:00:00Z",
+      "version": "v4.0.0",
+      "type": "major",
+      "author": {
+        "name": "Ryan Jones",
+        "role": "Lead Product Engineer & Designer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+      },
+      "tags": [
+        "fun-labs",
+        "q-up",
+        "service-requests"
+      ]
+    },
+    {
+      "appId": "fun-labs",
+      "appName": "Fun Labs",
+      "title": "🗄️ The Vault: In-House File Server",
+      "description": "A new in-house file server for active members. 🔐\n\n### What It Does\n* **🗄️ Member file server**: A central place for active members to access files.\n* **🧩 Exclusive 3D files**: Gain access to exclusive 3D files for onsite use only.\n* **✂️ Laser crafting designs**: Gain access to exclusive laser crafting designs.",
+      "date": "2026-06-08T14:00:00Z",
+      "version": "v3.0.0",
+      "type": "major",
+      "author": {
+        "name": "Ryan Jones",
+        "role": "Lead Product Engineer & Designer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+      },
+      "tags": [
+        "fun-labs",
+        "the-vault",
+        "file-server",
+        "3d",
+        "laser"
+      ]
+    },
+    {
+      "appId": "fun-labs",
+      "appName": "Fun Labs",
+      "title": "🎨 Filament Visualizer: Preview Materials on 3D Models",
+      "description": "A new experimental tool, currently under development. 🚧\n\n### What It Does\n* **📥 Import a model**: Bring in a 3D model.\n* **🎨 Assign a material**: Apply a material to preview how the model will look.\n* **🚧 Under development**: Still actively being built.",
+      "date": "2026-06-08T13:00:00Z",
+      "version": "v2.0.0",
+      "type": "major",
+      "author": {
+        "name": "Ryan Jones",
+        "role": "Lead Product Engineer & Designer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+      },
+      "tags": [
+        "fun-labs",
+        "filament-visualizer",
+        "3d",
+        "materials"
+      ]
+    },
     {
       "appId": "public-site",
       "appName": "Public Site",

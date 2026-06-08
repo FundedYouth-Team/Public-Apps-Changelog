@@ -7,6 +7,48 @@
   <language>en-us</language>
   <atom:link href="https://changelog.fundedyouth.org/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>[Fun Labs] 🗂️ Q-UP: Service Request Tracking</title>
+    <link>https://changelog.fundedyouth.org/?app=fun-labs&amp;update=fun-labs-1780930800000</link>
+    <guid>https://changelog.fundedyouth.org/update/fun-labs-1780930800000</guid>
+    <pubDate>Mon, 08 Jun 2026 15:00:00 GMT</pubDate>
+    <description>A new in-house tool is taking shape in the lab. 🚀
+
+### What It Does
+* **📋 Track service requests**: Keep tabs on incoming requests so jobs like prints get completed.
+* **🙌 Keep volunteers on track**: Helps volunteers know what&apos;s in the queue and what&apos;s next.
+* **🔄 Team in the loop**: Keeps the whole team aware of progress from request to done.</description>
+    <author>Ryan Jones</author>
+    <category>major</category>
+  </item>
+  <item>
+    <title>[Fun Labs] 🗄️ The Vault: In-House File Server</title>
+    <link>https://changelog.fundedyouth.org/?app=fun-labs&amp;update=fun-labs-1780927200000</link>
+    <guid>https://changelog.fundedyouth.org/update/fun-labs-1780927200000</guid>
+    <pubDate>Mon, 08 Jun 2026 14:00:00 GMT</pubDate>
+    <description>A new in-house file server for active members. 🔐
+
+### What It Does
+* **🗄️ Member file server**: A central place for active members to access files.
+* **🧩 Exclusive 3D files**: Gain access to exclusive 3D files for onsite use only.
+* **✂️ Laser crafting designs**: Gain access to exclusive laser crafting designs.</description>
+    <author>Ryan Jones</author>
+    <category>major</category>
+  </item>
+  <item>
+    <title>[Fun Labs] 🎨 Filament Visualizer: Preview Materials on 3D Models</title>
+    <link>https://changelog.fundedyouth.org/?app=fun-labs&amp;update=fun-labs-1780923600000</link>
+    <guid>https://changelog.fundedyouth.org/update/fun-labs-1780923600000</guid>
+    <pubDate>Mon, 08 Jun 2026 13:00:00 GMT</pubDate>
+    <description>A new experimental tool, currently under development. 🚧
+
+### What It Does
+* **📥 Import a model**: Bring in a 3D model.
+* **🎨 Assign a material**: Apply a material to preview how the model will look.
+* **🚧 Under development**: Still actively being built.</description>
+    <author>Ryan Jones</author>
+    <category>major</category>
+  </item>
+  <item>
     <title>[Public Site] 🧰 New /apps Page: Tiny Tools &amp; Course Apps</title>
     <link>https://changelog.fundedyouth.org/?app=public-site&amp;update=public-site-1780920000000</link>
     <guid>https://changelog.fundedyouth.org/update/public-site-1780920000000</guid>
