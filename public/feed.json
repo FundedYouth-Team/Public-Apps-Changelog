@@ -6,6 +6,26 @@
   "description": "Hype updates, releases, and fixes from the FundedYouth developers.",
   "items": [
     {
+      "id": "docs-1781111824000",
+      "url": "https://changelog.fundedyouth.org/?app=docs&update=docs-1781111824000",
+      "title": "[Docs] 📄 Trimmed Redundancy from the Adult & Parent/Guardian Agreement",
+      "content_text": "We cleaned up the **Adult and Parent/Guardian Agreement** so there's less repeated reading. 📄\n\n### What Changed\n* **✂️ Removed duplicates**: Most of the content that was repeated here already lives in the **General Use Agreement**, so we took it out.\n* **✅ Easier to read**: The agreement is now shorter and clearer, without losing anything you need to know.",
+      "date_published": "2026-06-10T17:17:04Z",
+      "tags": [
+        "patch",
+        "docs",
+        "agreements",
+        "parent-guardian",
+        "cleanup"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
       "id": "user-portal-1781110775000",
       "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1781110775000",
       "title": "[User Portal] 📅 Event Registrations Sync to Public Schedule",

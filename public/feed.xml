@@ -7,6 +7,19 @@
   <language>en-us</language>
   <atom:link href="https://changelog.fundedyouth.org/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>[Docs] 📄 Trimmed Redundancy from the Adult &amp; Parent/Guardian Agreement</title>
+    <link>https://changelog.fundedyouth.org/?app=docs&amp;update=docs-1781111824000</link>
+    <guid>https://changelog.fundedyouth.org/update/docs-1781111824000</guid>
+    <pubDate>Wed, 10 Jun 2026 17:17:04 GMT</pubDate>
+    <description>We cleaned up the **Adult and Parent/Guardian Agreement** so there&apos;s less repeated reading. 📄
+
+### What Changed
+* **✂️ Removed duplicates**: Most of the content that was repeated here already lives in the **General Use Agreement**, so we took it out.
+* **✅ Easier to read**: The agreement is now shorter and clearer, without losing anything you need to know.</description>
+    <author>Ryan Jones</author>
+    <category>patch</category>
+  </item>
+  <item>
     <title>[User Portal] 📅 Event Registrations Sync to Public Schedule</title>
     <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1781110775000</link>
     <guid>https://changelog.fundedyouth.org/update/user-portal-1781110775000</guid>
