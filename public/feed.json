@@ -6,11 +6,91 @@
   "description": "Hype updates, releases, and fixes from the FundedYouth developers.",
   "items": [
     {
-      "id": "fun-labs-1780930800000",
-      "url": "https://changelog.fundedyouth.org/?app=fun-labs&update=fun-labs-1780930800000",
-      "title": "[Fun Labs] 🗂️ Q-UP: Service Request Tracking",
-      "content_text": "A new in-house tool is taking shape in the lab. 🚀\n\n### What It Does\n* **📋 Track service requests**: Keep tabs on incoming requests so jobs like prints get completed.\n* **🙌 Keep volunteers on track**: Helps volunteers know what's in the queue and what's next.\n* **🔄 Team in the loop**: Keeps the whole team aware of progress from request to done.",
-      "date_published": "2026-06-08T15:00:00Z",
+      "id": "user-portal-1781006400000",
+      "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1781006400000",
+      "title": "[User Portal] 📝 Streamlined Account Registration & Member Agreement",
+      "content_text": "New accounts now default to **My Child / Other**, and registration is more streamlined. 🎉\n\n### What's New\n* **📜 Agreement built in**: The **Portal Member Agreement** now appears at the bottom of the registration form — you'll need to scroll all the way down (aka read it) before you can agree to the terms and create your account.\n* **✅ Two-step validation**: After creating your account, validate your email and provide parental validation on the second email to unlock access to the portal.",
+      "date_published": "2026-06-09T12:00:00Z",
+      "tags": [
+        "minor",
+        "portal",
+        "registration",
+        "accounts",
+        "agreement"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
+      "id": "user-portal-1781002800000",
+      "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1781002800000",
+      "title": "[User Portal] 💳 Dashboard: FYBIT Balance & Upcoming Classes",
+      "content_text": "The **User Portal Dashboard** now keeps you in the loop at a glance. 🎉\n\n### What's New\n* **💰 FYBIT balance**: See a notice with your current FYBIT credit balance right on the dashboard.\n* **🛒 Buy more credits**: A quick link to top up your credits when you're running low.\n* **📅 Upcoming classes**: View your upcoming classes at a glance.",
+      "date_published": "2026-06-09T11:00:00Z",
+      "tags": [
+        "minor",
+        "portal",
+        "dashboard",
+        "fybit",
+        "credits",
+        "classes"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
+      "id": "user-portal-1780999200000",
+      "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1780999200000",
+      "title": "[User Portal] 🔑 Login: We Recommend Using Your Username",
+      "content_text": "We're recommending users sign in with their **username** instead of their email. 🔐\n\n### Why\n* **👨‍👩‍👧‍👦 Shared emails**: If a parent used the same email for multiple children, usernames keep each account distinct.\n* **✅ Smoother sign-in**: Switching to your username avoids confusion at login.",
+      "date_published": "2026-06-09T10:00:00Z",
+      "tags": [
+        "minor",
+        "portal",
+        "login",
+        "username",
+        "accounts"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
+      "id": "fun-labs-1780995600000",
+      "url": "https://changelog.fundedyouth.org/?app=fun-labs&update=fun-labs-1780995600000",
+      "title": "[Fun Labs] ⏰ More Daily Instructional Hours Coming",
+      "content_text": "We're working on a solution to provide more daily instructional hours. 🚀\n\n### What's Coming\n* **🕒 Custom time slots**: If the standard hours don't work for you, we're integrating a custom time slot feature.\n* **📬 Stay connected**: More details to come — stay tuned.",
+      "date_published": "2026-06-09T09:00:00Z",
+      "tags": [
+        "minor",
+        "fun-labs",
+        "scheduling",
+        "time-slots"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
+      "id": "public-site-1780907400000",
+      "url": "https://changelog.fundedyouth.org/?app=public-site&update=public-site-1780907400000",
+      "title": "[Public Site] Get Start now Redirected to Portal",
+      "content_text": "Remove the Get Started page. All links pointed to get started now redirect to https://portal.fundedyouth.org/#watch-and-learn",
+      "date_published": "2026-06-08T08:30:00Z",
       "tags": [
         "major",
         "fun-labs",
@@ -25,11 +105,49 @@
       ]
     },
     {
-      "id": "fun-labs-1780927200000",
-      "url": "https://changelog.fundedyouth.org/?app=fun-labs&update=fun-labs-1780927200000",
+      "id": "fun-labs-1780905600000",
+      "url": "https://changelog.fundedyouth.org/?app=fun-labs&update=fun-labs-1780905600000",
+      "title": "[Fun Labs] 🚀 New Rocket Workshop Coming Soon",
+      "content_text": "We're building a new hands-on workshop all about rockets and compression. 🚀\n\n### The Idea\n* **🛠️ Simplified design**: Reworking an existing model that relies on an air compressor.\n* **🚲 Bike pump system**: Replacing the compressor with a bike pump and a control panel for a simulated launch console.\n\n### How It Works\n* **🎯 Assemble**: Students build their own paper rocket.\n* **💨 Prime**: Pump to build up air pressure.\n* **🔴 Launch**: Hit the launch button to send the rocket flying.",
+      "date_published": "2026-06-08T08:00:00Z",
+      "tags": [
+        "major",
+        "fun-labs",
+        "q-up",
+        "service-requests"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
+      "id": "fun-labs-1780902000000",
+      "url": "https://changelog.fundedyouth.org/?app=fun-labs&update=fun-labs-1780902000000",
+      "title": "[Fun Labs] 🗂️ Q-UP: Service Request Tracking",
+      "content_text": "A new in-house tool is taking shape in the lab. 🚀\n\n### What It Does\n* **📋 Track service requests**: Keep tabs on incoming requests so jobs like prints get completed.\n* **🙌 Keep volunteers on track**: Helps volunteers know what's in the queue and what's next.\n* **🔄 Team in the loop**: Keeps the whole team aware of progress from request to done.",
+      "date_published": "2026-06-08T07:00:00Z",
+      "tags": [
+        "major",
+        "fun-labs",
+        "q-up",
+        "service-requests"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
+      "id": "fun-labs-1780898400000",
+      "url": "https://changelog.fundedyouth.org/?app=fun-labs&update=fun-labs-1780898400000",
       "title": "[Fun Labs] 🗄️ The Vault: In-House File Server",
       "content_text": "A new in-house file server for active members. 🔐\n\n### What It Does\n* **🗄️ Member file server**: A central place for active members to access files.\n* **🧩 Exclusive 3D files**: Gain access to exclusive 3D files for onsite use only.\n* **✂️ Laser crafting designs**: Gain access to exclusive laser crafting designs.",
-      "date_published": "2026-06-08T14:00:00Z",
+      "date_published": "2026-06-08T06:00:00Z",
       "tags": [
         "major",
         "fun-labs",
@@ -46,11 +164,11 @@
       ]
     },
     {
-      "id": "fun-labs-1780923600000",
-      "url": "https://changelog.fundedyouth.org/?app=fun-labs&update=fun-labs-1780923600000",
+      "id": "fun-labs-1780894800000",
+      "url": "https://changelog.fundedyouth.org/?app=fun-labs&update=fun-labs-1780894800000",
       "title": "[Fun Labs] 🎨 Filament Visualizer: Preview Materials on 3D Models",
       "content_text": "A new experimental tool, currently under development. 🚧\n\n### What It Does\n* **📥 Import a model**: Bring in a 3D model.\n* **🎨 Assign a material**: Apply a material to preview how the model will look.\n* **🚧 Under development**: Still actively being built.",
-      "date_published": "2026-06-08T13:00:00Z",
+      "date_published": "2026-06-08T05:00:00Z",
       "tags": [
         "major",
         "fun-labs",
@@ -60,8 +178,8 @@
       ],
       "authors": [
         {
-          "name": "Ryan Jones",
-          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+          "name": "Jerry Roca",
+          "avatar": "https://avatars.githubusercontent.com/u/237493376?v=4"
         }
       ]
     },

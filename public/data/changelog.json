@@ -22,7 +22,7 @@
       "icon": "User",
       "color": "from-pink-500 to-rose-500",
       "status": "active",
-      "currentVersion": "v4.8.0"
+      "currentVersion": "v4.11.0"
     },
     {
       "id": "the-vault",
@@ -58,10 +58,90 @@
       "icon": "FlaskConical",
       "color": "from-fuchsia-500 to-pink-500",
       "status": "beta",
-      "currentVersion": "v4.0.0"
+      "currentVersion": "v4.1.0"
     }
   ],
   "updates": [
+    {
+      "appId": "user-portal",
+      "appName": "User Portal",
+      "title": "📝 Streamlined Account Registration & Member Agreement",
+      "description": "New accounts now default to **My Child / Other**, and registration is more streamlined. 🎉\n\n### What's New\n* **📜 Agreement built in**: The **Portal Member Agreement** now appears at the bottom of the registration form — you'll need to scroll all the way down (aka read it) before you can agree to the terms and create your account.\n* **✅ Two-step validation**: After creating your account, validate your email and provide parental validation on the second email to unlock access to the portal.",
+      "date": "2026-06-09T12:00:00Z",
+      "version": "v4.11.0",
+      "type": "minor",
+      "author": {
+        "name": "Ryan Jones",
+        "role": "Lead Product Engineer & Designer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+      },
+      "tags": [
+        "portal",
+        "registration",
+        "accounts",
+        "agreement"
+      ]
+    },
+    {
+      "appId": "user-portal",
+      "appName": "User Portal",
+      "title": "💳 Dashboard: FYBIT Balance & Upcoming Classes",
+      "description": "The **User Portal Dashboard** now keeps you in the loop at a glance. 🎉\n\n### What's New\n* **💰 FYBIT balance**: See a notice with your current FYBIT credit balance right on the dashboard.\n* **🛒 Buy more credits**: A quick link to top up your credits when you're running low.\n* **📅 Upcoming classes**: View your upcoming classes at a glance.",
+      "date": "2026-06-09T11:00:00Z",
+      "version": "v4.10.0",
+      "type": "minor",
+      "author": {
+        "name": "Ryan Jones",
+        "role": "Lead Product Engineer & Designer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+      },
+      "tags": [
+        "portal",
+        "dashboard",
+        "fybit",
+        "credits",
+        "classes"
+      ]
+    },
+    {
+      "appId": "user-portal",
+      "appName": "User Portal",
+      "title": "🔑 Login: We Recommend Using Your Username",
+      "description": "We're recommending users sign in with their **username** instead of their email. 🔐\n\n### Why\n* **👨‍👩‍👧‍👦 Shared emails**: If a parent used the same email for multiple children, usernames keep each account distinct.\n* **✅ Smoother sign-in**: Switching to your username avoids confusion at login.",
+      "date": "2026-06-09T10:00:00Z",
+      "version": "v4.9.0",
+      "type": "minor",
+      "author": {
+        "name": "Ryan Jones",
+        "role": "Lead Product Engineer & Designer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+      },
+      "tags": [
+        "portal",
+        "login",
+        "username",
+        "accounts"
+      ]
+    },
+    {
+      "appId": "fun-labs",
+      "appName": "Fun Labs",
+      "title": "⏰ More Daily Instructional Hours Coming",
+      "description": "We're working on a solution to provide more daily instructional hours. 🚀\n\n### What's Coming\n* **🕒 Custom time slots**: If the standard hours don't work for you, we're integrating a custom time slot feature.\n* **📬 Stay connected**: More details to come — stay tuned.",
+      "date": "2026-06-09T09:00:00Z",
+      "version": "v4.1.0",
+      "type": "minor",
+      "author": {
+        "name": "Ryan Jones",
+        "role": "Lead Product Engineer & Designer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+      },
+      "tags": [
+        "fun-labs",
+        "scheduling",
+        "time-slots"
+      ]
+    },
     {
       "appId": "public-site",
       "appName": "Public Site",

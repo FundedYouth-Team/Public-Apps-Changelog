@@ -7,10 +7,90 @@
   <language>en-us</language>
   <atom:link href="https://changelog.fundedyouth.org/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>[User Portal] 📝 Streamlined Account Registration &amp; Member Agreement</title>
+    <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1781006400000</link>
+    <guid>https://changelog.fundedyouth.org/update/user-portal-1781006400000</guid>
+    <pubDate>Tue, 09 Jun 2026 12:00:00 GMT</pubDate>
+    <description>New accounts now default to **My Child / Other**, and registration is more streamlined. 🎉
+
+### What&apos;s New
+* **📜 Agreement built in**: The **Portal Member Agreement** now appears at the bottom of the registration form — you&apos;ll need to scroll all the way down (aka read it) before you can agree to the terms and create your account.
+* **✅ Two-step validation**: After creating your account, validate your email and provide parental validation on the second email to unlock access to the portal.</description>
+    <author>Ryan Jones</author>
+    <category>minor</category>
+  </item>
+  <item>
+    <title>[User Portal] 💳 Dashboard: FYBIT Balance &amp; Upcoming Classes</title>
+    <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1781002800000</link>
+    <guid>https://changelog.fundedyouth.org/update/user-portal-1781002800000</guid>
+    <pubDate>Tue, 09 Jun 2026 11:00:00 GMT</pubDate>
+    <description>The **User Portal Dashboard** now keeps you in the loop at a glance. 🎉
+
+### What&apos;s New
+* **💰 FYBIT balance**: See a notice with your current FYBIT credit balance right on the dashboard.
+* **🛒 Buy more credits**: A quick link to top up your credits when you&apos;re running low.
+* **📅 Upcoming classes**: View your upcoming classes at a glance.</description>
+    <author>Ryan Jones</author>
+    <category>minor</category>
+  </item>
+  <item>
+    <title>[User Portal] 🔑 Login: We Recommend Using Your Username</title>
+    <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1780999200000</link>
+    <guid>https://changelog.fundedyouth.org/update/user-portal-1780999200000</guid>
+    <pubDate>Tue, 09 Jun 2026 10:00:00 GMT</pubDate>
+    <description>We&apos;re recommending users sign in with their **username** instead of their email. 🔐
+
+### Why
+* **👨‍👩‍👧‍👦 Shared emails**: If a parent used the same email for multiple children, usernames keep each account distinct.
+* **✅ Smoother sign-in**: Switching to your username avoids confusion at login.</description>
+    <author>Ryan Jones</author>
+    <category>minor</category>
+  </item>
+  <item>
+    <title>[Fun Labs] ⏰ More Daily Instructional Hours Coming</title>
+    <link>https://changelog.fundedyouth.org/?app=fun-labs&amp;update=fun-labs-1780995600000</link>
+    <guid>https://changelog.fundedyouth.org/update/fun-labs-1780995600000</guid>
+    <pubDate>Tue, 09 Jun 2026 09:00:00 GMT</pubDate>
+    <description>We&apos;re working on a solution to provide more daily instructional hours. 🚀
+
+### What&apos;s Coming
+* **🕒 Custom time slots**: If the standard hours don&apos;t work for you, we&apos;re integrating a custom time slot feature.
+* **📬 Stay connected**: More details to come — stay tuned.</description>
+    <author>Ryan Jones</author>
+    <category>minor</category>
+  </item>
+  <item>
+    <title>[Public Site] Get Start now Redirected to Portal</title>
+    <link>https://changelog.fundedyouth.org/?app=public-site&amp;update=public-site-1780907400000</link>
+    <guid>https://changelog.fundedyouth.org/update/public-site-1780907400000</guid>
+    <pubDate>Mon, 08 Jun 2026 08:30:00 GMT</pubDate>
+    <description>Remove the Get Started page. All links pointed to get started now redirect to https://portal.fundedyouth.org/#watch-and-learn</description>
+    <author>Ryan Jones</author>
+    <category>major</category>
+  </item>
+  <item>
+    <title>[Fun Labs] 🚀 New Rocket Workshop Coming Soon</title>
+    <link>https://changelog.fundedyouth.org/?app=fun-labs&amp;update=fun-labs-1780905600000</link>
+    <guid>https://changelog.fundedyouth.org/update/fun-labs-1780905600000</guid>
+    <pubDate>Mon, 08 Jun 2026 08:00:00 GMT</pubDate>
+    <description>We&apos;re building a new hands-on workshop all about rockets and compression. 🚀
+
+### The Idea
+* **🛠️ Simplified design**: Reworking an existing model that relies on an air compressor.
+* **🚲 Bike pump system**: Replacing the compressor with a bike pump and a control panel for a simulated launch console.
+
+### How It Works
+* **🎯 Assemble**: Students build their own paper rocket.
+* **💨 Prime**: Pump to build up air pressure.
+* **🔴 Launch**: Hit the launch button to send the rocket flying.</description>
+    <author>Ryan Jones</author>
+    <category>major</category>
+  </item>
+  <item>
     <title>[Fun Labs] 🗂️ Q-UP: Service Request Tracking</title>
-    <link>https://changelog.fundedyouth.org/?app=fun-labs&amp;update=fun-labs-1780930800000</link>
-    <guid>https://changelog.fundedyouth.org/update/fun-labs-1780930800000</guid>
-    <pubDate>Mon, 08 Jun 2026 15:00:00 GMT</pubDate>
+    <link>https://changelog.fundedyouth.org/?app=fun-labs&amp;update=fun-labs-1780902000000</link>
+    <guid>https://changelog.fundedyouth.org/update/fun-labs-1780902000000</guid>
+    <pubDate>Mon, 08 Jun 2026 07:00:00 GMT</pubDate>
     <description>A new in-house tool is taking shape in the lab. 🚀
 
 ### What It Does
@@ -22,9 +102,9 @@
   </item>
   <item>
     <title>[Fun Labs] 🗄️ The Vault: In-House File Server</title>
-    <link>https://changelog.fundedyouth.org/?app=fun-labs&amp;update=fun-labs-1780927200000</link>
-    <guid>https://changelog.fundedyouth.org/update/fun-labs-1780927200000</guid>
-    <pubDate>Mon, 08 Jun 2026 14:00:00 GMT</pubDate>
+    <link>https://changelog.fundedyouth.org/?app=fun-labs&amp;update=fun-labs-1780898400000</link>
+    <guid>https://changelog.fundedyouth.org/update/fun-labs-1780898400000</guid>
+    <pubDate>Mon, 08 Jun 2026 06:00:00 GMT</pubDate>
     <description>A new in-house file server for active members. 🔐
 
 ### What It Does
@@ -36,16 +116,16 @@
   </item>
   <item>
     <title>[Fun Labs] 🎨 Filament Visualizer: Preview Materials on 3D Models</title>
-    <link>https://changelog.fundedyouth.org/?app=fun-labs&amp;update=fun-labs-1780923600000</link>
-    <guid>https://changelog.fundedyouth.org/update/fun-labs-1780923600000</guid>
-    <pubDate>Mon, 08 Jun 2026 13:00:00 GMT</pubDate>
+    <link>https://changelog.fundedyouth.org/?app=fun-labs&amp;update=fun-labs-1780894800000</link>
+    <guid>https://changelog.fundedyouth.org/update/fun-labs-1780894800000</guid>
+    <pubDate>Mon, 08 Jun 2026 05:00:00 GMT</pubDate>
     <description>A new experimental tool, currently under development. 🚧
 
 ### What It Does
 * **📥 Import a model**: Bring in a 3D model.
 * **🎨 Assign a material**: Apply a material to preview how the model will look.
 * **🚧 Under development**: Still actively being built.</description>
-    <author>Ryan Jones</author>
+    <author>Jerry Roca</author>
     <category>major</category>
   </item>
   <item>
