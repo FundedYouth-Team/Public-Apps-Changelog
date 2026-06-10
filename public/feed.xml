@@ -7,6 +7,21 @@
   <language>en-us</language>
   <atom:link href="https://changelog.fundedyouth.org/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>[Public Site] ✨ Learn Page Refresh + Easier Maker Apps Access</title>
+    <link>https://changelog.fundedyouth.org/?app=public-site&amp;update=public-site-1781115517000</link>
+    <guid>https://changelog.fundedyouth.org/update/public-site-1781115517000</guid>
+    <pubDate>Wed, 10 Jun 2026 18:18:37 GMT</pubDate>
+    <description>The **Learn** page got a fresh coat of paint to match the rest of the site, plus some handy new shortcuts. ✨
+
+### What Changed
+* **🎨 Matching style**: The Learn page styling now lines up with the look and feel of the rest of the site.
+* **🛠️ Maker Apps &amp; Tools button**: The hero section&apos;s secondary button is now **&quot;Maker Apps &amp; Tools&quot;** — clicking it scrolls you straight down to the link for the full Maker Apps &amp; Tools page.
+* **🧭 New explore section**: Added a brand-new **&quot;Explore our Maker Apps &amp; Tools&quot;** section near the bottom of the page.
+* **💬 Faster contact**: On the Teachers page, **&quot;Start a conversation now&quot;** now jumps right to the Contact page.</description>
+    <author>Ryan Jones</author>
+    <category>minor</category>
+  </item>
+  <item>
     <title>[Docs] 📄 Trimmed Redundancy from the Adult &amp; Parent/Guardian Agreement</title>
     <link>https://changelog.fundedyouth.org/?app=docs&amp;update=docs-1781111824000</link>
     <guid>https://changelog.fundedyouth.org/update/docs-1781111824000</guid>

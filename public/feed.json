@@ -6,6 +6,27 @@
   "description": "Hype updates, releases, and fixes from the FundedYouth developers.",
   "items": [
     {
+      "id": "public-site-1781115517000",
+      "url": "https://changelog.fundedyouth.org/?app=public-site&update=public-site-1781115517000",
+      "title": "[Public Site] ✨ Learn Page Refresh + Easier Maker Apps Access",
+      "content_text": "The **Learn** page got a fresh coat of paint to match the rest of the site, plus some handy new shortcuts. ✨\n\n### What Changed\n* **🎨 Matching style**: The Learn page styling now lines up with the look and feel of the rest of the site.\n* **🛠️ Maker Apps & Tools button**: The hero section's secondary button is now **\"Maker Apps & Tools\"** — clicking it scrolls you straight down to the link for the full Maker Apps & Tools page.\n* **🧭 New explore section**: Added a brand-new **\"Explore our Maker Apps & Tools\"** section near the bottom of the page.\n* **💬 Faster contact**: On the Teachers page, **\"Start a conversation now\"** now jumps right to the Contact page.",
+      "date_published": "2026-06-10T18:18:37Z",
+      "tags": [
+        "minor",
+        "public-site",
+        "learn",
+        "maker-apps",
+        "teachers",
+        "navigation"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
       "id": "docs-1781111824000",
       "url": "https://changelog.fundedyouth.org/?app=docs&update=docs-1781111824000",
       "title": "[Docs] 📄 Trimmed Redundancy from the Adult & Parent/Guardian Agreement",
