@@ -7,6 +7,20 @@
   <language>en-us</language>
   <atom:link href="https://changelog.fundedyouth.org/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>[User Portal] 🏷️ Renamed Sessions &amp; Course Navigation</title>
+    <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1781020800000</link>
+    <guid>https://changelog.fundedyouth.org/update/user-portal-1781020800000</guid>
+    <pubDate>Tue, 09 Jun 2026 16:00:00 GMT</pubDate>
+    <description>We&apos;ve refreshed some navigation labels in the **User Portal** to be clearer. 🏷️
+
+### What Changed
+* **Sessions → Events**
+* **Browse Events → Schedule**
+* **Available Courses → Join a Course**</description>
+    <author>Ryan Jones</author>
+    <category>minor</category>
+  </item>
+  <item>
     <title>[User Portal] 🧭 Reordered Portal Navigation</title>
     <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1781017200000</link>
     <guid>https://changelog.fundedyouth.org/update/user-portal-1781017200000</guid>

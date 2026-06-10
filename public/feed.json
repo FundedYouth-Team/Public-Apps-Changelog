@@ -6,6 +6,26 @@
   "description": "Hype updates, releases, and fixes from the FundedYouth developers.",
   "items": [
     {
+      "id": "user-portal-1781020800000",
+      "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1781020800000",
+      "title": "[User Portal] 🏷️ Renamed Sessions & Course Navigation",
+      "content_text": "We've refreshed some navigation labels in the **User Portal** to be clearer. 🏷️\n\n### What Changed\n* **Sessions → Events**\n* **Browse Events → Schedule**\n* **Available Courses → Join a Course**",
+      "date_published": "2026-06-09T16:00:00Z",
+      "tags": [
+        "minor",
+        "portal",
+        "navigation",
+        "events",
+        "courses"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
       "id": "user-portal-1781017200000",
       "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1781017200000",
       "title": "[User Portal] 🧭 Reordered Portal Navigation",
