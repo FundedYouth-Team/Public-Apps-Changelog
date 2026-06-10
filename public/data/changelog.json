@@ -67,7 +67,7 @@
       "appName": "User Portal",
       "title": "📅 Event Registrations Sync to Public Schedule",
       "description": "Event slots now stay in sync with the public calendar. 📅\n\n### What Changed\n* **✅ Live availability**: When a student registers for an event, it now shows up on the public calendar schedule page for available slots.\n* **🔄 Two-way updates**: This applies to both registration and cancellation, so open slots always reflect reality.",
-      "date": "2026-06-09T18:00:00Z",
+      "date": "2026-06-10T16:59:35Z",
       "version": "v4.14.1",
       "type": "patch",
       "author": {
