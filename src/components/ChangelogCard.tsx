@@ -110,14 +110,19 @@ export default function ChangelogCard({ item, app, showAuthor = false }: Changel
 
   const typeMeta = getTypeMeta(item.type);
 
-  // Format dynamic dates
-  const formatDate = (isoString: string) => {
+  // Format dynamic dates in the timezone the entry was authored in,
+  // appending the zone abbreviation (e.g. "Jun 10, 2026 PDT").
+  const formatDate = (isoString: string, timeZone = "America/Los_Angeles") => {
     const d = new Date(isoString);
-    return d.toLocaleDateString("en-US", {
+    const parts = new Intl.DateTimeFormat("en-US", {
       month: "short",
       day: "numeric",
       year: "numeric",
-    });
+      timeZone,
+      timeZoneName: "short",
+    }).formatToParts(d);
+    const get = (type: string) => parts.find((p) => p.type === type)?.value ?? "";
+    return `${get("month")} ${get("day")}, ${get("year")} ${get("timeZoneName")}`;
   };
 
   // Collapsed preview: a short plain-text excerpt; expand to see the full markdown.
@@ -152,7 +157,7 @@ export default function ChangelogCard({ item, app, showAuthor = false }: Changel
         {/* Date and Timeline indicator */}
         <div className="flex items-center gap-1 text-xs text-slate-400 dark:text-slate-500 font-mono">
           <Calendar className="h-3.5 w-3.5 text-slate-400" />
-          <span>{formatDate(item.date)}</span>
+          <span>{formatDate(item.date, item.timezone)}</span>
         </div>
       </div>
 

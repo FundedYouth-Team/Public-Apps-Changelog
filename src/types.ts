@@ -7,6 +7,7 @@ export interface ChangelogItem {
   title: string;
   description: string; // supports markdown
   date: string; // ISO date
+  timezone?: string; // IANA tz the entry was authored in (e.g. 'America/Los_Angeles'); defaults to Pacific
   version: string;
   type: UpdateType;
   author: {

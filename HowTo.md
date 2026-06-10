@@ -60,6 +60,7 @@ Add a new object to the **top** of the `updates` array (newest first). Example:
 | `title` | yes | The headline (emoji welcome). |
 | `description` | yes | Markdown. See §4 for supported syntax. Use `\n` for line breaks. |
 | `date` | yes | ISO 8601 UTC, e.g. `"2026-06-01T09:00:00Z"`. Controls ordering display & feed `pubDate`. |
+| `timezone` | no | IANA timezone the entry was authored in, e.g. `"America/Los_Angeles"`. The card renders the date in this zone and appends its abbreviation (e.g. `Jun 10, 2026 PDT`). Defaults to `America/Los_Angeles` when omitted. |
 | `version` | yes | e.g. `"v1.5.0"`. |
 | `type` | yes | One of `major`, `minor`, `patch`, `security`. Drives the colored badge & filters. |
 | `author.name` | yes | Author display name. |
