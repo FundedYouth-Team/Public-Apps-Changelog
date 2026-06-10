@@ -7,6 +7,19 @@
   <language>en-us</language>
   <atom:link href="https://changelog.fundedyouth.org/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>[User Portal] 📅 Event Registrations Sync to Public Schedule</title>
+    <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1781028000000</link>
+    <guid>https://changelog.fundedyouth.org/update/user-portal-1781028000000</guid>
+    <pubDate>Tue, 09 Jun 2026 18:00:00 GMT</pubDate>
+    <description>Event slots now stay in sync with the public calendar. 📅
+
+### What Changed
+* **✅ Live availability**: When a student registers for an event, it now shows up on the public calendar schedule page for available slots.
+* **🔄 Two-way updates**: This applies to both registration and cancellation, so open slots always reflect reality.</description>
+    <author>Ryan Jones</author>
+    <category>patch</category>
+  </item>
+  <item>
     <title>[User Portal] 📊 &quot;Student&quot; Is Now &quot;My Progress&quot;</title>
     <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1781024400000</link>
     <guid>https://changelog.fundedyouth.org/update/user-portal-1781024400000</guid>

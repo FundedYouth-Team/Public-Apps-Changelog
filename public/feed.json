@@ -6,6 +6,26 @@
   "description": "Hype updates, releases, and fixes from the FundedYouth developers.",
   "items": [
     {
+      "id": "user-portal-1781028000000",
+      "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1781028000000",
+      "title": "[User Portal] 📅 Event Registrations Sync to Public Schedule",
+      "content_text": "Event slots now stay in sync with the public calendar. 📅\n\n### What Changed\n* **✅ Live availability**: When a student registers for an event, it now shows up on the public calendar schedule page for available slots.\n* **🔄 Two-way updates**: This applies to both registration and cancellation, so open slots always reflect reality.",
+      "date_published": "2026-06-09T18:00:00Z",
+      "tags": [
+        "patch",
+        "portal",
+        "events",
+        "schedule",
+        "calendar"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
       "id": "user-portal-1781024400000",
       "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1781024400000",
       "title": "[User Portal] 📊 \"Student\" Is Now \"My Progress\"",
