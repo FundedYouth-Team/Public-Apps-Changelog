@@ -6,6 +6,26 @@
   "description": "Hype updates, releases, and fixes from the FundedYouth developers.",
   "items": [
     {
+      "id": "user-portal-1781010000000",
+      "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1781010000000",
+      "title": "[User Portal] 🎟️ Active Memberships: Auto-Enroll in Included Courses",
+      "content_text": "Active memberships now include **Auto-Enroll** for the courses covered by your membership. 🎉\n\n### What's New\n* **🚀 Automatic access**: Courses included in your membership are added for you — no need to join them manually.\n* **✅ Always enrolled**: As long as your membership is active, you're auto-enrolled in the included courses.",
+      "date_published": "2026-06-09T13:00:00Z",
+      "tags": [
+        "minor",
+        "portal",
+        "memberships",
+        "courses",
+        "auto-enroll"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
       "id": "user-portal-1781006400000",
       "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1781006400000",
       "title": "[User Portal] 📝 Streamlined Account Registration & Member Agreement",

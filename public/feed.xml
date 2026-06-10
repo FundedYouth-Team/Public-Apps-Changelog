@@ -7,6 +7,19 @@
   <language>en-us</language>
   <atom:link href="https://changelog.fundedyouth.org/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>[User Portal] 🎟️ Active Memberships: Auto-Enroll in Included Courses</title>
+    <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1781010000000</link>
+    <guid>https://changelog.fundedyouth.org/update/user-portal-1781010000000</guid>
+    <pubDate>Tue, 09 Jun 2026 13:00:00 GMT</pubDate>
+    <description>Active memberships now include **Auto-Enroll** for the courses covered by your membership. 🎉
+
+### What&apos;s New
+* **🚀 Automatic access**: Courses included in your membership are added for you — no need to join them manually.
+* **✅ Always enrolled**: As long as your membership is active, you&apos;re auto-enrolled in the included courses.</description>
+    <author>Ryan Jones</author>
+    <category>minor</category>
+  </item>
+  <item>
     <title>[User Portal] 📝 Streamlined Account Registration &amp; Member Agreement</title>
     <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1781006400000</link>
     <guid>https://changelog.fundedyouth.org/update/user-portal-1781006400000</guid>

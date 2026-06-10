@@ -22,7 +22,7 @@
       "icon": "User",
       "color": "from-pink-500 to-rose-500",
       "status": "active",
-      "currentVersion": "v4.11.0"
+      "currentVersion": "v4.12.0"
     },
     {
       "id": "the-vault",
@@ -62,6 +62,26 @@
     }
   ],
   "updates": [
+    {
+      "appId": "user-portal",
+      "appName": "User Portal",
+      "title": "🎟️ Active Memberships: Auto-Enroll in Included Courses",
+      "description": "Active memberships now include **Auto-Enroll** for the courses covered by your membership. 🎉\n\n### What's New\n* **🚀 Automatic access**: Courses included in your membership are added for you — no need to join them manually.\n* **✅ Always enrolled**: As long as your membership is active, you're auto-enrolled in the included courses.",
+      "date": "2026-06-09T13:00:00Z",
+      "version": "v4.12.0",
+      "type": "minor",
+      "author": {
+        "name": "Ryan Jones",
+        "role": "Lead Product Engineer & Designer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+      },
+      "tags": [
+        "portal",
+        "memberships",
+        "courses",
+        "auto-enroll"
+      ]
+    },
     {
       "appId": "user-portal",
       "appName": "User Portal",
