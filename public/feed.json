@@ -6,6 +6,27 @@
   "description": "Hype updates, releases, and fixes from the FundedYouth developers.",
   "items": [
     {
+      "id": "user-portal-1781024400000",
+      "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1781024400000",
+      "title": "[User Portal] 📊 \"Student\" Is Now \"My Progress\"",
+      "content_text": "We've reorganized the **Student** area into a clearer **My Progress** section. 📊\n\n### What Changed\n* **🧭 Nav rename**: **Student** is now **My Progress**.\n* **🏷️ Sub-menu renames**: **My Progress → Overview**, **My Badges → Badges**, **My Pathways → Pathways**.\n* **📰 Consistent headers**: The page title now always reads **My Progress**, with the subtitle showing the section you're on (Overview, Badges, or Pathways).",
+      "date_published": "2026-06-09T17:00:00Z",
+      "tags": [
+        "minor",
+        "portal",
+        "navigation",
+        "progress",
+        "badges",
+        "pathways"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
       "id": "user-portal-1781020800000",
       "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1781020800000",
       "title": "[User Portal] 🏷️ Renamed Sessions & Course Navigation",

@@ -22,7 +22,7 @@
       "icon": "User",
       "color": "from-pink-500 to-rose-500",
       "status": "active",
-      "currentVersion": "v4.13.0"
+      "currentVersion": "v4.14.0"
     },
     {
       "id": "the-vault",
@@ -62,6 +62,27 @@
     }
   ],
   "updates": [
+    {
+      "appId": "user-portal",
+      "appName": "User Portal",
+      "title": "📊 \"Student\" Is Now \"My Progress\"",
+      "description": "We've reorganized the **Student** area into a clearer **My Progress** section. 📊\n\n### What Changed\n* **🧭 Nav rename**: **Student** is now **My Progress**.\n* **🏷️ Sub-menu renames**: **My Progress → Overview**, **My Badges → Badges**, **My Pathways → Pathways**.\n* **📰 Consistent headers**: The page title now always reads **My Progress**, with the subtitle showing the section you're on (Overview, Badges, or Pathways).",
+      "date": "2026-06-09T17:00:00Z",
+      "version": "v4.14.0",
+      "type": "minor",
+      "author": {
+        "name": "Ryan Jones",
+        "role": "Lead Product Engineer & Designer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+      },
+      "tags": [
+        "portal",
+        "navigation",
+        "progress",
+        "badges",
+        "pathways"
+      ]
+    },
     {
       "appId": "user-portal",
       "appName": "User Portal",

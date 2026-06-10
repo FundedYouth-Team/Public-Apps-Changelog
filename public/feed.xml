@@ -7,6 +7,20 @@
   <language>en-us</language>
   <atom:link href="https://changelog.fundedyouth.org/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>[User Portal] 📊 &quot;Student&quot; Is Now &quot;My Progress&quot;</title>
+    <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1781024400000</link>
+    <guid>https://changelog.fundedyouth.org/update/user-portal-1781024400000</guid>
+    <pubDate>Tue, 09 Jun 2026 17:00:00 GMT</pubDate>
+    <description>We&apos;ve reorganized the **Student** area into a clearer **My Progress** section. 📊
+
+### What Changed
+* **🧭 Nav rename**: **Student** is now **My Progress**.
+* **🏷️ Sub-menu renames**: **My Progress → Overview**, **My Badges → Badges**, **My Pathways → Pathways**.
+* **📰 Consistent headers**: The page title now always reads **My Progress**, with the subtitle showing the section you&apos;re on (Overview, Badges, or Pathways).</description>
+    <author>Ryan Jones</author>
+    <category>minor</category>
+  </item>
+  <item>
     <title>[User Portal] 🏷️ Renamed Sessions &amp; Course Navigation</title>
     <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1781020800000</link>
     <guid>https://changelog.fundedyouth.org/update/user-portal-1781020800000</guid>
