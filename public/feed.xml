@@ -7,6 +7,30 @@
   <language>en-us</language>
   <atom:link href="https://changelog.fundedyouth.org/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>[User Portal] 🧭 Reordered Portal Navigation</title>
+    <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1781017200000</link>
+    <guid>https://changelog.fundedyouth.org/update/user-portal-1781017200000</guid>
+    <pubDate>Tue, 09 Jun 2026 15:00:00 GMT</pubDate>
+    <description>We&apos;ve reordered the **User Portal** navigation for a more intuitive flow. 🧭
+
+### New Order
+* **Dashboard → Sessions → Student → Subscription → Billing → Agreements → Profile**</description>
+    <author>Ryan Jones</author>
+    <category>patch</category>
+  </item>
+  <item>
+    <title>[User Portal] 🏷️ Subscriptions Nav Renamed to &quot;Membership&quot;</title>
+    <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1781013600000</link>
+    <guid>https://changelog.fundedyouth.org/update/user-portal-1781013600000</guid>
+    <pubDate>Tue, 09 Jun 2026 14:00:00 GMT</pubDate>
+    <description>Small wording tweak in the navigation. 🏷️
+
+### What Changed
+* **Subscriptions → Membership**: The **Subscriptions** nav item is now labeled **Membership**.</description>
+    <author>Ryan Jones</author>
+    <category>patch</category>
+  </item>
+  <item>
     <title>[User Portal] 🎟️ Active Memberships: Auto-Enroll in Included Courses</title>
     <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1781010000000</link>
     <guid>https://changelog.fundedyouth.org/update/user-portal-1781010000000</guid>

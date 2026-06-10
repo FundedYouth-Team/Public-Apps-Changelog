@@ -6,6 +6,43 @@
   "description": "Hype updates, releases, and fixes from the FundedYouth developers.",
   "items": [
     {
+      "id": "user-portal-1781017200000",
+      "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1781017200000",
+      "title": "[User Portal] 🧭 Reordered Portal Navigation",
+      "content_text": "We've reordered the **User Portal** navigation for a more intuitive flow. 🧭\n\n### New Order\n* **Dashboard → Sessions → Student → Subscription → Billing → Agreements → Profile**",
+      "date_published": "2026-06-09T15:00:00Z",
+      "tags": [
+        "patch",
+        "portal",
+        "navigation"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
+      "id": "user-portal-1781013600000",
+      "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1781013600000",
+      "title": "[User Portal] 🏷️ Subscriptions Nav Renamed to \"Membership\"",
+      "content_text": "Small wording tweak in the navigation. 🏷️\n\n### What Changed\n* **Subscriptions → Membership**: The **Subscriptions** nav item is now labeled **Membership**.",
+      "date_published": "2026-06-09T14:00:00Z",
+      "tags": [
+        "patch",
+        "portal",
+        "navigation",
+        "membership"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
       "id": "user-portal-1781010000000",
       "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1781010000000",
       "title": "[User Portal] 🎟️ Active Memberships: Auto-Enroll in Included Courses",
