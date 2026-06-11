@@ -13,7 +13,7 @@
       "icon": "Globe",
       "color": "from-orange-500 to-amber-500",
       "status": "active",
-      "currentVersion": "v2.11.0"
+      "currentVersion": "v2.11.1"
     },
     {
       "id": "user-portal",
@@ -62,6 +62,27 @@
     }
   ],
   "updates": [
+    {
+      "appId": "public-site",
+      "appName": "Public Site",
+      "title": "🙌 New Way to Start Volunteering",
+      "description": "Signing up to volunteer is now simpler and happens right inside the **User Portal**. 🙌\n\n### What Changed\n* **🔗 No more Jotform**: We removed the old Jotform link from the Volunteer page.\n* **🚀 Start in the User Portal**: Volunteering now begins by creating a free account in the User Portal.\n* **✅ Quick steps**: Just agree to the required terms of service and sign the **Volunteer Agreement**.\n* **📬 We'll follow up**: Once you sign the agreement, a team member will reach out to you.",
+      "date": "2026-06-11T16:34:29Z",
+      "timezone": "America/Los_Angeles",
+      "version": "v2.11.1",
+      "type": "patch",
+      "author": {
+        "name": "Ryan Jones",
+        "role": "Lead Product Engineer & Designer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+      },
+      "tags": [
+        "public-site",
+        "volunteer",
+        "user-portal",
+        "onboarding"
+      ]
+    },
     {
       "appId": "public-site",
       "appName": "Public Site",

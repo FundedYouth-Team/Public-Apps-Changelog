@@ -7,6 +7,21 @@
   <language>en-us</language>
   <atom:link href="https://changelog.fundedyouth.org/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>[Public Site] 🙌 New Way to Start Volunteering</title>
+    <link>https://changelog.fundedyouth.org/?app=public-site&amp;update=public-site-1781195669000</link>
+    <guid>https://changelog.fundedyouth.org/update/public-site-1781195669000</guid>
+    <pubDate>Thu, 11 Jun 2026 16:34:29 GMT</pubDate>
+    <description>Signing up to volunteer is now simpler and happens right inside the **User Portal**. 🙌
+
+### What Changed
+* **🔗 No more Jotform**: We removed the old Jotform link from the Volunteer page.
+* **🚀 Start in the User Portal**: Volunteering now begins by creating a free account in the User Portal.
+* **✅ Quick steps**: Just agree to the required terms of service and sign the **Volunteer Agreement**.
+* **📬 We&apos;ll follow up**: Once you sign the agreement, a team member will reach out to you.</description>
+    <author>Ryan Jones</author>
+    <category>patch</category>
+  </item>
+  <item>
     <title>[Public Site] ✨ Learn Page Refresh + Easier Maker Apps Access</title>
     <link>https://changelog.fundedyouth.org/?app=public-site&amp;update=public-site-1781115517000</link>
     <guid>https://changelog.fundedyouth.org/update/public-site-1781115517000</guid>

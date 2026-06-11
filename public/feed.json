@@ -6,6 +6,26 @@
   "description": "Hype updates, releases, and fixes from the FundedYouth developers.",
   "items": [
     {
+      "id": "public-site-1781195669000",
+      "url": "https://changelog.fundedyouth.org/?app=public-site&update=public-site-1781195669000",
+      "title": "[Public Site] 🙌 New Way to Start Volunteering",
+      "content_text": "Signing up to volunteer is now simpler and happens right inside the **User Portal**. 🙌\n\n### What Changed\n* **🔗 No more Jotform**: We removed the old Jotform link from the Volunteer page.\n* **🚀 Start in the User Portal**: Volunteering now begins by creating a free account in the User Portal.\n* **✅ Quick steps**: Just agree to the required terms of service and sign the **Volunteer Agreement**.\n* **📬 We'll follow up**: Once you sign the agreement, a team member will reach out to you.",
+      "date_published": "2026-06-11T16:34:29Z",
+      "tags": [
+        "patch",
+        "public-site",
+        "volunteer",
+        "user-portal",
+        "onboarding"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
       "id": "public-site-1781115517000",
       "url": "https://changelog.fundedyouth.org/?app=public-site&update=public-site-1781115517000",
       "title": "[Public Site] ✨ Learn Page Refresh + Easier Maker Apps Access",
