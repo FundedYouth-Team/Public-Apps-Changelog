@@ -7,6 +7,21 @@
   <language>en-us</language>
   <atom:link href="https://changelog.fundedyouth.org/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>[User Portal] 🏷️ Admin Portal Menu Renames: Curriculum &amp; Events</title>
+    <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1781216183000</link>
+    <guid>https://changelog.fundedyouth.org/update/user-portal-1781216183000</guid>
+    <pubDate>Thu, 11 Jun 2026 22:16:23 GMT</pubDate>
+    <description>We renamed a few menus in the **Admin Portal** to make them clearer. 🏷️
+
+### What Changed
+* **📚 Students → Curriculum**: The **Students** main menu is now **Curriculum**.
+* **🧭 Curriculum sub-menu**: Under Curriculum, the old **Curriculum** item is now **Overview**, and **Accounts** is back to being called **Students**.
+* **📅 Sessions → Events**: The **Sessions** main menu is now **Events**.
+* **🗓️ Events → Schedule**: Under Events, the old **Events** item is now **Schedule**.</description>
+    <author>Ryan Jones</author>
+    <category>patch</category>
+  </item>
+  <item>
     <title>[Public Site] 🙌 New Way to Start Volunteering</title>
     <link>https://changelog.fundedyouth.org/?app=public-site&amp;update=public-site-1781195669000</link>
     <guid>https://changelog.fundedyouth.org/update/public-site-1781195669000</guid>

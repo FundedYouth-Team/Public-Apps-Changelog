@@ -6,6 +6,27 @@
   "description": "Hype updates, releases, and fixes from the FundedYouth developers.",
   "items": [
     {
+      "id": "user-portal-1781216183000",
+      "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1781216183000",
+      "title": "[User Portal] 🏷️ Admin Portal Menu Renames: Curriculum & Events",
+      "content_text": "We renamed a few menus in the **Admin Portal** to make them clearer. 🏷️\n\n### What Changed\n* **📚 Students → Curriculum**: The **Students** main menu is now **Curriculum**.\n* **🧭 Curriculum sub-menu**: Under Curriculum, the old **Curriculum** item is now **Overview**, and **Accounts** is back to being called **Students**.\n* **📅 Sessions → Events**: The **Sessions** main menu is now **Events**.\n* **🗓️ Events → Schedule**: Under Events, the old **Events** item is now **Schedule**.",
+      "date_published": "2026-06-11T22:16:23Z",
+      "tags": [
+        "patch",
+        "portal",
+        "admin",
+        "navigation",
+        "curriculum",
+        "events"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
       "id": "public-site-1781195669000",
       "url": "https://changelog.fundedyouth.org/?app=public-site&update=public-site-1781195669000",
       "title": "[Public Site] 🙌 New Way to Start Volunteering",
