@@ -7,6 +7,19 @@
   <language>en-us</language>
   <atom:link href="https://changelog.fundedyouth.org/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>[User Portal] ✉️ Clearer Event Registration Emails</title>
+    <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1781456232000</link>
+    <guid>https://changelog.fundedyouth.org/update/user-portal-1781456232000</guid>
+    <pubDate>Sun, 14 Jun 2026 16:57:12 GMT</pubDate>
+    <description>We tidied up the registration email notifications in the **Admin Portal**. ✉️
+
+### What Changed
+* **🏷️ New name**: **Class / Sessions Registration** is now **Event Registration** for Email Notifications.
+* **➕ More details**: This section now also includes **username**, **email**, and **grade**.</description>
+    <author>Ryan Jones</author>
+    <category>patch</category>
+  </item>
+  <item>
     <title>[User Portal] 📅 Request a Custom Class Schedule</title>
     <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1781453995000</link>
     <guid>https://changelog.fundedyouth.org/update/user-portal-1781453995000</guid>

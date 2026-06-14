@@ -6,6 +6,27 @@
   "description": "Hype updates, releases, and fixes from the FundedYouth developers.",
   "items": [
     {
+      "id": "user-portal-1781456232000",
+      "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1781456232000",
+      "title": "[User Portal] ✉️ Clearer Event Registration Emails",
+      "content_text": "We tidied up the registration email notifications in the **Admin Portal**. ✉️\n\n### What Changed\n* **🏷️ New name**: **Class / Sessions Registration** is now **Event Registration** for Email Notifications.\n* **➕ More details**: This section now also includes **username**, **email**, and **grade**.",
+      "date_published": "2026-06-14T16:57:12Z",
+      "tags": [
+        "patch",
+        "portal",
+        "admin",
+        "notifications",
+        "events",
+        "email"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
       "id": "user-portal-1781453995000",
       "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1781453995000",
       "title": "[User Portal] 📅 Request a Custom Class Schedule",
