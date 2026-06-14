@@ -6,6 +6,27 @@
   "description": "Hype updates, releases, and fixes from the FundedYouth developers.",
   "items": [
     {
+      "id": "user-portal-1781462756000",
+      "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1781462756000",
+      "title": "[User Portal] 🙈 Hide Whole Events & Auto-Cleanup",
+      "content_text": "More polish for **Events > Registrations** in the **Admin Portal**. 🙈\n\n### What Changed\n* **📱 Looks great anywhere**: Registrant details now show as a table on desktop and as easy-to-read stacked cards on mobile.\n* **🙈 Hide a whole event**: A new **Hide** button tucks an entire event out of the list (still kept on the Schedule and in the audit log), replacing the old per-person dismiss.\n* **🗂️ New Settings tab**: Registrations now has **Registrations** and **Settings** sub-tabs.\n* **⏳ Auto-hide old events**: In Settings you can have events hide automatically after a set number of days, and see any manually hidden events with a **Restore** button.",
+      "date_published": "2026-06-14T18:45:56Z",
+      "tags": [
+        "patch",
+        "portal",
+        "admin",
+        "events",
+        "registrations",
+        "settings"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
       "id": "user-portal-1781461359000",
       "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1781461359000",
       "title": "[User Portal] 📱 Active Events & Mobile-Friendly Registrations",
