@@ -7,6 +7,20 @@
   <language>en-us</language>
   <atom:link href="https://changelog.fundedyouth.org/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>[User Portal] 🗂️ Event-by-Event Registrations View</title>
+    <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1781460722000</link>
+    <guid>https://changelog.fundedyouth.org/update/user-portal-1781460722000</guid>
+    <pubDate>Sun, 14 Jun 2026 18:12:02 GMT</pubDate>
+    <description>**Events &gt; Registrations** in the **Admin Portal** got a big upgrade — instead of one giant list, you now browse by event. 🗂️
+
+### What Changed
+* **📋 Pick an event**: The left side lists **Upcoming** and **Past** events, each showing its date/time and how many people are registered versus the capacity. Search filters the list by event name.
+* **👥 See who&apos;s coming**: The right side shows everyone registered for the event you picked (the first one is selected automatically), sorted by status — **registered → attended → no-show → cancelled**.
+* **✅ Same quick actions**: You can still mark attended, no-show, cancel, or dismiss each person, and the registered date still shows in Pacific time.</description>
+    <author>Ryan Jones</author>
+    <category>minor</category>
+  </item>
+  <item>
     <title>[User Portal] 🙈 Dismiss Registrations &amp; Correct Dates</title>
     <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1781459868000</link>
     <guid>https://changelog.fundedyouth.org/update/user-portal-1781459868000</guid>

@@ -6,6 +6,27 @@
   "description": "Hype updates, releases, and fixes from the FundedYouth developers.",
   "items": [
     {
+      "id": "user-portal-1781460722000",
+      "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1781460722000",
+      "title": "[User Portal] 🗂️ Event-by-Event Registrations View",
+      "content_text": "**Events > Registrations** in the **Admin Portal** got a big upgrade — instead of one giant list, you now browse by event. 🗂️\n\n### What Changed\n* **📋 Pick an event**: The left side lists **Upcoming** and **Past** events, each showing its date/time and how many people are registered versus the capacity. Search filters the list by event name.\n* **👥 See who's coming**: The right side shows everyone registered for the event you picked (the first one is selected automatically), sorted by status — **registered → attended → no-show → cancelled**.\n* **✅ Same quick actions**: You can still mark attended, no-show, cancel, or dismiss each person, and the registered date still shows in Pacific time.",
+      "date_published": "2026-06-14T18:12:02Z",
+      "tags": [
+        "minor",
+        "portal",
+        "admin",
+        "events",
+        "registrations",
+        "attendance"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
       "id": "user-portal-1781459868000",
       "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1781459868000",
       "title": "[User Portal] 🙈 Dismiss Registrations & Correct Dates",
