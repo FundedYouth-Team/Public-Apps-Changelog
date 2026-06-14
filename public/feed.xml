@@ -7,6 +7,22 @@
   <language>en-us</language>
   <atom:link href="https://changelog.fundedyouth.org/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>[User Portal] 📅 Request a Custom Class Schedule</title>
+    <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1781453995000</link>
+    <guid>https://changelog.fundedyouth.org/update/user-portal-1781453995000</guid>
+    <pubDate>Sun, 14 Jun 2026 16:19:55 GMT</pubDate>
+    <description>Can&apos;t make our standard weekly course hours? Now you can ask for a time that works for you. 📅
+
+### What Changed
+* **📝 New request form**: Pick a course, then check off the classes in that course you want to take.
+* **⏳ Plan ahead**: Choose a date at least **2 days** in the future, then pick a start time.
+* **🧮 Smart time slots**: We only show start times that actually fit. If you need 2 hours in a row and the open window is 10 AM–12 PM, you&apos;ll see **10 AM** offered — but not 11 AM, since that would leave only 1 hour.
+* **🛠️ Admins set the hours**: The Admin Portal controls which hours can be booked for custom requests.
+* **🤝 It&apos;s just a request**: After you submit, a team member will reach out to confirm your schedule.</description>
+    <author>Ryan Jones</author>
+    <category>major</category>
+  </item>
+  <item>
     <title>[User Portal] 🏷️ Admin Portal Menu Renames: Curriculum &amp; Events</title>
     <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1781216183000</link>
     <guid>https://changelog.fundedyouth.org/update/user-portal-1781216183000</guid>

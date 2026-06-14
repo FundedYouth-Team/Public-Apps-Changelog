@@ -6,6 +6,27 @@
   "description": "Hype updates, releases, and fixes from the FundedYouth developers.",
   "items": [
     {
+      "id": "user-portal-1781453995000",
+      "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1781453995000",
+      "title": "[User Portal] 📅 Request a Custom Class Schedule",
+      "content_text": "Can't make our standard weekly course hours? Now you can ask for a time that works for you. 📅\n\n### What Changed\n* **📝 New request form**: Pick a course, then check off the classes in that course you want to take.\n* **⏳ Plan ahead**: Choose a date at least **2 days** in the future, then pick a start time.\n* **🧮 Smart time slots**: We only show start times that actually fit. If you need 2 hours in a row and the open window is 10 AM–12 PM, you'll see **10 AM** offered — but not 11 AM, since that would leave only 1 hour.\n* **🛠️ Admins set the hours**: The Admin Portal controls which hours can be booked for custom requests.\n* **🤝 It's just a request**: After you submit, a team member will reach out to confirm your schedule.",
+      "date_published": "2026-06-14T16:19:55Z",
+      "tags": [
+        "major",
+        "portal",
+        "scheduling",
+        "events",
+        "courses",
+        "requests"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
       "id": "user-portal-1781216183000",
       "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1781216183000",
       "title": "[User Portal] 🏷️ Admin Portal Menu Renames: Curriculum & Events",
