@@ -6,6 +6,27 @@
   "description": "Hype updates, releases, and fixes from the FundedYouth developers.",
   "items": [
     {
+      "id": "user-portal-1781459868000",
+      "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1781459868000",
+      "title": "[User Portal] 🙈 Dismiss Registrations & Correct Dates",
+      "content_text": "More cleanup for **Event Registrations** in the **Admin Portal**. 🙈\n\n### What Changed\n* **🙈 Dismiss a registration**: A new **Dismiss** button on every row hides a registration (like ones for past events) without deleting it.\n* **🧾 Tracked in the audit log**: Each dismiss is recorded so there's a clear history of what was hidden.\n* **🕐 Correct dates everywhere**: The date column now always shows **Pacific time**, fixing an off-by-one day for people on other time zones.",
+      "date_published": "2026-06-14T17:57:48Z",
+      "tags": [
+        "patch",
+        "portal",
+        "admin",
+        "events",
+        "registrations",
+        "timezone"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
       "id": "user-portal-1781458689000",
       "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1781458689000",
       "title": "[User Portal] 🗂️ Tabs & Dismiss for Custom Requests",

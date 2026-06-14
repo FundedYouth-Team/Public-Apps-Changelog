@@ -7,6 +7,20 @@
   <language>en-us</language>
   <atom:link href="https://changelog.fundedyouth.org/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>[User Portal] 🙈 Dismiss Registrations &amp; Correct Dates</title>
+    <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1781459868000</link>
+    <guid>https://changelog.fundedyouth.org/update/user-portal-1781459868000</guid>
+    <pubDate>Sun, 14 Jun 2026 17:57:48 GMT</pubDate>
+    <description>More cleanup for **Event Registrations** in the **Admin Portal**. 🙈
+
+### What Changed
+* **🙈 Dismiss a registration**: A new **Dismiss** button on every row hides a registration (like ones for past events) without deleting it.
+* **🧾 Tracked in the audit log**: Each dismiss is recorded so there&apos;s a clear history of what was hidden.
+* **🕐 Correct dates everywhere**: The date column now always shows **Pacific time**, fixing an off-by-one day for people on other time zones.</description>
+    <author>Ryan Jones</author>
+    <category>patch</category>
+  </item>
+  <item>
     <title>[User Portal] 🗂️ Tabs &amp; Dismiss for Custom Requests</title>
     <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1781458689000</link>
     <guid>https://changelog.fundedyouth.org/update/user-portal-1781458689000</guid>
