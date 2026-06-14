@@ -7,6 +7,20 @@
   <language>en-us</language>
   <atom:link href="https://changelog.fundedyouth.org/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>[User Portal] 🧭 Simpler Registrations Tabs</title>
+    <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1781463946000</link>
+    <guid>https://changelog.fundedyouth.org/update/user-portal-1781463946000</guid>
+    <pubDate>Sun, 14 Jun 2026 19:05:46 GMT</pubDate>
+    <description>We simplified the tabs in **Events &gt; Registrations** in the **Admin Portal**. 🧭
+
+### What Changed
+* **🧭 One row of tabs**: The old nested tabs are now a single row — **Upcoming Events**, **Past Events**, and **Settings**.
+* **🔍 Search has its own space**: The search box moved to its own row just below the tabs.
+* **🧹 Less clutter**: We removed the redundant **Registrations** tab.</description>
+    <author>Ryan Jones</author>
+    <category>patch</category>
+  </item>
+  <item>
     <title>[User Portal] 🙈 Hide Whole Events &amp; Auto-Cleanup</title>
     <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1781462756000</link>
     <guid>https://changelog.fundedyouth.org/update/user-portal-1781462756000</guid>

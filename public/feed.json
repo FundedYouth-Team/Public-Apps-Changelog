@@ -6,6 +6,27 @@
   "description": "Hype updates, releases, and fixes from the FundedYouth developers.",
   "items": [
     {
+      "id": "user-portal-1781463946000",
+      "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1781463946000",
+      "title": "[User Portal] 🧭 Simpler Registrations Tabs",
+      "content_text": "We simplified the tabs in **Events > Registrations** in the **Admin Portal**. 🧭\n\n### What Changed\n* **🧭 One row of tabs**: The old nested tabs are now a single row — **Upcoming Events**, **Past Events**, and **Settings**.\n* **🔍 Search has its own space**: The search box moved to its own row just below the tabs.\n* **🧹 Less clutter**: We removed the redundant **Registrations** tab.",
+      "date_published": "2026-06-14T19:05:46Z",
+      "tags": [
+        "patch",
+        "portal",
+        "admin",
+        "events",
+        "registrations",
+        "navigation"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
       "id": "user-portal-1781462756000",
       "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1781462756000",
       "title": "[User Portal] 🙈 Hide Whole Events & Auto-Cleanup",
