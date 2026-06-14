@@ -7,6 +7,19 @@
   <language>en-us</language>
   <atom:link href="https://changelog.fundedyouth.org/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>[User Portal] 👤 Quick User Details in Event Registrations</title>
+    <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1781457539000</link>
+    <guid>https://changelog.fundedyouth.org/update/user-portal-1781457539000</guid>
+    <pubDate>Sun, 14 Jun 2026 17:18:59 GMT</pubDate>
+    <description>Checking who registered for an event just got faster in the **Admin Portal**. 👤
+
+### What Changed
+* **🪟 Click for details**: In **Events &gt; Registrations**, clicking a user opens a popup with their **email** and **grade**.
+* **🔗 Jump to profile**: The popup includes a button that takes you straight to that user&apos;s profile under **All Users**.</description>
+    <author>Ryan Jones</author>
+    <category>patch</category>
+  </item>
+  <item>
     <title>[User Portal] ✉️ Clearer Event Registration Emails</title>
     <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1781456232000</link>
     <guid>https://changelog.fundedyouth.org/update/user-portal-1781456232000</guid>

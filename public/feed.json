@@ -6,6 +6,27 @@
   "description": "Hype updates, releases, and fixes from the FundedYouth developers.",
   "items": [
     {
+      "id": "user-portal-1781457539000",
+      "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1781457539000",
+      "title": "[User Portal] 👤 Quick User Details in Event Registrations",
+      "content_text": "Checking who registered for an event just got faster in the **Admin Portal**. 👤\n\n### What Changed\n* **🪟 Click for details**: In **Events > Registrations**, clicking a user opens a popup with their **email** and **grade**.\n* **🔗 Jump to profile**: The popup includes a button that takes you straight to that user's profile under **All Users**.",
+      "date_published": "2026-06-14T17:18:59Z",
+      "tags": [
+        "patch",
+        "portal",
+        "admin",
+        "events",
+        "registrations",
+        "users"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
       "id": "user-portal-1781456232000",
       "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1781456232000",
       "title": "[User Portal] ✉️ Clearer Event Registration Emails",
