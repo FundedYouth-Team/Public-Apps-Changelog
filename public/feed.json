@@ -6,6 +6,27 @@
   "description": "Hype updates, releases, and fixes from the FundedYouth developers.",
   "items": [
     {
+      "id": "user-portal-1781458689000",
+      "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1781458689000",
+      "title": "[User Portal] 🗂️ Tabs & Dismiss for Custom Requests",
+      "content_text": "We reworked **Events > Requests** in the **Admin Portal** to keep things tidy. 🗂️\n\n### What Changed\n* **🗂️ Two tabs**: Requests are now split into **Submitted Requests** and **Settings**.\n* **🙈 Dismiss a request**: A new **Dismiss** button hides a request from the list without deleting it, so admins can clear out ones they've handled.\n* **🧾 Fuller audit log**: The audit log now tracks **Confirm**, **Decline**, **Add to Schedule**, and the new **Dismiss** action, with clearer descriptions.",
+      "date_published": "2026-06-14T17:38:09Z",
+      "tags": [
+        "patch",
+        "portal",
+        "admin",
+        "events",
+        "requests",
+        "scheduling"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
       "id": "user-portal-1781457539000",
       "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1781457539000",
       "title": "[User Portal] 👤 Quick User Details in Event Registrations",

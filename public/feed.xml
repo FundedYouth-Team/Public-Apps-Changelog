@@ -7,6 +7,20 @@
   <language>en-us</language>
   <atom:link href="https://changelog.fundedyouth.org/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>[User Portal] 🗂️ Tabs &amp; Dismiss for Custom Requests</title>
+    <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1781458689000</link>
+    <guid>https://changelog.fundedyouth.org/update/user-portal-1781458689000</guid>
+    <pubDate>Sun, 14 Jun 2026 17:38:09 GMT</pubDate>
+    <description>We reworked **Events &gt; Requests** in the **Admin Portal** to keep things tidy. 🗂️
+
+### What Changed
+* **🗂️ Two tabs**: Requests are now split into **Submitted Requests** and **Settings**.
+* **🙈 Dismiss a request**: A new **Dismiss** button hides a request from the list without deleting it, so admins can clear out ones they&apos;ve handled.
+* **🧾 Fuller audit log**: The audit log now tracks **Confirm**, **Decline**, **Add to Schedule**, and the new **Dismiss** action, with clearer descriptions.</description>
+    <author>Ryan Jones</author>
+    <category>patch</category>
+  </item>
+  <item>
     <title>[User Portal] 👤 Quick User Details in Event Registrations</title>
     <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1781457539000</link>
     <guid>https://changelog.fundedyouth.org/update/user-portal-1781457539000</guid>
