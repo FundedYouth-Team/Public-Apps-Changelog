@@ -6,6 +6,27 @@
   "description": "Hype updates, releases, and fixes from the FundedYouth developers.",
   "items": [
     {
+      "id": "user-portal-1781461359000",
+      "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1781461359000",
+      "title": "[User Portal] 📱 Active Events & Mobile-Friendly Registrations",
+      "content_text": "A couple of nice fixes for **Events > Registrations** in the **Admin Portal**. 📱\n\n### What Changed\n* **▶️ Active events stay up top**: The **Upcoming** list now includes events that are currently in progress, even if their end time has already passed.\n* **📱 Easier on mobile**: Tapping an event on your phone now shows its registrants right below it. Desktop keeps the side-by-side layout.",
+      "date_published": "2026-06-14T18:22:39Z",
+      "tags": [
+        "patch",
+        "portal",
+        "admin",
+        "events",
+        "registrations",
+        "mobile"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
       "id": "user-portal-1781460722000",
       "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1781460722000",
       "title": "[User Portal] 🗂️ Event-by-Event Registrations View",

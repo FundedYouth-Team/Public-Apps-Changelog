@@ -7,6 +7,19 @@
   <language>en-us</language>
   <atom:link href="https://changelog.fundedyouth.org/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>[User Portal] 📱 Active Events &amp; Mobile-Friendly Registrations</title>
+    <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1781461359000</link>
+    <guid>https://changelog.fundedyouth.org/update/user-portal-1781461359000</guid>
+    <pubDate>Sun, 14 Jun 2026 18:22:39 GMT</pubDate>
+    <description>A couple of nice fixes for **Events &gt; Registrations** in the **Admin Portal**. 📱
+
+### What Changed
+* **▶️ Active events stay up top**: The **Upcoming** list now includes events that are currently in progress, even if their end time has already passed.
+* **📱 Easier on mobile**: Tapping an event on your phone now shows its registrants right below it. Desktop keeps the side-by-side layout.</description>
+    <author>Ryan Jones</author>
+    <category>patch</category>
+  </item>
+  <item>
     <title>[User Portal] 🗂️ Event-by-Event Registrations View</title>
     <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1781460722000</link>
     <guid>https://changelog.fundedyouth.org/update/user-portal-1781460722000</guid>
