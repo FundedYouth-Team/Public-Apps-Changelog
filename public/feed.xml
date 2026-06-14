@@ -7,6 +7,20 @@
   <language>en-us</language>
   <atom:link href="https://changelog.fundedyouth.org/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>[User Portal] ✉️ Refreshed Custom Time Request Email</title>
+    <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1781466553000</link>
+    <guid>https://changelog.fundedyouth.org/update/user-portal-1781466553000</guid>
+    <pubDate>Sun, 14 Jun 2026 19:49:13 GMT</pubDate>
+    <description>We updated the **Custom Time Request Submitted** email template in **Administration &gt; Email Notifications** (Admin Portal). ✉️
+
+### What Changed
+* **📋 Clearer summary**: The email now lays out the request at a glance — the member&apos;s **name**, **username**, and **email**.
+* **🎯 Full request details**: It shows the chosen **course**, the **mode** (take together or separate, with the class count), each **class with its date and time**, and any **note** the member added.
+* **🧪 Sample placeholders**: The template uses sample data (like `studentName` and `studentUsername`) so you can preview exactly how a real request will look.</description>
+    <author>Ryan Jones</author>
+    <category>patch</category>
+  </item>
+  <item>
     <title>[User Portal] 🧭 Simpler Registrations Tabs</title>
     <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1781463946000</link>
     <guid>https://changelog.fundedyouth.org/update/user-portal-1781463946000</guid>

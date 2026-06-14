@@ -6,6 +6,27 @@
   "description": "Hype updates, releases, and fixes from the FundedYouth developers.",
   "items": [
     {
+      "id": "user-portal-1781466553000",
+      "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1781466553000",
+      "title": "[User Portal] ✉️ Refreshed Custom Time Request Email",
+      "content_text": "We updated the **Custom Time Request Submitted** email template in **Administration > Email Notifications** (Admin Portal). ✉️\n\n### What Changed\n* **📋 Clearer summary**: The email now lays out the request at a glance — the member's **name**, **username**, and **email**.\n* **🎯 Full request details**: It shows the chosen **course**, the **mode** (take together or separate, with the class count), each **class with its date and time**, and any **note** the member added.\n* **🧪 Sample placeholders**: The template uses sample data (like `studentName` and `studentUsername`) so you can preview exactly how a real request will look.",
+      "date_published": "2026-06-14T19:49:13Z",
+      "tags": [
+        "patch",
+        "portal",
+        "admin",
+        "notifications",
+        "email",
+        "scheduling"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
       "id": "user-portal-1781463946000",
       "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1781463946000",
       "title": "[User Portal] 🧭 Simpler Registrations Tabs",
