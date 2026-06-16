@@ -7,6 +7,21 @@
   <language>en-us</language>
   <atom:link href="https://changelog.fundedyouth.org/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>[User Portal] 📧 One-Step Parent Consent for Under-13 Signups</title>
+    <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1781635088000</link>
+    <guid>https://changelog.fundedyouth.org/update/user-portal-1781635088000</guid>
+    <pubDate>Tue, 16 Jun 2026 18:38:08 GMT</pubDate>
+    <description>We made signing up simpler for members under 13 and their parents. 📧
+
+### What Changed
+* **✉️ Just one email**: Instead of two separate emails (one to verify the address and another for parental consent), parents now get a single combined message.
+* **✅ One click does both**: Clicking the confirmation link both verifies the parent&apos;s email and records their consent at the same time.
+* **📜 Consent starts at signup**: Agreeing to the **Portal Member Agreement** during signup counts as the initial consent, in line with children&apos;s privacy rules (COPPA).
+* **🔁 Everything else is the same**: The signup flow for ages 13+ and the admin resend-consent option are unchanged.</description>
+    <author>Ryan Jones</author>
+    <category>minor</category>
+  </item>
+  <item>
     <title>[User Portal] 🐛 Fixed Crashes When Creating Invoices &amp; Courses</title>
     <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1781634049000</link>
     <guid>https://changelog.fundedyouth.org/update/user-portal-1781634049000</guid>
@@ -18,7 +33,7 @@
 * **📚 Courses**: Creating a course without a badge or category selected now saves correctly instead of failing.
 * **🔒 Your data is safe**: No data was affected — these were input-handling bugs, not security issues.</description>
     <author>Ryan Jones</author>
-    <category>patch</category>
+    <category>security</category>
   </item>
   <item>
     <title>[User Portal] 🔑 Shorter Passwords Allowed (With a Heads-Up)</title>

@@ -6,13 +6,34 @@
   "description": "Hype updates, releases, and fixes from the FundedYouth developers.",
   "items": [
     {
+      "id": "user-portal-1781635088000",
+      "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1781635088000",
+      "title": "[User Portal] 📧 One-Step Parent Consent for Under-13 Signups",
+      "content_text": "We made signing up simpler for members under 13 and their parents. 📧\n\n### What Changed\n* **✉️ Just one email**: Instead of two separate emails (one to verify the address and another for parental consent), parents now get a single combined message.\n* **✅ One click does both**: Clicking the confirmation link both verifies the parent's email and records their consent at the same time.\n* **📜 Consent starts at signup**: Agreeing to the **Portal Member Agreement** during signup counts as the initial consent, in line with children's privacy rules (COPPA).\n* **🔁 Everything else is the same**: The signup flow for ages 13+ and the admin resend-consent option are unchanged.",
+      "date_published": "2026-06-16T18:38:08Z",
+      "tags": [
+        "minor",
+        "portal",
+        "auth",
+        "signup",
+        "consent",
+        "coppa"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
       "id": "user-portal-1781634049000",
       "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1781634049000",
       "title": "[User Portal] 🐛 Fixed Crashes When Creating Invoices & Courses",
       "content_text": "We squashed two server crashes that popped up when an admin left an optional field blank while creating records. 🐛\n\n### What Changed\n* **🧾 Invoices**: Creating an invoice with no due date now defaults the due date to the issue date instead of failing.\n* **📚 Courses**: Creating a course without a badge or category selected now saves correctly instead of failing.\n* **🔒 Your data is safe**: No data was affected — these were input-handling bugs, not security issues.",
       "date_published": "2026-06-16T18:20:49Z",
       "tags": [
-        "patch",
+        "security",
         "portal",
         "admin",
         "bugfix",
