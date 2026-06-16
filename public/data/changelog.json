@@ -70,7 +70,7 @@
       "date": "2026-06-16T18:20:49Z",
       "timezone": "America/Los_Angeles",
       "version": "v5.1.6",
-      "type": "patch",
+      "type": "security",
       "author": {
         "name": "Ryan Jones",
         "role": "Lead Product Engineer & Designer",
