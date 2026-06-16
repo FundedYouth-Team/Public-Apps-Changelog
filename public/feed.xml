@@ -7,6 +7,20 @@
   <language>en-us</language>
   <atom:link href="https://changelog.fundedyouth.org/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>[User Portal] 🐛 Fixed Crashes When Creating Invoices &amp; Courses</title>
+    <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1781634049000</link>
+    <guid>https://changelog.fundedyouth.org/update/user-portal-1781634049000</guid>
+    <pubDate>Tue, 16 Jun 2026 18:20:49 GMT</pubDate>
+    <description>We squashed two server crashes that popped up when an admin left an optional field blank while creating records. 🐛
+
+### What Changed
+* **🧾 Invoices**: Creating an invoice with no due date now defaults the due date to the issue date instead of failing.
+* **📚 Courses**: Creating a course without a badge or category selected now saves correctly instead of failing.
+* **🔒 Your data is safe**: No data was affected — these were input-handling bugs, not security issues.</description>
+    <author>Ryan Jones</author>
+    <category>patch</category>
+  </item>
+  <item>
     <title>[User Portal] 🔑 Shorter Passwords Allowed (With a Heads-Up)</title>
     <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1781633415000</link>
     <guid>https://changelog.fundedyouth.org/update/user-portal-1781633415000</guid>

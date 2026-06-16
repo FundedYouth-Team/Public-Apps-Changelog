@@ -6,6 +6,27 @@
   "description": "Hype updates, releases, and fixes from the FundedYouth developers.",
   "items": [
     {
+      "id": "user-portal-1781634049000",
+      "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1781634049000",
+      "title": "[User Portal] 🐛 Fixed Crashes When Creating Invoices & Courses",
+      "content_text": "We squashed two server crashes that popped up when an admin left an optional field blank while creating records. 🐛\n\n### What Changed\n* **🧾 Invoices**: Creating an invoice with no due date now defaults the due date to the issue date instead of failing.\n* **📚 Courses**: Creating a course without a badge or category selected now saves correctly instead of failing.\n* **🔒 Your data is safe**: No data was affected — these were input-handling bugs, not security issues.",
+      "date_published": "2026-06-16T18:20:49Z",
+      "tags": [
+        "patch",
+        "portal",
+        "admin",
+        "bugfix",
+        "billing",
+        "curriculum"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
       "id": "user-portal-1781633415000",
       "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1781633415000",
       "title": "[User Portal] 🔑 Shorter Passwords Allowed (With a Heads-Up)",
