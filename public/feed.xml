@@ -7,6 +7,20 @@
   <language>en-us</language>
   <atom:link href="https://changelog.fundedyouth.org/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>[User Portal] 🔑 Shorter Passwords Allowed (With a Heads-Up)</title>
+    <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1781633415000</link>
+    <guid>https://changelog.fundedyouth.org/update/user-portal-1781633415000</guid>
+    <pubDate>Tue, 16 Jun 2026 18:10:15 GMT</pubDate>
+    <description>We relaxed the password length rule, while still nudging you toward staying secure. 🔑
+
+### What Changed
+* **🔢 8 characters minimum**: Passwords can now be as short as **8 characters**.
+* **⚠️ Friendly warning**: If you pick a shorter password, we&apos;ll show a heads-up that it&apos;s weaker for your account&apos;s security.
+* **🛡️ Extra protection**: We recommend turning on **two-factor authentication (2FA)** in your user profile for a stronger layer of security.</description>
+    <author>Ryan Jones</author>
+    <category>patch</category>
+  </item>
+  <item>
     <title>[User Portal] ✉️ Refreshed Custom Time Request Email</title>
     <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1781466553000</link>
     <guid>https://changelog.fundedyouth.org/update/user-portal-1781466553000</guid>

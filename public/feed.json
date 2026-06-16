@@ -6,6 +6,27 @@
   "description": "Hype updates, releases, and fixes from the FundedYouth developers.",
   "items": [
     {
+      "id": "user-portal-1781633415000",
+      "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1781633415000",
+      "title": "[User Portal] 🔑 Shorter Passwords Allowed (With a Heads-Up)",
+      "content_text": "We relaxed the password length rule, while still nudging you toward staying secure. 🔑\n\n### What Changed\n* **🔢 8 characters minimum**: Passwords can now be as short as **8 characters**.\n* **⚠️ Friendly warning**: If you pick a shorter password, we'll show a heads-up that it's weaker for your account's security.\n* **🛡️ Extra protection**: We recommend turning on **two-factor authentication (2FA)** in your user profile for a stronger layer of security.",
+      "date_published": "2026-06-16T18:10:15Z",
+      "tags": [
+        "patch",
+        "portal",
+        "security",
+        "passwords",
+        "2fa",
+        "account"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
       "id": "user-portal-1781466553000",
       "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1781466553000",
       "title": "[User Portal] ✉️ Refreshed Custom Time Request Email",
