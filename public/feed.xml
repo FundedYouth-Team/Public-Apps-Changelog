@@ -7,6 +7,20 @@
   <language>en-us</language>
   <atom:link href="https://changelog.fundedyouth.org/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>[Fun Labs] 🖨️ New App: Print Cards</title>
+    <link>https://changelog.fundedyouth.org/?app=fun-labs&amp;update=fun-labs-1781653576000</link>
+    <guid>https://changelog.fundedyouth.org/update/fun-labs-1781653576000</guid>
+    <pubDate>Tue, 16 Jun 2026 23:46:16 GMT</pubDate>
+    <description>Say hello to **Print Cards**, a new in-house tool for our team. 🖨️
+
+### What Changed
+* **🆕 New app**: Print Cards lives at **/apps/print-cards** and is for **in-house use only**.
+* **📄 Turn a file into a card**: When someone creates an account in person (instead of signing up online), their login info can be saved to a `.txt` file. Print Cards reads that file and builds a printable card.
+* **🖨️ Ready to print**: Once the card is created, you can print it right from the app to hand to the new member.</description>
+    <author>Ryan Jones</author>
+    <category>minor</category>
+  </item>
+  <item>
     <title>[User Portal] 📧 One-Step Parent Consent for Under-13 Signups</title>
     <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1781635088000</link>
     <guid>https://changelog.fundedyouth.org/update/user-portal-1781635088000</guid>

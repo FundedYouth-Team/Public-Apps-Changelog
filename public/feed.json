@@ -6,6 +6,27 @@
   "description": "Hype updates, releases, and fixes from the FundedYouth developers.",
   "items": [
     {
+      "id": "fun-labs-1781653576000",
+      "url": "https://changelog.fundedyouth.org/?app=fun-labs&update=fun-labs-1781653576000",
+      "title": "[Fun Labs] 🖨️ New App: Print Cards",
+      "content_text": "Say hello to **Print Cards**, a new in-house tool for our team. 🖨️\n\n### What Changed\n* **🆕 New app**: Print Cards lives at **/apps/print-cards** and is for **in-house use only**.\n* **📄 Turn a file into a card**: When someone creates an account in person (instead of signing up online), their login info can be saved to a `.txt` file. Print Cards reads that file and builds a printable card.\n* **🖨️ Ready to print**: Once the card is created, you can print it right from the app to hand to the new member.",
+      "date_published": "2026-06-16T23:46:16Z",
+      "tags": [
+        "minor",
+        "fun-labs",
+        "new-app",
+        "print-cards",
+        "internal",
+        "onboarding"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
       "id": "user-portal-1781635088000",
       "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1781635088000",
       "title": "[User Portal] 📧 One-Step Parent Consent for Under-13 Signups",
