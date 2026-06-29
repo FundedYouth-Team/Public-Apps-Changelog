@@ -7,6 +7,21 @@
   <language>en-us</language>
   <atom:link href="https://changelog.fundedyouth.org/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>[User Portal] 🙋 Volunteer Shifts: One-Per-Day Limit &amp; Early Checkout</title>
+    <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1782757586000</link>
+    <guid>https://changelog.fundedyouth.org/update/user-portal-1782757586000</guid>
+    <pubDate>Mon, 29 Jun 2026 18:26:26 GMT</pubDate>
+    <description>Two handy upgrades for managing volunteer shifts. 🙋
+
+### What Changed
+* **🔂 One Shift Per Day**: A new toggle in the Add/Edit Timeslot form lets admins limit a timeslot to **one shift per volunteer per day**. If it&apos;s on and a volunteer already has a shift that date, signing up for another is blocked with a clear message.
+* **💾 Edits now save properly**: We also fixed a bug where editing a timeslot only updated the screen without saving — changes now stick.
+* **🚪 Early Checkout**: Assigned volunteers can now be checked out early with a new amber **Early Checkout** button. Pick the actual end time, and the shift is marked **Completed** with that time shown as a badge.
+* **🎟️ Fair credits**: Credits are automatically prorated to the hours actually worked, and the credit history notes the early departure.</description>
+    <author>Ryan Jones</author>
+    <category>patch</category>
+  </item>
+  <item>
     <title>[Fun Labs] 🖨️ New App: Print Cards</title>
     <link>https://changelog.fundedyouth.org/?app=fun-labs&amp;update=fun-labs-1781653576000</link>
     <guid>https://changelog.fundedyouth.org/update/fun-labs-1781653576000</guid>

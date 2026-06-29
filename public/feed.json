@@ -6,6 +6,27 @@
   "description": "Hype updates, releases, and fixes from the FundedYouth developers.",
   "items": [
     {
+      "id": "user-portal-1782757586000",
+      "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1782757586000",
+      "title": "[User Portal] 🙋 Volunteer Shifts: One-Per-Day Limit & Early Checkout",
+      "content_text": "Two handy upgrades for managing volunteer shifts. 🙋\n\n### What Changed\n* **🔂 One Shift Per Day**: A new toggle in the Add/Edit Timeslot form lets admins limit a timeslot to **one shift per volunteer per day**. If it's on and a volunteer already has a shift that date, signing up for another is blocked with a clear message.\n* **💾 Edits now save properly**: We also fixed a bug where editing a timeslot only updated the screen without saving — changes now stick.\n* **🚪 Early Checkout**: Assigned volunteers can now be checked out early with a new amber **Early Checkout** button. Pick the actual end time, and the shift is marked **Completed** with that time shown as a badge.\n* **🎟️ Fair credits**: Credits are automatically prorated to the hours actually worked, and the credit history notes the early departure.",
+      "date_published": "2026-06-29T18:26:26Z",
+      "tags": [
+        "patch",
+        "portal",
+        "volunteers",
+        "scheduling",
+        "credits",
+        "admin"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
       "id": "fun-labs-1781653576000",
       "url": "https://changelog.fundedyouth.org/?app=fun-labs&update=fun-labs-1781653576000",
       "title": "[Fun Labs] 🖨️ New App: Print Cards",
