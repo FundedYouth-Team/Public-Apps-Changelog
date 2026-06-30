@@ -7,6 +7,22 @@
   <language>en-us</language>
   <atom:link href="https://changelog.fundedyouth.org/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>[User Portal] 💳 Stripe Memberships &amp; Smarter Renewals</title>
+    <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1782838124000</link>
+    <guid>https://changelog.fundedyouth.org/update/user-portal-1782838124000</guid>
+    <pubDate>Tue, 30 Jun 2026 16:48:44 GMT</pubDate>
+    <description>Memberships can now be paid with a card through Stripe, with flexible billing lengths and a safety net for missed payments. 💳
+
+### What Changed
+* **💳 Pay by card**: Stripe-priced membership plans now open an embedded checkout when you subscribe. Credit-based plans work exactly as before.
+* **📆 Flexible billing lengths**: Plans can bill every 1, 3, 6, or 12 months — a 3-month plan now creates a true 3-month Stripe billing cycle.
+* **🔁 Hands-off renewals**: Stripe-subscribed memberships renew through Stripe, so the system no longer double-handles their renewals.
+* **🛟 Missed payment safety net**: If a card payment fails, we&apos;ll automatically cover the renewal with your credits when you have enough (and let you know). If not, the membership lapses and the wallet is frozen.
+* **🛠️ Clearer admin plan form**: The admin plan editor now shows a live **billing mode** badge, uses a month-count input instead of a monthly/yearly dropdown, and has clearer field labels.</description>
+    <author>Ryan Jones</author>
+    <category>minor</category>
+  </item>
+  <item>
     <title>[User Portal] 🙋 Volunteer Shifts: One-Per-Day Limit &amp; Early Checkout</title>
     <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1782757586000</link>
     <guid>https://changelog.fundedyouth.org/update/user-portal-1782757586000</guid>

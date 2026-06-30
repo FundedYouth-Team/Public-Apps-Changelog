@@ -6,6 +6,27 @@
   "description": "Hype updates, releases, and fixes from the FundedYouth developers.",
   "items": [
     {
+      "id": "user-portal-1782838124000",
+      "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1782838124000",
+      "title": "[User Portal] 💳 Stripe Memberships & Smarter Renewals",
+      "content_text": "Memberships can now be paid with a card through Stripe, with flexible billing lengths and a safety net for missed payments. 💳\n\n### What Changed\n* **💳 Pay by card**: Stripe-priced membership plans now open an embedded checkout when you subscribe. Credit-based plans work exactly as before.\n* **📆 Flexible billing lengths**: Plans can bill every 1, 3, 6, or 12 months — a 3-month plan now creates a true 3-month Stripe billing cycle.\n* **🔁 Hands-off renewals**: Stripe-subscribed memberships renew through Stripe, so the system no longer double-handles their renewals.\n* **🛟 Missed payment safety net**: If a card payment fails, we'll automatically cover the renewal with your credits when you have enough (and let you know). If not, the membership lapses and the wallet is frozen.\n* **🛠️ Clearer admin plan form**: The admin plan editor now shows a live **billing mode** badge, uses a month-count input instead of a monthly/yearly dropdown, and has clearer field labels.",
+      "date_published": "2026-06-30T16:48:44Z",
+      "tags": [
+        "minor",
+        "portal",
+        "memberships",
+        "billing",
+        "stripe",
+        "credits"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
       "id": "user-portal-1782757586000",
       "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1782757586000",
       "title": "[User Portal] 🙋 Volunteer Shifts: One-Per-Day Limit & Early Checkout",
