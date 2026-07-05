@@ -6,6 +6,27 @@
   "description": "Hype updates, releases, and fixes from the FundedYouth developers.",
   "items": [
     {
+      "id": "fun-labs-1783291755000",
+      "url": "https://changelog.fundedyouth.org/?app=fun-labs&update=fun-labs-1783291755000",
+      "title": "[Fun Labs] 🚀 Rocket Workshop: Build It, Launch It, Watch It Fly!",
+      "content_text": "Blast off! The **Rocket Workshop** is built, ready, and running — an interactive, hands-on adventure from paper tube to sky-high launch. 🚀\n\n### What Changed\n* **📄 Build your rocket**: Start by folding a basic paper rocket — simple, quick, and yours.\n* **🌀 Fins make the difference**: Throw it without fins and watch it wobble and shake. Snap on some fins and watch it glide smooth and straight — science you can see!\n* **🚲 Pump up the power**: Load your rocket onto the launch station and use a bike pump to fill the pressure system. Feel the tension build!\n* **🔴 3… 2… 1… LAUNCH!**: Count down from 3, hit the launch button, and send your rocket soaring into the sky. 🎉",
+      "date_published": "2026-07-05T22:49:15Z",
+      "tags": [
+        "patch",
+        "fun-labs",
+        "rocket-workshop",
+        "interactive",
+        "stem",
+        "activity"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
       "id": "user-portal-1782838124000",
       "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1782838124000",
       "title": "[User Portal] 💳 Stripe Memberships & Smarter Renewals",

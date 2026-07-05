@@ -58,10 +58,32 @@
       "icon": "FlaskConical",
       "color": "from-fuchsia-500 to-pink-500",
       "status": "beta",
-      "currentVersion": "v4.2.0"
+      "currentVersion": "v4.2.1"
     }
   ],
   "updates": [
+    {
+      "appId": "fun-labs",
+      "appName": "Fun Labs",
+      "title": "🚀 Rocket Workshop: Build It, Launch It, Watch It Fly!",
+      "description": "Blast off! The **Rocket Workshop** is built, ready, and running — an interactive, hands-on adventure from paper tube to sky-high launch. 🚀\n\n### What Changed\n* **📄 Build your rocket**: Start by folding a basic paper rocket — simple, quick, and yours.\n* **🌀 Fins make the difference**: Throw it without fins and watch it wobble and shake. Snap on some fins and watch it glide smooth and straight — science you can see!\n* **🚲 Pump up the power**: Load your rocket onto the launch station and use a bike pump to fill the pressure system. Feel the tension build!\n* **🔴 3… 2… 1… LAUNCH!**: Count down from 3, hit the launch button, and send your rocket soaring into the sky. 🎉",
+      "date": "2026-07-05T22:49:15Z",
+      "timezone": "America/Los_Angeles",
+      "version": "v4.2.1",
+      "type": "patch",
+      "author": {
+        "name": "Ryan Jones",
+        "role": "Lead Product Engineer & Designer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+      },
+      "tags": [
+        "fun-labs",
+        "rocket-workshop",
+        "interactive",
+        "stem",
+        "activity"
+      ]
+    },
     {
       "appId": "user-portal",
       "appName": "User Portal",
