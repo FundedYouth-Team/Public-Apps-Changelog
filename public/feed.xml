@@ -7,6 +7,19 @@
   <language>en-us</language>
   <atom:link href="https://changelog.fundedyouth.org/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>[User Portal] 🎓 Mark Course Completion from the POS</title>
+    <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1783458882000</link>
+    <guid>https://changelog.fundedyouth.org/update/user-portal-1783458882000</guid>
+    <pubDate>Tue, 07 Jul 2026 21:14:42 GMT</pubDate>
+    <description>Admins can now track course progress right from the Storefront POS in the **Admin Portal**. 🎓
+
+### What Changed
+* **✅ Mark as complete**: In **Storefront POS &gt; Progress and Badges**, you can mark a student as having completed a course.
+* **↩️ Undo anytime**: Made a mistake? You can just as easily unmark a completion to set it back.</description>
+    <author>Ryan Jones</author>
+    <category>patch</category>
+  </item>
+  <item>
     <title>[Fun Labs] 🚀 Rocket Workshop: Build It, Launch It, Watch It Fly!</title>
     <link>https://changelog.fundedyouth.org/?app=fun-labs&amp;update=fun-labs-1783291755000</link>
     <guid>https://changelog.fundedyouth.org/update/fun-labs-1783291755000</guid>

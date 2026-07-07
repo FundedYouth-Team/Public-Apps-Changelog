@@ -6,6 +6,27 @@
   "description": "Hype updates, releases, and fixes from the FundedYouth developers.",
   "items": [
     {
+      "id": "user-portal-1783458882000",
+      "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1783458882000",
+      "title": "[User Portal] 🎓 Mark Course Completion from the POS",
+      "content_text": "Admins can now track course progress right from the Storefront POS in the **Admin Portal**. 🎓\n\n### What Changed\n* **✅ Mark as complete**: In **Storefront POS > Progress and Badges**, you can mark a student as having completed a course.\n* **↩️ Undo anytime**: Made a mistake? You can just as easily unmark a completion to set it back.",
+      "date_published": "2026-07-07T21:14:42Z",
+      "tags": [
+        "patch",
+        "portal",
+        "admin",
+        "pos",
+        "curriculum",
+        "badges"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
       "id": "fun-labs-1783291755000",
       "url": "https://changelog.fundedyouth.org/?app=fun-labs&update=fun-labs-1783291755000",
       "title": "[Fun Labs] 🚀 Rocket Workshop: Build It, Launch It, Watch It Fly!",
