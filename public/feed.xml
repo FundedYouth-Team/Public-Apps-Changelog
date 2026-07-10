@@ -7,6 +7,20 @@
   <language>en-us</language>
   <atom:link href="https://changelog.fundedyouth.org/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>[Q-Up] 🔢 Q-Up Is Live — Sign In with Your Username &amp; 4-Digit PIN</title>
+    <link>https://changelog.fundedyouth.org/?app=q-up&amp;update=q-up-1783721536000</link>
+    <guid>https://changelog.fundedyouth.org/update/q-up-1783721536000</guid>
+    <pubDate>Fri, 10 Jul 2026 22:12:16 GMT</pubDate>
+    <description>Q-Up, our new job tracking system, is up and running in beta — and signing in is as easy as remembering 4 digits. 🔢
+
+### What Changed
+* **👤 Set your PIN**: Log into your **User Portal** account and add a 4-digit PIN code under your profile.
+* **🔑 Simple sign-in**: Once your PIN is set, log in with just your **Username + PIN** — no long password needed.
+* **🧪 Beta mode**: Q-Up is live in beta, so expect fast updates as we polish the experience.</description>
+    <author>Ryan Jones</author>
+    <category>major</category>
+  </item>
+  <item>
     <title>[User Portal] 🎓 Mark Course Completion from the POS</title>
     <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1783458882000</link>
     <guid>https://changelog.fundedyouth.org/update/user-portal-1783458882000</guid>

@@ -6,6 +6,27 @@
   "description": "Hype updates, releases, and fixes from the FundedYouth developers.",
   "items": [
     {
+      "id": "q-up-1783721536000",
+      "url": "https://changelog.fundedyouth.org/?app=q-up&update=q-up-1783721536000",
+      "title": "[Q-Up] 🔢 Q-Up Is Live — Sign In with Your Username & 4-Digit PIN",
+      "content_text": "Q-Up, our new job tracking system, is up and running in beta — and signing in is as easy as remembering 4 digits. 🔢\n\n### What Changed\n* **👤 Set your PIN**: Log into your **User Portal** account and add a 4-digit PIN code under your profile.\n* **🔑 Simple sign-in**: Once your PIN is set, log in with just your **Username + PIN** — no long password needed.\n* **🧪 Beta mode**: Q-Up is live in beta, so expect fast updates as we polish the experience.",
+      "date_published": "2026-07-10T22:12:16Z",
+      "tags": [
+        "major",
+        "q-up",
+        "authentication",
+        "pin",
+        "login",
+        "beta"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
       "id": "user-portal-1783458882000",
       "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1783458882000",
       "title": "[User Portal] 🎓 Mark Course Completion from the POS",

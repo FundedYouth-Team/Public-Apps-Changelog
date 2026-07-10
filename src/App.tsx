@@ -8,6 +8,7 @@ import {
   GraduationCap,
   Briefcase,
   FlaskConical,
+  ClipboardList,
   Search,
   Bell,
   Activity,
@@ -39,7 +40,8 @@ const ICON_MAP: Record<string, any> = {
   GitCompare,
   GraduationCap,
   Briefcase,
-  FlaskConical
+  FlaskConical,
+  ClipboardList
 };
 
 // Helper to get matching clean design colors for each app
@@ -47,10 +49,10 @@ const getAppThemeColors = (appId: string | null) => {
   switch (appId) {
     case "public-site":
       return {
-        text: "text-amber-700",
-        icon: "text-orange-500",
-        bg: "bg-orange-50/70",
-        borderClass: "border-orange-500"
+        text: "text-teal-700",
+        icon: "text-teal-500",
+        bg: "bg-teal-50/70",
+        borderClass: "border-teal-500"
       };
     case "user-portal":
       return {
@@ -86,6 +88,13 @@ const getAppThemeColors = (appId: string | null) => {
         icon: "text-indigo-500",
         bg: "bg-indigo-50/70",
         borderClass: "border-indigo-500"
+      };
+    case "q-up":
+      return {
+        text: "text-red-700",
+        icon: "text-orange-600",
+        bg: "bg-orange-50/70",
+        borderClass: "border-red-500"
       };
     case "fun-labs":
       return {
