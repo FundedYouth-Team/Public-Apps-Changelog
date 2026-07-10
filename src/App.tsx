@@ -49,10 +49,10 @@ const getAppThemeColors = (appId: string | null) => {
   switch (appId) {
     case "public-site":
       return {
-        text: "text-teal-700",
-        icon: "text-teal-500",
-        bg: "bg-teal-50/70",
-        borderClass: "border-teal-500"
+        text: "text-blue-700",
+        icon: "text-blue-500",
+        bg: "bg-blue-50/70",
+        borderClass: "border-blue-500"
       };
     case "user-portal":
       return {
