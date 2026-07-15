@@ -6,6 +6,27 @@
   "description": "Hype updates, releases, and fixes from the FundedYouth developers.",
   "items": [
     {
+      "id": "user-portal-1784098431000",
+      "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1784098431000",
+      "title": "[User Portal] 💳 Switch from Credits to Card — Without Losing a Day",
+      "content_text": "You can now move an active membership off the credit system and onto a card (or bank account) — and every day you already paid for still counts. 💳\n\n### What Changed\n* **🔄 Switch while active**: Move from the credit system to a card or bank account even while your membership is still running on credits.\n* **🗓️ No surprise charges**: Your remaining credit days convert to free days. For example, 20 days left becomes 20 days free — then your Stripe payment method is charged at the next billing cycle.\n* **💳 Any payment method**: Works for swapping one card for another, or replacing a card with a bank account.\n* **🏪 Self-serve or onsite**: Make the switch yourself in your **User Portal** account, or have staff do it at the **Admin Storefront POS**.",
+      "date_published": "2026-07-15T06:53:51Z",
+      "tags": [
+        "patch",
+        "portal",
+        "memberships",
+        "billing",
+        "stripe",
+        "pos"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
       "id": "q-up-1783721536000",
       "url": "https://changelog.fundedyouth.org/?app=q-up&update=q-up-1783721536000",
       "title": "[Q-Up] 🔢 Q-Up Is Live — Sign In with Your Username & 4-Digit PIN",
