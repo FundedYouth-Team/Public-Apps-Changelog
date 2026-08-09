@@ -7,6 +7,34 @@
   <language>en-us</language>
   <atom:link href="https://changelog.fundedyouth.org/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>[Q-Up] 🔐 Q-Up Is Going Public — Secure Re-Engineering Underway</title>
+    <link>https://changelog.fundedyouth.org/?app=q-up&amp;update=q-up-1786306125000</link>
+    <guid>https://changelog.fundedyouth.org/update/q-up-1786306125000</guid>
+    <pubDate>Sun, 09 Aug 2026 20:08:45 GMT</pubDate>
+    <description>Q-Up is being re-engineered to move from local-only onsite access to a public site you can reach anywhere on the web. 🔐
+
+### What Changed
+* **🌐 Public access coming**: Q-Up will no longer be limited to onsite use — it&apos;s becoming a full public-access web app.
+* **🔐 Security first**: Opening Q-Up to the web means a much higher level of security, and that&apos;s being built in from the ground up.
+* **⏳ Worth the wait**: The re-engineering will take some time — we&apos;re not rushing the security work that protects your data.</description>
+    <author>Ryan Jones</author>
+    <category>security</category>
+  </item>
+  <item>
+    <title>[Public Site] 🧮 New Mini App: Reverse Tax Calculator</title>
+    <link>https://changelog.fundedyouth.org/?app=public-site&amp;update=public-site-1786305988000</link>
+    <guid>https://changelog.fundedyouth.org/update/public-site-1786305988000</guid>
+    <pubDate>Sun, 09 Aug 2026 20:06:28 GMT</pubDate>
+    <description>There&apos;s a new mini app on the **/apps** page that works out prices backwards — so a customer&apos;s total lands exactly on the number you want. 🧮
+
+### What Changed
+* **🧮 Reverse Tax Calculator**: Enter the tax rate and the total you want the customer to pay, and it calculates the exact price to ring up.
+* **💵 Whole-number totals**: Perfect for setting prices so totals come out to clean, round numbers — no more odd cents.
+* **📍 Find it under /apps**: The calculator lives with the other mini apps on the Public Site.</description>
+    <author>Ryan Jones</author>
+    <category>patch</category>
+  </item>
+  <item>
     <title>[User Portal] 💳 Switch from Credits to Card — Without Losing a Day</title>
     <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1784098431000</link>
     <guid>https://changelog.fundedyouth.org/update/user-portal-1784098431000</guid>

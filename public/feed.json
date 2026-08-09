@@ -6,6 +6,48 @@
   "description": "Hype updates, releases, and fixes from the FundedYouth developers.",
   "items": [
     {
+      "id": "q-up-1786306125000",
+      "url": "https://changelog.fundedyouth.org/?app=q-up&update=q-up-1786306125000",
+      "title": "[Q-Up] 🔐 Q-Up Is Going Public — Secure Re-Engineering Underway",
+      "content_text": "Q-Up is being re-engineered to move from local-only onsite access to a public site you can reach anywhere on the web. 🔐\n\n### What Changed\n* **🌐 Public access coming**: Q-Up will no longer be limited to onsite use — it's becoming a full public-access web app.\n* **🔐 Security first**: Opening Q-Up to the web means a much higher level of security, and that's being built in from the ground up.\n* **⏳ Worth the wait**: The re-engineering will take some time — we're not rushing the security work that protects your data.",
+      "date_published": "2026-08-09T20:08:45Z",
+      "tags": [
+        "security",
+        "q-up",
+        "security",
+        "re-engineering",
+        "web-access",
+        "beta"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
+      "id": "public-site-1786305988000",
+      "url": "https://changelog.fundedyouth.org/?app=public-site&update=public-site-1786305988000",
+      "title": "[Public Site] 🧮 New Mini App: Reverse Tax Calculator",
+      "content_text": "There's a new mini app on the **/apps** page that works out prices backwards — so a customer's total lands exactly on the number you want. 🧮\n\n### What Changed\n* **🧮 Reverse Tax Calculator**: Enter the tax rate and the total you want the customer to pay, and it calculates the exact price to ring up.\n* **💵 Whole-number totals**: Perfect for setting prices so totals come out to clean, round numbers — no more odd cents.\n* **📍 Find it under /apps**: The calculator lives with the other mini apps on the Public Site.",
+      "date_published": "2026-08-09T20:06:28Z",
+      "tags": [
+        "patch",
+        "public-site",
+        "mini-apps",
+        "calculator",
+        "tax",
+        "pricing"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
       "id": "user-portal-1784098431000",
       "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1784098431000",
       "title": "[User Portal] 💳 Switch from Credits to Card — Without Losing a Day",

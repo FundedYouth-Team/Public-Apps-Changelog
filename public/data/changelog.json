@@ -13,7 +13,7 @@
       "icon": "Globe",
       "color": "from-teal-500 to-blue-500",
       "status": "active",
-      "currentVersion": "v2.11.1"
+      "currentVersion": "v2.11.2"
     },
     {
       "id": "user-portal",
@@ -40,7 +40,7 @@
       "icon": "ClipboardList",
       "color": "from-red-500 to-orange-500",
       "status": "beta",
-      "currentVersion": "v1.0.1"
+      "currentVersion": "v1.0.2"
     },
     {
       "id": "curriculum",
@@ -71,6 +71,50 @@
     }
   ],
   "updates": [
+    {
+      "appId": "q-up",
+      "appName": "Q-Up",
+      "title": "🔐 Q-Up Is Going Public — Secure Re-Engineering Underway",
+      "description": "Q-Up is being re-engineered to move from local-only onsite access to a public site you can reach anywhere on the web. 🔐\n\n### What Changed\n* **🌐 Public access coming**: Q-Up will no longer be limited to onsite use — it's becoming a full public-access web app.\n* **🔐 Security first**: Opening Q-Up to the web means a much higher level of security, and that's being built in from the ground up.\n* **⏳ Worth the wait**: The re-engineering will take some time — we're not rushing the security work that protects your data.",
+      "date": "2026-08-09T20:08:45Z",
+      "timezone": "America/Los_Angeles",
+      "version": "v1.0.2",
+      "type": "security",
+      "author": {
+        "name": "Ryan Jones",
+        "role": "Lead Product Engineer & Designer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+      },
+      "tags": [
+        "q-up",
+        "security",
+        "re-engineering",
+        "web-access",
+        "beta"
+      ]
+    },
+    {
+      "appId": "public-site",
+      "appName": "Public Site",
+      "title": "🧮 New Mini App: Reverse Tax Calculator",
+      "description": "There's a new mini app on the **/apps** page that works out prices backwards — so a customer's total lands exactly on the number you want. 🧮\n\n### What Changed\n* **🧮 Reverse Tax Calculator**: Enter the tax rate and the total you want the customer to pay, and it calculates the exact price to ring up.\n* **💵 Whole-number totals**: Perfect for setting prices so totals come out to clean, round numbers — no more odd cents.\n* **📍 Find it under /apps**: The calculator lives with the other mini apps on the Public Site.",
+      "date": "2026-08-09T20:06:28Z",
+      "timezone": "America/Los_Angeles",
+      "version": "v2.11.2",
+      "type": "patch",
+      "author": {
+        "name": "Ryan Jones",
+        "role": "Lead Product Engineer & Designer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+      },
+      "tags": [
+        "public-site",
+        "mini-apps",
+        "calculator",
+        "tax",
+        "pricing"
+      ]
+    },
     {
       "appId": "user-portal",
       "appName": "User Portal",
