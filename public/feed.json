@@ -6,6 +6,48 @@
   "description": "Hype updates, releases, and fixes from the FundedYouth developers.",
   "items": [
     {
+      "id": "user-portal-1786470877000",
+      "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1786470877000",
+      "title": "[User Portal] 📆 Instructors Can Open Their Schedule for Non-Class Bookings",
+      "content_text": "Bookings now has a toggle instructors can flip to take appointments that aren't tied to coursework. 📆\n\n### What Changed\n* **🔁 New schedule toggle**: Instructors can turn their schedule on for bookings outside of regular class work.\n* **📅 More than coursework**: Meetings, check-ins, and other one-off appointments can now be booked on an instructor's calendar.\n* **✅ Stays in your control**: The toggle is off until an instructor turns it on, so nobody gets booked by surprise.",
+      "date_published": "2026-08-11T17:54:37Z",
+      "tags": [
+        "patch",
+        "user-portal",
+        "bookings",
+        "instructors",
+        "scheduling",
+        "patch"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
+      "id": "user-portal-1786470818000",
+      "url": "https://changelog.fundedyouth.org/?app=user-portal&update=user-portal-1786470818000",
+      "title": "[User Portal] 🔑 One Simple Sign-In Form for Users",
+      "content_text": "The sign-in page now shows just one form — the User form — so there's nothing extra to figure out. 🔑\n\n### What Changed\n* **✅ One form, not two**: The old User | Admin switcher is gone. Everyone lands straight on the User sign-in form.\n* **🔗 Admin login moved**: Admins now use a small \"Admin Login\" link placed right under the Create an Account button.\n* **✨ Less confusion**: Regular users no longer have to pick which kind of login they need — they just sign in.",
+      "date_published": "2026-08-11T17:53:38Z",
+      "tags": [
+        "patch",
+        "user-portal",
+        "sign-in",
+        "admin",
+        "ui",
+        "patch"
+      ],
+      "authors": [
+        {
+          "name": "Ryan Jones",
+          "avatar": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+        }
+      ]
+    },
+    {
       "id": "q-up-1786306125000",
       "url": "https://changelog.fundedyouth.org/?app=q-up&update=q-up-1786306125000",
       "title": "[Q-Up] 🔐 Q-Up Is Going Public — Secure Re-Engineering Underway",

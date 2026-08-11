@@ -7,6 +7,34 @@
   <language>en-us</language>
   <atom:link href="https://changelog.fundedyouth.org/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>[User Portal] 📆 Instructors Can Open Their Schedule for Non-Class Bookings</title>
+    <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1786470877000</link>
+    <guid>https://changelog.fundedyouth.org/update/user-portal-1786470877000</guid>
+    <pubDate>Tue, 11 Aug 2026 17:54:37 GMT</pubDate>
+    <description>Bookings now has a toggle instructors can flip to take appointments that aren&apos;t tied to coursework. 📆
+
+### What Changed
+* **🔁 New schedule toggle**: Instructors can turn their schedule on for bookings outside of regular class work.
+* **📅 More than coursework**: Meetings, check-ins, and other one-off appointments can now be booked on an instructor&apos;s calendar.
+* **✅ Stays in your control**: The toggle is off until an instructor turns it on, so nobody gets booked by surprise.</description>
+    <author>Ryan Jones</author>
+    <category>patch</category>
+  </item>
+  <item>
+    <title>[User Portal] 🔑 One Simple Sign-In Form for Users</title>
+    <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1786470818000</link>
+    <guid>https://changelog.fundedyouth.org/update/user-portal-1786470818000</guid>
+    <pubDate>Tue, 11 Aug 2026 17:53:38 GMT</pubDate>
+    <description>The sign-in page now shows just one form — the User form — so there&apos;s nothing extra to figure out. 🔑
+
+### What Changed
+* **✅ One form, not two**: The old User | Admin switcher is gone. Everyone lands straight on the User sign-in form.
+* **🔗 Admin login moved**: Admins now use a small &quot;Admin Login&quot; link placed right under the Create an Account button.
+* **✨ Less confusion**: Regular users no longer have to pick which kind of login they need — they just sign in.</description>
+    <author>Ryan Jones</author>
+    <category>patch</category>
+  </item>
+  <item>
     <title>[Q-Up] 🔐 Q-Up Is Going Public — Secure Re-Engineering Underway</title>
     <link>https://changelog.fundedyouth.org/?app=q-up&amp;update=q-up-1786306125000</link>
     <guid>https://changelog.fundedyouth.org/update/q-up-1786306125000</guid>
