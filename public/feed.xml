@@ -7,6 +7,20 @@
   <language>en-us</language>
   <atom:link href="https://changelog.fundedyouth.org/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>[Public Site] 📅 Schedule Page Now Explains &quot;Book a Session&quot;</title>
+    <link>https://changelog.fundedyouth.org/?app=public-site&amp;update=public-site-1786483264000</link>
+    <guid>https://changelog.fundedyouth.org/update/public-site-1786483264000</guid>
+    <pubDate>Tue, 11 Aug 2026 21:21:04 GMT</pubDate>
+    <description>The Schedule page now tells you about booking a session in the Portal, so you know where to go next. 📅
+
+### What Changed
+* **ℹ️ New details on Schedule**: The page explains what &quot;Book a Session&quot; is and how it works.
+* **🔗 Points to the Portal**: You&apos;re pointed straight to the Portal, where sessions are actually booked.
+* **✅ Fewer questions**: No more guessing whether a session is booked here or somewhere else.</description>
+    <author>Ryan Jones</author>
+    <category>patch</category>
+  </item>
+  <item>
     <title>[User Portal] 📆 Instructors Can Open Their Schedule for Non-Class Bookings</title>
     <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1786470877000</link>
     <guid>https://changelog.fundedyouth.org/update/user-portal-1786470877000</guid>
