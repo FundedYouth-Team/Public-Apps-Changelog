@@ -7,6 +7,22 @@
   <language>en-us</language>
   <atom:link href="https://changelog.fundedyouth.org/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>[User Portal] 🧑‍🏫 Membership Booking Is Here</title>
+    <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1786484147000</link>
+    <guid>https://changelog.fundedyouth.org/update/user-portal-1786484147000</guid>
+    <pubDate>Tue, 11 Aug 2026 21:35:47 GMT</pubDate>
+    <description>Members can now book time directly with an instructor, and instructors build their own teaching calendar. 🧑‍🏫
+
+### What Changed
+* **📆 Custom instructor calendars**: Each instructor sets up their own available times for teaching — nobody else picks their hours.
+* **👥 Three ways to learn**: Book a 1-on-1, a private group, or a public group session.
+* **📚 Pick what you&apos;re doing**: Choose a course, a class, a workshop, or a custom reason for the session.
+* **✅ Approved courses only**: Instructors can only be booked for the courses they&apos;re approved to teach.
+* **🌟 Members only**: Membership Booking is available to active members.</description>
+    <author>Ryan Jones</author>
+    <category>major</category>
+  </item>
+  <item>
     <title>[Public Site] 📅 Schedule Page Now Explains &quot;Book a Session&quot;</title>
     <link>https://changelog.fundedyouth.org/?app=public-site&amp;update=public-site-1786483264000</link>
     <guid>https://changelog.fundedyouth.org/update/public-site-1786483264000</guid>

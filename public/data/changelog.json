@@ -22,7 +22,7 @@
       "icon": "User",
       "color": "from-pink-500 to-rose-500",
       "status": "active",
-      "currentVersion": "v5.3.4"
+      "currentVersion": "v6.0.0"
     },
     {
       "id": "the-vault",
@@ -71,6 +71,28 @@
     }
   ],
   "updates": [
+    {
+      "appId": "user-portal",
+      "appName": "User Portal",
+      "title": "🧑‍🏫 Membership Booking Is Here",
+      "description": "Members can now book time directly with an instructor, and instructors build their own teaching calendar. 🧑‍🏫\n\n### What Changed\n* **📆 Custom instructor calendars**: Each instructor sets up their own available times for teaching — nobody else picks their hours.\n* **👥 Three ways to learn**: Book a 1-on-1, a private group, or a public group session.\n* **📚 Pick what you're doing**: Choose a course, a class, a workshop, or a custom reason for the session.\n* **✅ Approved courses only**: Instructors can only be booked for the courses they're approved to teach.\n* **🌟 Members only**: Membership Booking is available to active members.",
+      "date": "2026-08-11T21:35:47Z",
+      "timezone": "America/Los_Angeles",
+      "version": "v6.0.0",
+      "type": "major",
+      "author": {
+        "name": "Ryan Jones",
+        "role": "Lead Product Engineer & Designer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+      },
+      "tags": [
+        "user-portal",
+        "bookings",
+        "instructors",
+        "membership",
+        "scheduling"
+      ]
+    },
     {
       "appId": "public-site",
       "appName": "Public Site",
