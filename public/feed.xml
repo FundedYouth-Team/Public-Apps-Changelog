@@ -7,6 +7,24 @@
   <language>en-us</language>
   <atom:link href="https://changelog.fundedyouth.org/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>[User Portal] 🎟️ The New Booking System Replaces Join a Course</title>
+    <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1787522578000</link>
+    <guid>https://changelog.fundedyouth.org/update/user-portal-1787522578000</guid>
+    <pubDate>Sun, 23 Aug 2026 22:02:58 GMT</pubDate>
+    <description>The old &quot;Join a Course&quot; system is gone. Students now join public events or build their own booking, and see exactly what it costs the whole way through. 🎟️
+
+### What Changed
+* **📅 Join events or book your own**: Students can hop into a public event, or set up a booking that fits their schedule.
+* **🎯 Pick a topic, then a format**: Choose your topic, then pick 1-on-1, private group, or public group.
+* **👁️ Public groups go on the calendar**: Public group bookings show up on the public calendar. 1-on-1 and private group bookings stay off it — every booking is still an event behind the scenes.
+* **👥 Private groups pay together**: If you set up a private group, you pay for the whole group during the booking setup.
+* **💰 Credit cost shown the whole time**: Your FYBit credit cost updates as you go, so there are no surprises. Some courses cost credits and some don&apos;t, and some instructors charge for their time while others don&apos;t — it&apos;s all totaled up right before you book.
+* **💳 Short on credits? Pay right there**: If your wallet doesn&apos;t cover it, a Stripe popup appears inside the booking so you can buy the rest without starting over.
+* **✅ Simpler progress**: Student progress is now just Not Started or Completed — no more In Progress in between.</description>
+    <author>Ryan Jones</author>
+    <category>major</category>
+  </item>
+  <item>
     <title>[User Portal] 🎓 Every Student Gets Their Own Progress Page</title>
     <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1787458899000</link>
     <guid>https://changelog.fundedyouth.org/update/user-portal-1787458899000</guid>
