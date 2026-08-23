@@ -22,7 +22,7 @@
       "icon": "User",
       "color": "from-pink-500 to-rose-500",
       "status": "active",
-      "currentVersion": "v6.0.0"
+      "currentVersion": "v6.1.0"
     },
     {
       "id": "the-vault",
@@ -71,6 +71,28 @@
     }
   ],
   "updates": [
+    {
+      "appId": "user-portal",
+      "appName": "User Portal",
+      "title": "🎓 Every Student Gets Their Own Progress Page",
+      "description": "On the admin side, Curriculum > Students now opens a full page for each student instead of a small slide-out. 🎓\n\n### What Changed\n* **📄 Dedicated student pages**: Clicking a student opens their own page showing their progress, instead of a slide-out panel squeezed on the side.\n* **🗑️ \"Join a Course\" removed**: That button no longer fits how the new bookings model works, so it's gone.\n* **✅ Room to grow**: A real page gives each student's progress the space it needs as bookings roll out.",
+      "date": "2026-08-23T04:21:39Z",
+      "timezone": "America/Los_Angeles",
+      "version": "v6.1.0",
+      "type": "minor",
+      "author": {
+        "name": "Ryan Jones",
+        "role": "Lead Product Engineer & Designer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+      },
+      "tags": [
+        "user-portal",
+        "admin",
+        "curriculum",
+        "students",
+        "bookings"
+      ]
+    },
     {
       "appId": "user-portal",
       "appName": "User Portal",

@@ -7,6 +7,20 @@
   <language>en-us</language>
   <atom:link href="https://changelog.fundedyouth.org/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>[User Portal] 🎓 Every Student Gets Their Own Progress Page</title>
+    <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1787458899000</link>
+    <guid>https://changelog.fundedyouth.org/update/user-portal-1787458899000</guid>
+    <pubDate>Sun, 23 Aug 2026 04:21:39 GMT</pubDate>
+    <description>On the admin side, Curriculum &gt; Students now opens a full page for each student instead of a small slide-out. 🎓
+
+### What Changed
+* **📄 Dedicated student pages**: Clicking a student opens their own page showing their progress, instead of a slide-out panel squeezed on the side.
+* **🗑️ &quot;Join a Course&quot; removed**: That button no longer fits how the new bookings model works, so it&apos;s gone.
+* **✅ Room to grow**: A real page gives each student&apos;s progress the space it needs as bookings roll out.</description>
+    <author>Ryan Jones</author>
+    <category>minor</category>
+  </item>
+  <item>
     <title>[User Portal] 🧑‍🏫 Membership Booking Is Here</title>
     <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1786484147000</link>
     <guid>https://changelog.fundedyouth.org/update/user-portal-1786484147000</guid>
