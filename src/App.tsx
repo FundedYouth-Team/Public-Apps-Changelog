@@ -30,7 +30,18 @@ import { ChangelogItem, AppInfo, UpdateType } from "./types";
 import ChangelogCard from "./components/ChangelogCard";
 import SubscriptionModal from "./components/SubscriptionModal";
 import { useTheme } from "./hooks/useTheme";
-import logoUrl from "./assets/fybit-credit-logo.png";
+
+// FundedYouth "man" mark (source: ps-cdn.fundedyouth.org/fy-man-logo.svg).
+// Inlined with currentColor so it follows the header text color in light/dark mode;
+// viewBox is cropped to the artwork bounds to drop the original's empty padding.
+const FyManLogo = ({ className }: { className?: string }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="192 202 680 680" className={className} role="img" aria-label="FundedYouth logo">
+    <g transform="translate(0,1024) scale(0.1,-0.1)" fill="currentColor" stroke="none">
+      <path d="M7078 7910 c-61 -15 -243 -112 -523 -278 -527 -313 -1245 -885 -1650 -1315 -64 -69 -123 -135 -131 -146 -23 -32 -39 -26 -70 27 -44 75 -239 365 -337 502 -120 166 -282 364 -471 573 -99 110 -149 138 -257 145 -137 8 -238 -49 -296 -166 -24 -50 -28 -68 -28 -147 0 -83 3 -95 34 -152 18 -35 67 -102 108 -150 143 -170 280 -339 355 -439 97 -128 335 -485 422 -632 l66 -113 -47 -61 c-113 -143 -140 -180 -232 -318 -364 -545 -567 -976 -686 -1460 -149 -608 -121 -1230 72 -1615 152 -301 417 -461 706 -425 376 47 778 394 1032 890 281 550 369 1233 249 1929 -46 265 -108 475 -240 804 -70 175 -74 190 -61 211 48 72 341 368 622 627 137 126 375 315 658 523 207 151 572 378 822 512 125 66 195 126 233 199 23 44 27 62 27 145 0 116 -20 175 -82 241 -72 77 -195 114 -295 89z m-2429 -3048 c220 -710 196 -1375 -68 -1900 -95 -189 -200 -329 -314 -418 -86 -67 -132 -92 -194 -103 -41 -8 -48 -7 -70 15 -94 94 -149 410 -125 717 40 521 206 973 583 1584 107 174 137 215 149 208 5 -3 23 -50 39 -103z" />
+      <path d="M4771 7824 c-222 -60 -391 -279 -391 -509 0 -299 235 -534 535 -535 329 -1 583 331 499 653 -64 249 -266 409 -514 406 -41 0 -99 -7 -129 -15z" />
+    </g>
+  </svg>
+);
 
 // Custom Lucide-style icon: two thick concentric rings (Fidget Maker)
 const FidgetRings = ({ className }: { className?: string }) => (
@@ -137,7 +148,7 @@ export default function App() {
         {/* Dynamic Telemetry Header Bar */}
         <header className="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4.5 mb-6 flex flex-col md:flex-row items-center justify-between gap-4 shadow-xs">
           <div className="flex items-center gap-3">
-            <img src={logoUrl} alt="FundedYouth fybit logo" className="h-10 w-10 shrink-0 object-contain" />
+            <FyManLogo className="h-10 w-10 shrink-0 text-slate-900 dark:text-slate-100" />
             <div>
               <div className="flex items-center gap-2">
                 <h1 className="text-base md:text-lg font-bold tracking-tight text-slate-900 dark:text-slate-100 uppercase">
