@@ -23,7 +23,8 @@ import {
   Sun,
   Moon,
   Eye,
-  EyeOff
+  EyeOff,
+  Home
 } from "lucide-react";
 import { ChangelogItem, AppInfo, UpdateType } from "./types";
 import ChangelogCard from "./components/ChangelogCard";
@@ -51,82 +52,6 @@ const ICON_MAP: Record<string, any> = {
   FlaskConical,
   ClipboardList,
   FidgetRings
-};
-
-// Helper to get matching clean design colors for each app
-const getAppThemeColors = (appId: string | null) => {
-  switch (appId) {
-    case "public-site":
-      return {
-        text: "text-blue-700",
-        icon: "text-blue-500",
-        bg: "bg-blue-50/70",
-        borderClass: "border-blue-500"
-      };
-    case "user-portal":
-      return {
-        text: "text-pink-700",
-        icon: "text-pink-500",
-        bg: "bg-pink-50/70",
-        borderClass: "border-pink-500"
-      };
-    case "the-vault":
-      return {
-        text: "text-purple-700",
-        icon: "text-purple-500",
-        bg: "bg-purple-50/70",
-        borderClass: "border-purple-500"
-      };
-    case "docs":
-      return {
-        text: "text-blue-700",
-        icon: "text-blue-500",
-        bg: "bg-blue-50/70",
-        borderClass: "border-blue-500"
-      };
-    case "curriculum":
-      return {
-        text: "text-emerald-700",
-        icon: "text-emerald-500",
-        bg: "bg-emerald-50/70",
-        borderClass: "border-emerald-500"
-      };
-    case "partner-network":
-      return {
-        text: "text-indigo-700",
-        icon: "text-indigo-500",
-        bg: "bg-indigo-50/70",
-        borderClass: "border-indigo-500"
-      };
-    case "q-up":
-      return {
-        text: "text-red-700",
-        icon: "text-orange-600",
-        bg: "bg-orange-50/70",
-        borderClass: "border-red-500"
-      };
-    case "fun-labs":
-      return {
-        text: "text-fuchsia-700",
-        icon: "text-fuchsia-500",
-        bg: "bg-fuchsia-50/70",
-        borderClass: "border-fuchsia-500"
-      };
-    case "fidget-maker":
-      return {
-        text: "text-blue-700",
-        icon: "text-orange-500",
-        bg: "bg-blue-50/70",
-        borderClass: "border-blue-500"
-      };
-    default:
-      return {
-        text: "text-slate-700",
-        icon: "text-slate-400",
-        bg: "bg-slate-50",
-        borderClass: "border-slate-300"
-      };
-  }
 };
 
 export default function App() {
@@ -302,81 +227,32 @@ export default function App() {
           </div>
         </header>
 
-        {/* Dashboard Content Grid splits into Sidebar & Stream */}
-        <div id="main-content-layout" className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+        {/* Dashboard Content Grid splits into Sidebar & Stream.
+            Mobile order: context header + app icons, then sidebar, then feed.
+            Desktop: sidebar pinned to the left column spanning both stream rows. */}
+        <div id="main-content-layout" className="grid grid-cols-1 lg:grid-cols-12 gap-x-6 gap-y-5 items-start">
 
           {/* LEFT SIDEBAR NAVIGATION PANEL (lg:col-span-3) - STICKY AND LOCKED ON DESKTOP */}
-          <aside className="lg:col-span-3 lg:sticky lg:top-6 lg:max-h-[calc(100vh-3.5rem)] lg:overflow-y-auto space-y-5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-5 rounded-xl shadow-xs self-start">
+          <aside className="order-2 lg:order-0 lg:col-span-3 lg:col-start-1 lg:row-start-1 lg:row-span-2 lg:sticky lg:top-6 lg:max-h-[calc(100vh-3.5rem)] lg:overflow-y-auto space-y-5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-5 rounded-xl shadow-xs self-start">
 
-            {/* Apps directory navigator */}
-            <div className="space-y-3.5">
-              <h3 className="px-1 text-xs font-bold text-slate-400/90 dark:text-slate-500 uppercase tracking-wider mb-2 flex items-center justify-between">
-                <span>The Ecosystem</span>
-                <span className="font-mono bg-slate-100 dark:bg-slate-800 text-[10px] border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400 rounded px-1.5 py-0.5 leading-none font-medium">
-                  {apps.length} Apps
-                </span>
-              </h3>
-
-              <div className="space-y-1">
-                {/* "All" button */}
-                <button
-                  id="nav-all-apps"
-                  onClick={() => setSelectedAppId(null)}
-                  className={`w-full flex items-center justify-between rounded-r-lg py-2 text-left text-xs transition-all duration-150 cursor-pointer relative overflow-hidden ${
-                    selectedAppId === null
-                      ? "bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-100 font-semibold border-l-[3px] border-slate-700 dark:border-slate-400 pl-2 shadow-xs"
-                      : "text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800/60 font-medium pl-2.5 border-l-[3px] border-transparent"
-                  }`}
-                >
-                  <div className="flex items-center gap-2">
-                    <Activity className={`h-3.5 w-3.5 ${selectedAppId === null ? "text-slate-700 dark:text-slate-300" : "text-slate-400"}`} />
-                    <span>Everything</span>
-                  </div>
-                  <span className={`font-mono text-[9px] px-1.5 py-0.5 rounded pr-2 ${
-                    selectedAppId === null ? "bg-white dark:bg-slate-700 shadow-xs text-slate-700 dark:text-slate-200" : "bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400"
-                  }`}>
-                    {changelogs.length}
-                  </span>
-                </button>
-
-                {/* Individual dynamic app tabs */}
-                {apps.map((app) => {
-                  const LucideIcon = ICON_MAP[app.icon] || Globe;
-                  const isSelected = selectedAppId === app.id;
-                  const appUpdatesCount = changelogs.filter((cl) => cl.appId === app.id).length;
-                  const themeColors = getAppThemeColors(app.id);
-
-                  return (
-                    <button
-                      key={app.id}
-                      id={`nav-app-${app.id}`}
-                      onClick={() => setSelectedAppId(app.id)}
-                      className={`w-full flex items-center justify-between rounded-r-lg py-2 text-left text-xs transition-all duration-150 cursor-pointer relative overflow-hidden ${
-                        isSelected
-                          ? `${themeColors.bg} ${themeColors.text} font-semibold border-l-[3px] ${themeColors.borderClass} pl-2 shadow-xs`
-                          : "text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800/60 font-medium pl-2.5 border-l-[3px] border-transparent"
-                      }`}
-                    >
-                      <div className="flex items-center gap-2 min-w-0">
-                        <LucideIcon className={`h-3.5 w-3.5 flex-shrink-0 ${themeColors.icon}`} />
-                        <span className="truncate">{app.name}</span>
-                      </div>
-
-                      <div className="flex items-center gap-1.5 flex-shrink-0 pr-2">
-                        <span className="text-[9px] font-mono opacity-60 truncate max-w-[40px] hidden sm:inline">
-                          {app.currentVersion}
-                        </span>
-                        <span className={`font-mono text-[9px] px-1.5 py-0.5 rounded ${
-                          isSelected ? "bg-white shadow-xs text-slate-700" : "bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400"
-                        }`}>
-                          {appUpdatesCount}
-                        </span>
-                      </div>
-                    </button>
-                  );
-                })}
+            {/* Home button: returns to the app icon grid + all activity */}
+            <button
+              id="nav-home"
+              onClick={() => setSelectedAppId(null)}
+              className={`w-full flex items-center justify-between rounded-lg px-3 py-2.5 text-left text-xs font-semibold transition-colors cursor-pointer border ${
+                selectedAppId === null
+                  ? "bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-100 border-slate-200 dark:border-slate-700"
+                  : "bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800"
+              }`}
+            >
+              <div className="flex items-center gap-2">
+                <Home className="h-3.5 w-3.5" />
+                <span>Home</span>
               </div>
-            </div>
+              <span className="font-mono text-[9px] px-1.5 py-0.5 rounded bg-white dark:bg-slate-700 shadow-xs text-slate-700 dark:text-slate-200">
+                {changelogs.length}
+              </span>
+            </button>
 
             {/* Quick Metrics Widget */}
             <div className="border-t border-slate-100 dark:border-slate-800 pt-4 space-y-3">
@@ -439,10 +315,11 @@ export default function App() {
 
           </aside>
 
-          {/* CENTER TIMELINE FOCUS STREAM (lg:col-span-9) */}
-          <main className="lg:col-span-9 space-y-5">
+          {/* STREAM TOP: context header + app icon grid (lg:col-span-9) */}
+          <div className="order-1 lg:order-0 lg:col-span-9 lg:col-start-4 lg:row-start-1 space-y-5">
 
-            {/* Context Header Section displaying Selected App details */}
+            {/* Context Header Section displaying Selected App details (hidden on home) */}
+            {selectedAppObj && (
             <section className="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 shadow-xs relative overflow-hidden">
               <div className="absolute right-[-40px] top-[-40px] h-40 w-40 bg-slate-50 dark:bg-slate-800 rounded-full -z-10 blur-3xl opacity-60" />
 
@@ -479,6 +356,7 @@ export default function App() {
                 </div>
               </div>
             </section>
+            )}
 
             {/* Home view: grid of app icons — click a tile to open that app's feed */}
             {!selectedAppObj && apps.length > 0 && (
@@ -511,6 +389,10 @@ export default function App() {
                 })}
               </section>
             )}
+          </div>
+
+          {/* CENTER TIMELINE FOCUS STREAM (lg:col-span-9) */}
+          <main className="order-3 lg:order-0 lg:col-span-9 lg:col-start-4 lg:row-start-2 space-y-5">
 
             {/* Inline search & filters tools panel */}
             <div className="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-3 shadow-xs flex flex-col md:flex-row items-center justify-between gap-3">
