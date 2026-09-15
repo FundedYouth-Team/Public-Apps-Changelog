@@ -22,7 +22,7 @@
       "icon": "User",
       "color": "from-pink-500 to-rose-500",
       "status": "active",
-      "currentVersion": "v7.0.0"
+      "currentVersion": "v7.0.1"
     },
     {
       "id": "the-vault",
@@ -68,9 +68,63 @@
       "color": "from-fuchsia-500 to-pink-500",
       "status": "beta",
       "currentVersion": "v4.2.1"
+    },
+    {
+      "id": "fidget-maker",
+      "name": "Fidget Maker",
+      "description": "Design your own custom fidget ring — stack rings, size them, and pattern the outer ring.",
+      "icon": "FidgetRings",
+      "color": "from-blue-500 to-orange-500",
+      "iconColor": "from-blue-500 from-50% to-orange-500 to-50%",
+      "status": "beta",
+      "currentVersion": "v0.1.0"
     }
   ],
   "updates": [
+    {
+      "appId": "fidget-maker",
+      "appName": "Fidget Maker",
+      "title": "🌀 Fidget Maker Is Live — Build Your Own Fidget Ring",
+      "description": "Fidget Maker is up and running! Now you can design a fidget ring that's all yours. 🌀\n\n### What Changed\n* **🚀 App is live**: Fidget Maker is running and ready to use.\n* **💍 Make your own fidget ring**: Build a custom fidget ring from scratch.\n* **➕ Stack two or more rings**: Add as many rings as you like — start with two and keep going.\n* **📏 Set ring sizes**: Pick the size of each ring so they fit together just right.\n* **🎨 Pattern the outer ring**: Add a pattern to the outer ring to give it your own style.",
+      "date": "2026-09-15T18:10:07Z",
+      "timezone": "America/Los_Angeles",
+      "version": "v0.1.0",
+      "type": "minor",
+      "author": {
+        "name": "Ryan Jones",
+        "role": "Lead Product Engineer & Designer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+      },
+      "tags": [
+        "fidget-maker",
+        "launch",
+        "rings",
+        "design",
+        "patterns"
+      ]
+    },
+    {
+      "appId": "user-portal",
+      "appName": "User Portal",
+      "title": "📧 Cancellation Emails + a Tidier My Availability Tab",
+      "description": "Nobody gets left guessing when a booking is called off, and instructors have an easier time setting up their availability. 📧\n\n### What Changed\n* **🚫 Cancellation emails**: When a booking is cancelled, every student on it and the instructor get an email right away.\n* **🧭 Sub-menu in My Availability**: Admin Portal > Bookings > My Availability now has a sub-menu, so it's easier to find your way around its features.\n* **✅ \"Other\" sessions stand apart**: Other sessions are now separated from the formats, since \"Other\" isn't a listed course.",
+      "date": "2026-08-27T17:24:55Z",
+      "timezone": "America/Los_Angeles",
+      "version": "v7.0.1",
+      "type": "patch",
+      "author": {
+        "name": "Ryan Jones",
+        "role": "Lead Product Engineer & Designer",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/8403768?v=4&size=64"
+      },
+      "tags": [
+        "user-portal",
+        "bookings",
+        "notifications",
+        "admin",
+        "availability"
+      ]
+    },
     {
       "appId": "user-portal",
       "appName": "User Portal",

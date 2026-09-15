@@ -40,12 +40,16 @@
         "description": { "type": "string" },
         "icon": {
           "type": "string",
-          "description": "Lucide icon name. Supported by the sidebar: Globe, User, ShieldAlert, BookOpen, GitCompare, GraduationCap, Briefcase, FlaskConical, ClipboardList.",
-          "examples": ["Globe", "User", "ShieldAlert", "BookOpen", "GitCompare", "GraduationCap", "Briefcase", "FlaskConical", "ClipboardList"]
+          "description": "Lucide icon name. Supported by the sidebar: Globe, User, ShieldAlert, BookOpen, GitCompare, GraduationCap, Briefcase, FlaskConical, ClipboardList, FidgetRings (custom).",
+          "examples": ["Globe", "User", "ShieldAlert", "BookOpen", "GitCompare", "GraduationCap", "Briefcase", "FlaskConical", "ClipboardList", "FidgetRings"]
         },
         "color": {
           "type": "string",
           "description": "Tailwind gradient utility used for the card accent, e.g. 'from-orange-500 to-amber-500'."
+        },
+        "iconColor": {
+          "type": "string",
+          "description": "Optional Tailwind gradient utility for the home grid icon and the card's app-name badge; falls back to `color`. Use hard stops for a split, e.g. 'from-blue-500 from-50% to-orange-500 to-50%'."
         },
         "status": {
           "type": "string",

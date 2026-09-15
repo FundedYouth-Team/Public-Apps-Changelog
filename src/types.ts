@@ -24,6 +24,7 @@ export interface AppInfo {
   description: string;
   icon: string; // Lucide icon name
   color: string; // Tailwind hex or class prefix (e.g. 'orange', 'emerald', 'sky')
+  iconColor?: string; // Optional override for the home grid icon background; falls back to `color`
   status: "active" | "maintenance" | "beta";
   currentVersion: string;
 }

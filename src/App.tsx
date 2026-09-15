@@ -31,6 +31,14 @@ import SubscriptionModal from "./components/SubscriptionModal";
 import { useTheme } from "./hooks/useTheme";
 import logoUrl from "./assets/logo-color-white-bg.png";
 
+// Custom Lucide-style icon: two thick concentric rings (Fidget Maker)
+const FidgetRings = ({ className }: { className?: string }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={3} className={className} aria-hidden="true">
+    <circle cx="12" cy="12" r="10" />
+    <circle cx="12" cy="12" r="4.5" />
+  </svg>
+);
+
 // Map string keys to Lucide icons dynamically for app categories
 const ICON_MAP: Record<string, any> = {
   Globe,
@@ -41,7 +49,8 @@ const ICON_MAP: Record<string, any> = {
   GraduationCap,
   Briefcase,
   FlaskConical,
-  ClipboardList
+  ClipboardList,
+  FidgetRings
 };
 
 // Helper to get matching clean design colors for each app
@@ -102,6 +111,13 @@ const getAppThemeColors = (appId: string | null) => {
         icon: "text-fuchsia-500",
         bg: "bg-fuchsia-50/70",
         borderClass: "border-fuchsia-500"
+      };
+    case "fidget-maker":
+      return {
+        text: "text-blue-700",
+        icon: "text-orange-500",
+        bg: "bg-blue-50/70",
+        borderClass: "border-blue-500"
       };
     default:
       return {
@@ -463,6 +479,38 @@ export default function App() {
                 </div>
               </div>
             </section>
+
+            {/* Home view: grid of app icons — click a tile to open that app's feed */}
+            {!selectedAppObj && apps.length > 0 && (
+              <section id="app-icon-grid" className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-3">
+                {apps.map((app) => {
+                  const LucideIcon = ICON_MAP[app.icon] || Globe;
+                  const appUpdatesCount = changelogs.filter((cl) => cl.appId === app.id).length;
+
+                  return (
+                    <button
+                      key={app.id}
+                      id={`grid-app-${app.id}`}
+                      onClick={() => setSelectedAppId(app.id)}
+                      title={app.description}
+                      className="group flex flex-col items-center text-center gap-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4 shadow-xs transition-all duration-150 hover:border-slate-800 dark:hover:border-slate-600 hover:-translate-y-0.5 cursor-pointer"
+                    >
+                      <div className={`flex h-12 w-12 items-center justify-center rounded-2xl bg-linear-to-br ${app.iconColor || app.color || "from-slate-400 to-slate-500"} shadow-sm transition-transform duration-150 group-hover:scale-105`}>
+                        <LucideIcon className="h-6 w-6 text-white" />
+                      </div>
+                      <div className="min-w-0 w-full">
+                        <span className="block truncate text-sm font-semibold text-slate-900 dark:text-slate-100">{app.name}</span>
+                        <span className="mt-1 flex items-center justify-center gap-1.5 text-[10px] font-mono text-slate-500 dark:text-slate-400">
+                          <span>{app.currentVersion}</span>
+                          <span className="text-slate-300 dark:text-slate-600">•</span>
+                          <span>{appUpdatesCount} {appUpdatesCount === 1 ? "update" : "updates"}</span>
+                        </span>
+                      </div>
+                    </button>
+                  );
+                })}
+              </section>
+            )}
 
             {/* Inline search & filters tools panel */}
             <div className="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-3 shadow-xs flex flex-col md:flex-row items-center justify-between gap-3">

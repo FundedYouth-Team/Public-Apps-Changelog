@@ -143,7 +143,7 @@ export default function ChangelogCard({ item, app, showAuthor = false }: Changel
         
         {/* App Title & Version badges */}
         <div className="flex items-center gap-2">
-          <span className={`inline-flex items-center gap-1 px-2.5 py-0.5 text-xs font-semibold rounded-md ${app?.color ? `bg-linear-to-r ${app.color} text-white` : "bg-slate-950 text-white"}`}>
+          <span className={`inline-flex items-center gap-1 px-2.5 py-0.5 text-xs font-semibold rounded-md ${app?.iconColor ? `bg-linear-to-br ${app.iconColor} text-white` : app?.color ? `bg-linear-to-r ${app.color} text-white` : "bg-slate-950 text-white"}`}>
             {item.appName}
           </span>
           <span className="font-mono text-xs text-slate-800 dark:text-slate-300 font-medium bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded px-1.5 py-0.5">

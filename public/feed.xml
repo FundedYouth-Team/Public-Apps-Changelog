@@ -7,6 +7,36 @@
   <language>en-us</language>
   <atom:link href="https://changelog.fundedyouth.org/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>[Fidget Maker] 🌀 Fidget Maker Is Live — Build Your Own Fidget Ring</title>
+    <link>https://changelog.fundedyouth.org/?app=fidget-maker&amp;update=fidget-maker-1789495807000</link>
+    <guid>https://changelog.fundedyouth.org/update/fidget-maker-1789495807000</guid>
+    <pubDate>Tue, 15 Sep 2026 18:10:07 GMT</pubDate>
+    <description>Fidget Maker is up and running! Now you can design a fidget ring that&apos;s all yours. 🌀
+
+### What Changed
+* **🚀 App is live**: Fidget Maker is running and ready to use.
+* **💍 Make your own fidget ring**: Build a custom fidget ring from scratch.
+* **➕ Stack two or more rings**: Add as many rings as you like — start with two and keep going.
+* **📏 Set ring sizes**: Pick the size of each ring so they fit together just right.
+* **🎨 Pattern the outer ring**: Add a pattern to the outer ring to give it your own style.</description>
+    <author>Ryan Jones</author>
+    <category>minor</category>
+  </item>
+  <item>
+    <title>[User Portal] 📧 Cancellation Emails + a Tidier My Availability Tab</title>
+    <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1787851495000</link>
+    <guid>https://changelog.fundedyouth.org/update/user-portal-1787851495000</guid>
+    <pubDate>Thu, 27 Aug 2026 17:24:55 GMT</pubDate>
+    <description>Nobody gets left guessing when a booking is called off, and instructors have an easier time setting up their availability. 📧
+
+### What Changed
+* **🚫 Cancellation emails**: When a booking is cancelled, every student on it and the instructor get an email right away.
+* **🧭 Sub-menu in My Availability**: Admin Portal &gt; Bookings &gt; My Availability now has a sub-menu, so it&apos;s easier to find your way around its features.
+* **✅ &quot;Other&quot; sessions stand apart**: Other sessions are now separated from the formats, since &quot;Other&quot; isn&apos;t a listed course.</description>
+    <author>Ryan Jones</author>
+    <category>patch</category>
+  </item>
+  <item>
     <title>[User Portal] 🎟️ The New Booking System Replaces Join a Course</title>
     <link>https://changelog.fundedyouth.org/?app=user-portal&amp;update=user-portal-1787522578000</link>
     <guid>https://changelog.fundedyouth.org/update/user-portal-1787522578000</guid>
