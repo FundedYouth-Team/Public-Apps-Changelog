@@ -30,7 +30,7 @@ import { ChangelogItem, AppInfo, UpdateType } from "./types";
 import ChangelogCard from "./components/ChangelogCard";
 import SubscriptionModal from "./components/SubscriptionModal";
 import { useTheme } from "./hooks/useTheme";
-import logoUrl from "./assets/logo-color-white-bg.png";
+import logoUrl from "./assets/fybit-credit-logo.png";
 
 // Custom Lucide-style icon: two thick concentric rings (Fidget Maker)
 const FidgetRings = ({ className }: { className?: string }) => (
@@ -137,9 +137,7 @@ export default function App() {
         {/* Dynamic Telemetry Header Bar */}
         <header className="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4.5 mb-6 flex flex-col md:flex-row items-center justify-between gap-4 shadow-xs">
           <div className="flex items-center gap-3">
-            <div className="relative flex h-10 w-10 items-center justify-center rounded-lg overflow-hidden">
-              <img src={logoUrl} alt="FundedYouth logo" className="h-full w-full object-contain" />
-            </div>
+            <img src={logoUrl} alt="FundedYouth fybit logo" className="h-10 w-10 shrink-0 object-contain" />
             <div>
               <div className="flex items-center gap-2">
                 <h1 className="text-base md:text-lg font-bold tracking-tight text-slate-900 dark:text-slate-100 uppercase">
